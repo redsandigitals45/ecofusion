@@ -474,7 +474,7 @@ export default function Home() {
 
                         {/* Qatar */}
                         <div className="dest-card reveal delay-1">
-                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1616854589255-a0bd00d922bc?q=80&w=600&auto=format&fit=crop)' }}>
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=600&auto=format&fit=crop)' }}>
                                 <div className="dest-img-overlay"></div>
                                 <div className="dest-title">
                                     <span className="dest-flag">
@@ -507,7 +507,7 @@ export default function Home() {
 
                         {/* Singapore */}
                         <div className="dest-card reveal delay-2">
-                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1596422846543-7ec40a3fb628?q=80&w=600&auto=format&fit=crop)' }}>
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=600&auto=format&fit=crop)' }}>
                                 <div className="dest-img-overlay"></div>
                                 <div className="dest-title">
                                     <span className="dest-flag">
@@ -573,7 +573,7 @@ export default function Home() {
 
                         {/* Italy */}
                         <div className="dest-card reveal delay-1">
-                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1516483638261-f4ddaefa53f7?q=80&w=600&auto=format&fit=crop)' }}>
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=600&auto=format&fit=crop)' }}>
                                 <div className="dest-img-overlay"></div>
                                 <div className="dest-title">
                                     <span className="dest-flag">
@@ -606,7 +606,7 @@ export default function Home() {
 
                         {/* Norway */}
                         <div className="dest-card reveal delay-2">
-                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1513515570324-4b533b38153d?q=80&w=600&auto=format&fit=crop)' }}>
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?q=80&w=600&auto=format&fit=crop)' }}>
                                 <div className="dest-img-overlay"></div>
                                 <div className="dest-title">
                                     <span className="dest-flag">
