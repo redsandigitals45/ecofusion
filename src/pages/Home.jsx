@@ -33,6 +33,41 @@ export default function Home() {
         return () => clearInterval(timer);
     }, []);
 
+    const allLogs = [
+        { icon: '🩺', text: 'Medical Doctor cleared port entry compliance in Nassau, Bahamas', color: 'rgb(139, 92, 246)' },
+        { icon: '⚓', text: "Chief Housekeeper onboarded cruise ship 'Glow of the Seas'", color: 'rgb(0, 85, 255)' },
+        { icon: '🛳️', text: "Second Mate matched with cruise vessel 'Pacific Venture'", color: 'rgb(0, 85, 255)' },
+        { icon: '🛫', text: '15 Seafarers cleared visa compliance for Galveston Port boarding', color: 'rgb(139, 92, 246)' },
+        { icon: '🛡️', text: '4 Deckhands passed premium STCW Safety at Sea Certification', color: 'rgb(16, 185, 129)' },
+        { icon: '👨‍✈️', text: "Chief Officer matched with cruise vessel 'Oceanic Explorer'", color: 'rgb(0, 85, 255)' },
+        { icon: '🍸', text: 'Food & Beverage Manager assigned to luxury suite fleet', color: 'rgb(245, 158, 11)' }
+    ];
+
+    const [liveLogs, setLiveLogs] = useState([]);
+
+    useEffect(() => {
+        const initial = allLogs.slice(0, 5).map(log => ({
+            ...log,
+            id: Math.random(),
+            time: new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' })
+        }));
+        setLiveLogs(initial);
+
+        const interval = setInterval(() => {
+            const randomLog = allLogs[Math.floor(Math.random() * allLogs.length)];
+            const timeStr = new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            const newLog = { ...randomLog, id: Math.random(), time: timeStr };
+
+            setLiveLogs(prev => {
+                const updated = [newLog, ...prev];
+                if (updated.length > 5) updated.pop();
+                return updated;
+            });
+        }, 1500);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <>
             {/* HERO */}
@@ -358,6 +393,95 @@ export default function Home() {
                 <div className="container">
                     <div className="reviews-action">
                         <Link to="/reviews" className="btn-blue">READ MORE REVIEWS</Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* LIVE OPERATIONS CONTROL */}
+            <section className="container" style={{ paddingBottom: '80px' }}>
+                <div className="home-live-ops" style={{
+                    marginTop: '2.5rem',
+                    marginBottom: '2rem',
+                    background: 'var(--card-bg, #fff)',
+                    borderRadius: '24px',
+                    border: '1px solid var(--border, rgba(0, 22, 122, 0.1))',
+                    padding: '2.5rem',
+                    boxShadow: '0 20px 40px rgba(0, 22, 122, 0.02)',
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    gap: '3rem',
+                    alignItems: 'stretch'
+                }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '1.5rem' }}>
+                        <div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#00167A' }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-activity animate-pulse" aria-hidden="true" style={{ color: '#10b981', width: '16px', height: '16px' }}><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+                                <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Live Operations Control</span>
+                                <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10b981', boxShadow: '0 0 6px #10b981', display: 'inline-block' }}></span>
+                            </div>
+                            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#00167A', marginBottom: '0.75rem', letterSpacing: '-0.02em', lineHeight: 1.2 }}>Global Crew &amp; Vessel Logistics</h3>
+                            <p style={{ fontSize: '0.85rem', color: 'var(--muted, #64748b)', lineHeight: 1.5 }}>Monitoring real-time seafarer deployments, visa compliance, and certified crew matches across our global cruise line fleet.</p>
+                        </div>
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                            <div style={{ background: 'rgba(0, 22, 122, 0.01)', border: '1px solid var(--border, rgba(0, 22, 122, 0.1))', borderRadius: '12px', padding: '1rem', position: 'relative' }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users" aria-hidden="true" style={{ color: '#00167A', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--muted, #64748b)', letterSpacing: '0.05em' }}>Active Onboard</span>
+                                <span style={{ fontSize: '1.25rem', fontWeight: 850, color: '#00167A', letterSpacing: '-0.03em', display: 'flex', alignItems: 'center', gap: '0.35rem', marginTop: '0.15rem' }}>1258<span style={{ fontSize: '0.65rem', fontWeight: 600, color: '#10b981', background: 'rgba(16,185,129,0.1)', padding: '0.1rem 0.35rem', borderRadius: '4px' }}>LIVE</span></span>
+                            </div>
+                            <div style={{ background: 'rgba(0, 22, 122, 0.01)', border: '1px solid var(--border, rgba(0, 22, 122, 0.1))', borderRadius: '12px', padding: '1rem' }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-ship" aria-hidden="true" style={{ color: '#ff7a00', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M12 10.189V14"></path><path d="M12 2v3"></path><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"></path><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 2.81 7.76"></path><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg>
+                                <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--muted, #64748b)', letterSpacing: '0.05em' }}>Fleet Vessels</span>
+                                <span style={{ fontSize: '1.25rem', fontWeight: 850, color: '#ff7a00', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>64</span>
+                            </div>
+                            <div style={{ background: 'rgba(0, 22, 122, 0.01)', border: '1px solid var(--border, rgba(0, 22, 122, 0.1))', borderRadius: '12px', padding: '1rem' }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users" aria-hidden="true" style={{ color: '#8b5cf6', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--muted, #64748b)', letterSpacing: '0.05em' }}>Talent Pool</span>
+                                <span style={{ fontSize: '1.25rem', fontWeight: 850, color: '#8b5cf6', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>14,850+</span>
+                            </div>
+                            <div style={{ background: 'rgba(0, 22, 122, 0.01)', border: '1px solid var(--border, rgba(0, 22, 122, 0.1))', borderRadius: '12px', padding: '1rem' }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shield-check" aria-hidden="true" style={{ color: '#10b981', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--muted, #64748b)', letterSpacing: '0.05em' }}>STCW Compliance</span>
+                                <span style={{ fontSize: '1.25rem', fontWeight: 850, color: '#10b981', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>100%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style={{ background: '#090d1a', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.06)', padding: '1.25rem 1rem', display: 'flex', flexDirection: 'column', gap: '1.25rem', boxShadow: 'inset 0 10px 30px rgba(0,0,0,0.5)', height: '100%', minHeight: 0, overflow: 'hidden' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1rem' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#94a3b8' }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-terminal" aria-hidden="true" style={{ color: '#38bdf8' }}><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg>
+                                <span style={{ fontFamily: 'monospace', fontSize: '0.8rem', fontWeight: 700 }}>crew-matching-core.sh</span>
+                            </div>
+                            <div style={{ display: 'flex', gap: '0.35rem' }}>
+                                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ef4444' }}></span>
+                                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#eab308' }}></span>
+                                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#22c55e' }}></span>
+                            </div>
+                        </div>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', flex: 1, overflow: 'hidden' }}>
+                            {liveLogs.map((log, index) => (
+                                <div key={log.id} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', fontFamily: 'monospace', fontSize: '0.8rem', lineHeight: 1.5, color: index === 0 ? 'rgb(248, 250, 252)' : 'rgb(148, 163, 184)', padding: '0.5rem 0', borderBottom: '1px solid rgba(255, 255, 255, 0.03)', animation: index === 0 ? 'slideDownLog 0.3s ease-out' : 'none', opacity: 1 - (index * 0.15) }}>
+                                    <span style={{ color: 'rgb(100, 116, 139)', flexShrink: 0 }}>[{log.time}]</span>
+                                    <span style={{ flexShrink: 0 }}>{log.icon}</span>
+                                    <span style={{ flex: '1 1 0%' }}>{log.text}</span>
+                                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: log.color, boxShadow: `0 0 8px ${log.color}`, flexShrink: 0, marginTop: '0.35rem' }}></span>
+                                </div>
+                            ))}
+                        </div>
+                        <style>{`
+                            @keyframes slideDownLog {
+                                0% { opacity: 0; transform: translateY(-10px); }
+                                100% { opacity: 1; transform: translateY(0); }
+                            }
+                            @media (max-width: 900px) {
+                                .home-live-ops {
+                                    grid-template-columns: 1fr !important;
+                                    padding: 1.5rem !important;
+                                    gap: 2rem !important;
+                                }
+                            }
+                        `}</style>
                     </div>
                 </div>
             </section>
