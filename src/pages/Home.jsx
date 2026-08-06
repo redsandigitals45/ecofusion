@@ -14,7 +14,7 @@ export default function Home() {
                         <p className="lede" style={{ color: 'rgba(255,255,255,0.85)' }}>Ecofusion Outsourcing places and prepares talent for careers at sea, in the air, and across the world's hotels — one guided pathway from training to placement.</p>
 
                         <div className="hero-actions">
-                            <Link to="/contact" className="btn btn-primary" style={{ background: '#fff', color: 'var(--blue)' }}>Start Your Career</Link>
+                            <Link to="/contact" className="btn btn-primary" style={{ background: 'var(--maroon, #5c0f38)', color: '#fff', border: 'none' }}>Start Your Career</Link>
                             <Link to="/about" className="btn" style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', backdropFilter: 'blur(8px)' }}>How It Works</Link>
                         </div>
                     </div>
@@ -74,33 +74,57 @@ export default function Home() {
             </section>
 
             {/* THREE INDUSTRIES */}
-            <section className="section on-rose">
+            <section className="section on-rose" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
                 <div className="container">
-                    <div className="section-head">
-                        <span className="eyebrow">A Global Career Landscape</span>
-                        <h2>Three industries. One mission.</h2>
-                        <p>Cruise, aviation and hotel sectors all value trained, adaptable people who can work confidently in customer-facing, global-standard environments.</p>
+                    <div className="section-head" style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 60px' }}>
+                        <span className="eyebrow" style={{ color: '#38bdf8', padding: '6px 16px', background: '#f0f9ff', borderRadius: '99px', display: 'inline-block', marginBottom: '20px', fontWeight: '800', fontSize: '11px', letterSpacing: '1px', textTransform: 'uppercase' }}>A Global Career Landscape</span>
+                        <h2 style={{ fontSize: 'clamp(36px, 4vw, 48px)', fontWeight: '800', lineHeight: '1.2', marginBottom: '20px', color: '#0f172a' }}>Three industries. One mission.</h2>
+                        <p style={{ fontSize: '17px', color: '#64748b', lineHeight: '1.6' }}>Cruise, aviation and hotel sectors all value trained, adaptable people who can work confidently in customer-facing, global-standard environments.</p>
                     </div>
-                    <div className="grid grid-3">
-                        <div className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-cruise.jpg" alt="Cruise ship at sea" /></div>
-                            <div className="body">
+
+                    <div className="grid immersive-cards-grid reveal stagger-group">
+                        <div className="immersive-card">
+                            <img className="ic-bg" src="/assets/img/hero-cruise.jpg" alt="" />
+                            <div className="ic-overlay"></div>
+                            <div className="ic-content">
+                                <div className="ic-badge">
+                                    <span className="ic-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="5" r="3" /><line x1="12" y1="22" x2="12" y2="8" /><path d="M5 12H2a10 10 0 0 0 20 0h-3" /></svg>
+                                    </span> CRUISE PLACEMENT
+                                </div>
                                 <h3>Cruise</h3>
                                 <p>Guest relations, F&amp;B, housekeeping, entertainment &amp; onboard service roles.</p>
+                                <Link to="/services/cruise" className="ic-btn">EXPLORE CAREERS <span>→</span></Link>
                             </div>
                         </div>
-                        <div className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member at an airport terminal" /></div>
-                            <div className="body">
+
+                        <div className="immersive-card">
+                            <img className="ic-bg" src="/assets/img/hero-aviation.jpg" alt="" />
+                            <div className="ic-overlay"></div>
+                            <div className="ic-content">
+                                <div className="ic-badge">
+                                    <span className="ic-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.7l-1.2 3.6c-.1.4.2.9.7 1l4.8 1.1L5 16l-2.8-.5c-.5-.1-.9.2-1.1.7l-.5 1.5c-.1.4.3.9.8.8l4.8-1 4.7-4.7 1.1 4.8c.1.5.6.8 1 .7l3.6-1.2c.5-.2.8-.6.7-1.1Z" /></svg>
+                                    </span> AVIATION PLACEMENT
+                                </div>
                                 <h3>Aviation</h3>
                                 <p>Cabin crew, airport operations, ground service &amp; passenger-facing roles.</p>
+                                <Link to="/services/aviation" className="ic-btn">EXPLORE CAREERS <span>→</span></Link>
                             </div>
                         </div>
-                        <div className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-hospitality.jpg" alt="Hotel reception staff assisting a guest" /></div>
-                            <div className="body">
+
+                        <div className="immersive-card span-last">
+                            <img className="ic-bg" src="/assets/img/hero-hospitality.jpg" alt="" />
+                            <div className="ic-overlay"></div>
+                            <div className="ic-content">
+                                <div className="ic-badge">
+                                    <span className="ic-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2" /><path d="M9 22v-4h6v4" /><path d="M8 6h.01" /><path d="M16 6h.01" /><path d="M12 6h.01" /><path d="M12 10h.01" /><path d="M12 14h.01" /><path d="M16 10h.01" /><path d="M16 14h.01" /><path d="M8 10h.01" /><path d="M8 14h.01" /></svg>
+                                    </span> HOSPITALITY PLACEMENT
+                                </div>
                                 <h3>Hotel Management</h3>
                                 <p>Front office, housekeeping, F&amp;B and full hotel operations.</p>
+                                <Link to="/services/hospitality" className="ic-btn">EXPLORE CAREERS <span>→</span></Link>
                             </div>
                         </div>
                     </div>

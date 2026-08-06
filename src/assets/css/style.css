@@ -1350,3 +1350,129 @@ section {
     transform: translateX(calc(-50% - 30px));
   }
 }
+
+/* IMMERSIVE CARDS SECTION */
+.immersive-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.immersive-card {
+  position: relative;
+  min-height: 480px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* content pushed to bottom */
+  padding: 40px;
+}
+
+.immersive-card .ic-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.immersive-card:hover .ic-bg {
+  transform: scale(1.08);
+}
+
+.ic-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 12, 24, 0) 0%, rgba(8, 12, 24, 0.5) 40%, rgba(8, 12, 24, 0.95) 100%);
+  z-index: 1;
+}
+
+.ic-badge {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #38bdf8;
+  /* Lighter primary blue from image */
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.ic-icon {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  backdrop-filter: blur(8px);
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.immersive-card:hover .ic-icon {
+  background-color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+.ic-content {
+  position: relative;
+  z-index: 2;
+}
+
+.ic-content h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.ic-content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 90%;
+}
+
+.ic-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.ic-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .immersive-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
