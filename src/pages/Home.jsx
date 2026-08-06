@@ -17,8 +17,52 @@ const reviewsRow2 = [
     { id: 10, text: "The hotel management placement process was incredibly smooth. They found a role that perfectly matched my 5-star resort background.", name: "David Chen", role: "Front Desk Manager • Hilton Sydney" }
 ];
 
+const jobs = [
+    { id: 1, badge: 'AE', title: 'Cabin Crew — Emirates', category: 'Aviation', salary: 'AED 8,500/mo - Tax-Free', location: 'UAE', type: 'Full-Time', exp: 'Exp: 1+ yr', tags: ['Dubai', 'Airlines'] },
+    { id: 2, badge: 'US', title: 'Cruise Ship Guest Associate', category: 'Cruise', salary: '$3,200/mo + Tips', location: 'USA', type: 'Contract', exp: 'Exp: 0-1 yr', tags: ['Miami', 'Royal Caribbean'] },
+    { id: 3, badge: 'MY', title: 'Airport Security Officer', category: 'Security', salary: 'MYR 4,800/mo', location: 'Malaysia', type: 'Full-Time', exp: 'Exp: 1-3 yr', tags: ['Kuala Lumpur', 'Terminal Security'] },
+    { id: 4, badge: 'EG', title: 'Marine Deck Cadet', category: 'Merchant Navy', salary: 'EGP 24,000/mo', location: 'Egypt', type: 'Contract', exp: 'Exp: Entry Level', tags: ['Suez Canal', 'Cargo Fleets'] },
+    { id: 5, badge: 'SG', title: 'Marine Deck Officer', category: 'Merchant Navy', salary: 'SGD 5,500/mo', location: 'Singapore', type: 'Contract', exp: 'Exp: 2+ yr', tags: ['Singapore', 'Container Fleet'] },
+    { id: 6, badge: 'AE', title: 'VIP Close Protection Officer', category: 'Security', salary: 'AED 12,000/mo', location: 'UAE', type: 'Full-Time', exp: 'Exp: 3+ yr', tags: ['Dubai', 'Corporate Security'] }
+];
+
+const JobCard = ({ job }) => (
+    <div className="job-card">
+        <div className="job-card-left">
+            <div className="job-badge">{job.badge}</div>
+            <div className="job-info">
+                <h3>
+                    {job.title}
+                    <span className="visa-badge">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        VISA SPONSORED
+                    </span>
+                </h3>
+                <div className="job-meta">
+                    <span style={{ fontWeight: 600, color: '#334155' }}>{job.salary}</span>
+                    <span style={{ opacity: 0.5 }}>|</span>
+                    <span>{job.location}</span>
+                    <span>{job.type}</span>
+                    <span>{job.exp}</span>
+                </div>
+                <div className="job-tags">
+                    {job.tags.map(tag => <span key={tag} className="job-tag">{tag}</span>)}
+                </div>
+            </div>
+        </div>
+        <div className="job-actions">
+            <button className="btn-save">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+            </button>
+            <Link to="/contact" className="btn" style={{ background: '#0ea5e9', color: '#fff', padding: '10px 24px', borderRadius: '100px', fontSize: '14px', fontWeight: 'bold' }}>Apply Now</Link>
+        </div>
+    </div>
+);
+
 export default function Home() {
     const [bgIndex, setBgIndex] = useState(0);
+    const [activeCategory, setActiveCategory] = useState('All');
+    const [activeLocation, setActiveLocation] = useState('All');
     const bgImages = [
         '/assets/img/hero-cruise.jpg',
         '/assets/img/hero-aviation.jpg',
@@ -255,6 +299,52 @@ export default function Home() {
                                 <Link to="/services/hospitality" className="ic-btn">EXPLORE CAREERS <span>→</span></Link>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* HOT OPPORTUNITIES */}
+            <section className="section" style={{ background: '#f8fafc', padding: '100px 0' }}>
+                <div className="container">
+                    <div className="section-head" style={{ marginBottom: '40px' }}>
+                        <span className="eyebrow" style={{ color: '#0ea5e9', padding: '6px 16px', background: '#e0f2fe', borderRadius: '99px', display: 'inline-block', marginBottom: '20px', fontWeight: '800', fontSize: '11px', letterSpacing: '1px', textTransform: 'uppercase' }}>NOW HIRING</span>
+                        <h2 style={{ fontSize: 'clamp(32px, 4vw, 44px)', fontWeight: '800', lineHeight: '1.2', marginBottom: '16px', color: '#0f172a' }}>
+                            Hot <span style={{ color: '#3b82f6' }}>Opportunities</span> Available Now
+                        </h2>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
+                            <p style={{ fontSize: '16px', color: '#64748b', lineHeight: '1.6', maxWidth: '600px', margin: 0 }}>
+                                Explore a selection of current international career opportunities across hospitality, aviation, maritime, and security sectors.
+                            </p>
+                            <Link to="/careers" style={{ color: '#0ea5e9', fontWeight: '700', fontSize: '15px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                View All Opportunities <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px', marginBottom: '32px' }}>
+                        <div className="filter-pills">
+                            {['All', 'Aviation', 'Cruise', 'Merchant Navy', 'Security'].map(cat => (
+                                <button key={cat} className={`filter-pill ${activeCategory === cat ? 'active-blue' : ''}`} onClick={() => setActiveCategory(cat)}>{cat}</button>
+                            ))}
+                        </div>
+                        <div className="filter-pills">
+                            {['All', 'UAE', 'Singapore', 'Malaysia', 'USA', 'Egypt'].map(loc => (
+                                <button key={loc} className={`filter-pill ${activeLocation === loc ? 'active-dark' : ''}`} onClick={() => setActiveLocation(loc)}>{loc}</button>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div>
+                        {jobs.filter(job =>
+                            (activeCategory === 'All' || job.category === activeCategory) &&
+                            (activeLocation === 'All' || job.location === activeLocation)
+                        ).map(job => (
+                            <JobCard key={job.id} job={job} />
+                        ))}
+                    </div>
+
+                    <div style={{ textAlign: 'center', marginTop: '48px' }}>
+                        <Link to="/contact" className="btn" style={{ background: '#0ea5e9', color: '#fff', padding: '16px 36px', borderRadius: '100px', fontWeight: 'bold' }}>VIEW ALL OPPORTUNITIES ➔</Link>
                     </div>
                 </div>
             </section>
