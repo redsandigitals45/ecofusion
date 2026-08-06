@@ -17,12 +17,58 @@ export default function Home() {
                             <Link to="/contact" className="btn btn-primary" style={{ background: '#fff', color: 'var(--blue)' }}>Start Your Career</Link>
                             <Link to="/about" className="btn" style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', backdropFilter: 'blur(8px)' }}>How It Works</Link>
                         </div>
+                    </div>
 
-                        <div className="hero-tags" style={{ color: '#fff' }}>
-                            <span className="hero-tag" style={{ background: 'rgba(255,255,255,0.1)', borderColor: 'rgba(255,255,255,0.2)' }}>⚓ Cruise</span>
-                            <span className="hero-tag" style={{ background: 'rgba(255,255,255,0.1)', borderColor: 'rgba(255,255,255,0.2)' }}>✈ Aviation</span>
-                            <span className="hero-tag" style={{ background: 'rgba(255,255,255,0.1)', borderColor: 'rgba(255,255,255,0.2)' }}>🏨 Hotel Management</span>
+                    <div className="hero-cards-right">
+                        <div className="floating-card delay-1">
+                            <div className="fc-icon blue">⚓</div>
+                            <div className="fc-content">
+                                <h3>Cruise</h3>
+                                <p>Careers at sea</p>
+                                <span className="fc-badge blue">CRUISE</span>
+                            </div>
                         </div>
+
+                        <div className="floating-card delay-2 align-right">
+                            <div className="fc-icon green">✈</div>
+                            <div className="fc-content">
+                                <h3>Aviation</h3>
+                                <p>In the air</p>
+                                <span className="fc-badge green">AVIATION</span>
+                            </div>
+                        </div>
+
+                        <div className="floating-card delay-3">
+                            <div className="fc-icon orange">🏨</div>
+                            <div className="fc-content">
+                                <h3>Hotel Management</h3>
+                                <p>Across the world</p>
+                                <span className="fc-badge orange">HOSPITALITY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* TRUSTED EMPLOYERS MARQUEE */}
+            <section className="trusted-employers-section">
+                <div className="container">
+                    <p className="trusted-eyebrow">TRUSTED BY LEADING GLOBAL EMPLOYERS</p>
+                </div>
+                <div className="marquee-container">
+                    <div className="marquee-track">
+                        {/* Using an array twice to create a seamless infinite loop */}
+                        {[...Array(2)].map((_, i) => (
+                            <div key={i} style={{ display: 'flex', gap: '60px' }}>
+                                <div className="marquee-item"><span className="m-icon">✈</span> ETIHAD AIRWAYS</div>
+                                <div className="marquee-item"><span className="m-icon hotel">🏨</span> HILTON</div>
+                                <div className="marquee-item"><span className="m-icon diamond">♦</span> MARRIOTT</div>
+                                <div className="marquee-item"><span className="m-icon star">⭐</span> CELEBRITY CRUISES</div>
+                                <div className="marquee-item"><span className="m-icon wave">🌊</span> COSTA CRUISES</div>
+                                <div className="marquee-item"><span className="m-icon ship">🛳️</span> ROYAL CARIBBEAN</div>
+                                <div className="marquee-item"><span className="m-icon anchor">⚓</span> MSC CRUISES</div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

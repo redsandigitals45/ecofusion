@@ -1113,3 +1113,240 @@ section {
 .hero-grid-new .hero-copy {
   max-width: 650px;
 }
+
+/* FLOATING CARDS SECTION */
+.hero-grid-new {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-cards-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 350px;
+  padding-left: 20px;
+}
+
+.floating-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 220px;
+  /* Uniform rectangular width */
+  max-width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-card.align-right {
+  margin-left: 40px;
+}
+
+.floating-card.delay-1 {
+  animation-delay: 0s;
+}
+
+.floating-card.delay-2 {
+  animation-delay: 1.5s;
+}
+
+.floating-card.delay-3 {
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.fc-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  /* Smaller radius */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 18px;
+  /* Smaller icon size */
+}
+
+.fc-icon.blue {
+  background: rgba(14, 165, 233, 0.2);
+  color: #0ea5e9;
+}
+
+.fc-icon.green {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.fc-icon.orange {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.fc-content h3 {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 700;
+  font-family: var(--font-body);
+}
+
+.fc-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  margin: 0 0 4px 0;
+}
+
+.fc-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  /* Reduced padding */
+  border-radius: 99px;
+  color: #fff;
+  font-size: 9px;
+  /* Reduced badge size */
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.fc-badge.blue {
+  background: #0ea5e9;
+}
+
+.fc-badge.green {
+  background: #10b981;
+}
+
+.fc-badge.orange {
+  background: #f59e0b;
+  color: #000;
+}
+
+@media (max-width: 900px) {
+  .hero-grid-new {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-cards-right {
+    padding-left: 0;
+    align-items: flex-start;
+  }
+
+  .floating-card.align-right {
+    margin-left: 0;
+  }
+}
+
+/* TRUSTED EMPLOYERS MARQUEE */
+.trusted-employers-section {
+  padding: 30px 0 30px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.trusted-eyebrow {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+  /* Greatly reduced gap */
+  text-transform: uppercase;
+}
+
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  /* Fade edges */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 35s linear infinite;
+  gap: 60px;
+  padding-left: 60px;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #cbd5e1;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.marquee-item .m-icon {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.m-icon.hotel {
+  color: #f87171;
+}
+
+.m-icon.diamond {
+  color: #94a3b8;
+}
+
+.m-icon.star {
+  color: #fbbf24;
+}
+
+.m-icon.wave {
+  color: #60a5fa;
+}
+
+.m-icon.ship {
+  color: #f43f5e;
+}
+
+.m-icon.anchor {
+  color: #38bdf8;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 30px));
+  }
+}
