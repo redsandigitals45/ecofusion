@@ -1353,13 +1353,16 @@ section {
 
 /* IMMERSIVE CARDS SECTION */
 .immersive-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-top: 40px;
 }
 
 .immersive-card {
+  flex: 1 1 calc(50% - 15px);
+  max-width: calc(50% - 15px);
   position: relative;
   min-height: 480px;
   border-radius: 20px;
@@ -2506,153 +2509,173 @@ section {
 .journey-card-modern:hover::after {
   transform: scaleX(1);
 }
+
 /* JOB CARD COMPONENT styles */
 .job-card {
-    background: #ffffff;
-    border: 1px solid #f1f5f9;
-    border-radius: 16px;
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -2px rgba(0, 0, 0, 0.02);
-    transition: all 0.3s ease;
-    margin-bottom: 16px;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -2px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
 }
+
 .job-card:hover {
-    border-color: #cbd5e1;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.025);
-    transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.025);
+  transform: translateY(-2px);
 }
+
 .job-card-left {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
+
 .job-badge {
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    background: #f0f9ff;
-    color: #0284c7;
-    font-weight: 700;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #f0f9ff;
+  color: #0284c7;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
+
 .job-info h3 {
-    margin: 0 0 6px 0;
-    font-size: 18px;
-    font-weight: 700;
-    color: #0f172a;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
+
 .visa-badge {
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background: #ecfdf5;
-    color: #059669;
-    padding: 4px 8px;
-    border-radius: 4px;
-    letter-spacing: 0.05em;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #ecfdf5;
+  color: #059669;
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
+
 .job-meta {
-    font-size: 13.5px;
-    color: #64748b;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
+  font-size: 13.5px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
 }
+
 .job-meta span {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 .job-tags {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
+
 .job-tag {
-    font-size: 11px;
-    background: #f1f5f9;
-    color: #475569;
-    padding: 4px 10px;
-    border-radius: 100px;
-    font-weight: 600;
+  font-size: 11px;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-weight: 600;
 }
+
 .job-actions {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
+
 .btn-save {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #94a3b8;
-    cursor: pointer;
-    transition: all 0.2s;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s;
 }
+
 .btn-save:hover {
-    border-color: #cbd5e1;
-    color: #64748b;
-    background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #64748b;
+  background: #f8fafc;
 }
+
 .filter-pills {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
+
 .filter-pill {
-    padding: 8px 16px;
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 100px;
-    font-size: 13px;
-    font-weight: 600;
-    color: #475569;
-    cursor: pointer;
-    transition: all 0.2s;
+  padding: 8px 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
 }
+
 .filter-pill:hover {
-    border-color: #cbd5e1;
-    background: #f8fafc;
+  border-color: #cbd5e1;
+  background: #f8fafc;
 }
+
 .filter-pill.active-blue {
-    background: #0ea5e9;
-    color: #fff;
-    border-color: #0ea5e9;
+  background: #0ea5e9;
+  color: #fff;
+  border-color: #0ea5e9;
 }
+
 .filter-pill.active-dark {
-    background: #0f172a;
-    color: #fff;
-    border-color: #0f172a;
+  background: #0f172a;
+  color: #fff;
+  border-color: #0f172a;
 }
 
 /* KEYFRAME ANIMATION FOR DYNAMIC JOBS */
 @keyframes jCardFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
+
 .job-card {
-    animation: jCardFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: jCardFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

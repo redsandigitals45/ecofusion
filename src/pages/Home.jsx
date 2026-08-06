@@ -349,8 +349,8 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ABOUT ECOFUSION (Modern Grid View) */}
-            <section className="section" style={{ background: '#fafbfc', padding: '100px 0' }}>
+            {/* OUR EXPERTISE (Modern Grid View) */}
+            <section className="section" style={{ background: '#f8fafc', padding: '100px 0' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
                     <div className="reveal" style={{ maxWidth: '820px', margin: '0 auto 56px auto' }}>
                         <span style={{
@@ -359,57 +359,340 @@ export default function Home() {
                             fontWeight: '800',
                             textTransform: 'uppercase',
                             letterSpacing: '1.5px',
-                            color: 'var(--maroon)',
-                            border: '1px solid rgba(92, 15, 56, 0.3)',
+                            color: '#0ea5e9',
+                            border: '1px solid #bae6fd',
+                            background: '#f0f9ff',
                             padding: '6px 16px',
                             borderRadius: '100px',
                             marginBottom: '20px'
                         }}>
-                            ABOUT ECOFUSION
+                            OUR EXPERTISE
                         </span>
-                        <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '900', color: '#0b1a4a', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '1.5rem' }}>A career partner — not just a recruiter.</h2>
+                        <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '900', color: '#0b1a4a', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '1.5rem' }}>
+                            More Than Recruitment.<br />
+                            <span style={{ color: '#0ea5e9' }}>We Build International Careers.</span>
+                        </h2>
                         <p style={{ fontSize: '1.15rem', color: '#64748b', lineHeight: '1.6' }}>
-                            Ecofusion Outsourcing is a professional recruitment and training consultancy that helps candidates build careers in cruise ships, aviation and hotel management. Unlike agencies that focus on placement alone, we build a complete talent-development journey — a stronger path for candidates, and a stronger pipeline for employers.
+                            Every successful international career begins with the right guidance, the right opportunity, and the right recruitment partner. At Ecofusion Outsourcing, we help ambitious professionals prepare for rewarding careers with trusted employers across multiple industries. From career consultation to employer coordination, our recruitment process is designed to make your journey simple, transparent, and professional.
                         </p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px', textAlign: 'left' }}>
                         {/* Card 1 */}
-                        <div className="reveal why-choose-card-modern">
-                            <div className="wc-icon-box">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--maroon)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '2px' }}><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z" /><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" /></svg>
+                        <div className="reveal expertise-card" style={{ background: '#fff', borderRadius: '16px', padding: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.04)' }}>
+                            <div className="ec-icon" style={{ background: '#0ea5e9', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                                {/* Compass */}
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
                             </div>
-                            <h3>Train</h3>
-                            <p>Build job-ready skills through specialised, industry-aligned courses.</p>
+                            <h3 style={{ fontSize: '19px', fontWeight: '700', color: '#0f172a', marginBottom: '12px' }}>Career Consultation</h3>
+                            <p style={{ fontSize: '14.5px', color: '#64748b', lineHeight: '1.6' }}>Receive personalized guidance to identify career opportunities that match your qualifications, skills, and aspirations.</p>
                         </div>
                         {/* Card 2 */}
-                        <div className="reveal delay-1 why-choose-card-modern">
-                            <div className="wc-icon-box">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--maroon)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '2px' }}><circle cx="12" cy="8" r="6" /><path d="M9 14l-2 7 5-3 5 3-2-7" /></svg>
+                        <div className="reveal delay-1 expertise-card" style={{ background: '#fff', borderRadius: '16px', padding: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.04)' }}>
+                            <div className="ec-icon" style={{ background: '#10b981', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                                {/* Globe */}
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                             </div>
-                            <h3>Certify</h3>
-                            <p>Award recognised certifications that meet international service standards.</p>
+                            <h3 style={{ fontSize: '19px', fontWeight: '700', color: '#0f172a', marginBottom: '12px' }}>Employer Matching</h3>
+                            <p style={{ fontSize: '14.5px', color: '#64748b', lineHeight: '1.6' }}>We connect eligible candidates with opportunities that align with their experience and career goals.</p>
                         </div>
                         {/* Card 3 */}
-                        <div className="reveal delay-2 why-choose-card-modern">
-                            <div className="wc-icon-box">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--maroon)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '2px' }}><path d="M8 12h8M8 12a4 4 0 1 1 4-4M16 12a4 4 0 1 1-4 4" /></svg>
+                        <div className="reveal delay-2 expertise-card" style={{ background: '#fff', borderRadius: '16px', padding: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.04)' }}>
+                            <div className="ec-icon" style={{ background: '#8b5cf6', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                                {/* Interview/User Desk */}
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                             </div>
-                            <h3>Place</h3>
-                            <p>Matched to the right role in cruise, aviation or hotel management.</p>
+                            <h3 style={{ fontSize: '19px', fontWeight: '700', color: '#0f172a', marginBottom: '12px' }}>Interview Preparation</h3>
+                            <p style={{ fontSize: '14.5px', color: '#64748b', lineHeight: '1.6' }}>Build confidence through professional interview guidance tailored to your chosen industry.</p>
                         </div>
-                    </div>
-
-                    <div className="reveal delay-3" style={{ marginTop: '48px' }}>
-                        <Link to="/about" className="btn" style={{ background: 'var(--maroon)', color: '#fff', padding: '16px 36px', borderRadius: '100px', fontWeight: 'bold' }}>More About Us</Link>
+                        {/* Card 4 */}
+                        <div className="reveal expertise-card" style={{ background: '#fff', borderRadius: '16px', padding: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.04)' }}>
+                            <div className="ec-icon" style={{ background: '#f97316', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                                {/* Document Support */}
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            </div>
+                            <h3 style={{ fontSize: '19px', fontWeight: '700', color: '#0f172a', marginBottom: '12px' }}>Documentation Support</h3>
+                            <p style={{ fontSize: '14.5px', color: '#64748b', lineHeight: '1.6' }}>Receive assistance with recruitment documentation and employer requirements.</p>
+                        </div>
+                        {/* Card 5 */}
+                        <div className="reveal delay-1 expertise-card" style={{ background: '#fff', borderRadius: '16px', padding: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.04)' }}>
+                            <div className="ec-icon" style={{ background: '#f43f5e', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                                {/* Career Planning (Briefcase) */}
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                            </div>
+                            <h3 style={{ fontSize: '19px', fontWeight: '700', color: '#0f172a', marginBottom: '12px' }}>Career Planning</h3>
+                            <p style={{ fontSize: '14.5px', color: '#64748b', lineHeight: '1.6' }}>Understand your career options and develop a roadmap for long-term professional growth.</p>
+                        </div>
+                        {/* Card 6 */}
+                        <div className="reveal delay-2 expertise-card" style={{ background: '#fff', borderRadius: '16px', padding: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.04)' }}>
+                            <div className="ec-icon" style={{ background: '#0ea5e9', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                                {/* Heart */}
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            </div>
+                            <h3 style={{ fontSize: '19px', fontWeight: '700', color: '#0f172a', marginBottom: '12px' }}>Candidate Support</h3>
+                            <p style={{ fontSize: '14.5px', color: '#64748b', lineHeight: '1.6' }}>Our recruitment team remains available to guide you throughout your recruitment journey.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* SERVICE MODEL */}
-            <section className="section on-dark">
-                <div className="blob-field"><div className="blob" style={{ width: '460px', height: '460px', top: '-200px', left: '40%' }}></div></div>
+            {/* DESTINATIONS SECTION */}
+            <section className="section" style={{ background: '#fff', padding: '100px 0' }}>
                 <div className="container">
+                    <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px auto' }} className="reveal">
+                        <h2 style={{ fontSize: 'clamp(36px, 4.5vw, 56px)', fontWeight: '900', color: '#0b1a4a', lineHeight: '1.15', letterSpacing: '-0.02em', marginBottom: '1.25rem' }}>
+                            Where Will Your <span style={{ color: '#0ea5e9' }}>Career</span><br />
+                            <span style={{ color: '#0ea5e9' }}>Take You?</span>
+                        </h2>
+                        <p style={{ fontSize: '1.15rem', color: '#94a3b8', lineHeight: '1.6' }}>
+                            International opportunities are available across some of the world's<br />most exciting destinations.
+                        </p>
+                    </div>
+
+                    <div className="destinations-grid">
+                        {/* UAE */}
+                        <div className="dest-card reveal">
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=600&auto=format&fit=crop)' }}>
+                                <div className="dest-img-overlay"></div>
+                                <div className="dest-title">
+                                    <span className="dest-flag">
+                                        <svg viewBox="0 0 36 36" width="24" height="24"><circle fill="#eee" cx="18" cy="18" r="18" /><path fill="#d21034" d="M0 9a18 18 0 0 1 36 0H0z" /><path fill="#00732f" d="M0 27h36a18 18 0 0 1-36 0z" /><path fill="#fff" d="M0 9h36v18H0z" /><path fill="#000" d="M0 9a18 18 0 0 0 0 18h12V9H0z" /></svg>
+                                    </span>
+                                    <h4>United Arab Emirates</h4>
+                                </div>
+                            </div>
+                            <div className="dest-body">
+                                <p className="dest-desc">Known for hospitality, aviation, and security careers.</p>
+                                <div className="dest-stats-grid">
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> LIVE JOBS</span>
+                                        <strong>240+<br />Vacancies</strong>
+                                    </div>
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg> SECTOR</span>
+                                        <strong style={{ color: '#0f172a' }}>Hospitality &amp;<br />Aviation</strong>
+                                    </div>
+                                </div>
+                                <div className="dest-salary">
+                                    <span className="dest-salary-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg> AVERAGE SALARY</span>
+                                    <strong>AED 6,000 – 12,000/mo</strong>
+                                </div>
+                                <Link to="/jobs/uae" className="dest-btn ua-grad">
+                                    EXPLORE JOBS IN UAE ➔
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Qatar */}
+                        <div className="dest-card reveal delay-1">
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1616854589255-a0bd00d922bc?q=80&w=600&auto=format&fit=crop)' }}>
+                                <div className="dest-img-overlay"></div>
+                                <div className="dest-title">
+                                    <span className="dest-flag">
+                                        <svg viewBox="0 0 36 36" width="24" height="24"><circle fill="#8a1538" cx="18" cy="18" r="18" /><path fill="#fff" d="M0 18a18 18 0 0 1 8.5-15.3l3 2 1-3.5 2 3 2.5-2.5 1 3.5 2.5-3 0 4 3-2-2 3.5 3-1-2.5 3 2 1-3 1.5 3 2.5-3.5-.5 1 3-3-1 2 2.5-3 0 1 3-3.5-1 2 2.5-3 0-1 4-2-2.5-2 3-1.5-3-2 3-1-3.5-2 2A18.1 18.1 0 0 1 0 18z" /></svg>
+                                    </span>
+                                    <h4>Qatar</h4>
+                                </div>
+                            </div>
+                            <div className="dest-body">
+                                <p className="dest-desc">Growing opportunities across multiple service industries.</p>
+                                <div className="dest-stats-grid">
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> LIVE JOBS</span>
+                                        <strong>190+<br />Vacancies</strong>
+                                    </div>
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg> SECTOR</span>
+                                        <strong style={{ color: '#0f172a' }}>Aviation &amp;<br />Services</strong>
+                                    </div>
+                                </div>
+                                <div className="dest-salary">
+                                    <span className="dest-salary-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg> AVERAGE SALARY</span>
+                                    <strong>QAR 5,500 – 11,000/mo</strong>
+                                </div>
+                                <Link to="/jobs/qatar" className="dest-btn qa-grad">
+                                    EXPLORE JOBS IN QATAR ➔
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Singapore */}
+                        <div className="dest-card reveal delay-2">
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1596422846543-7ec40a3fb628?q=80&w=600&auto=format&fit=crop)' }}>
+                                <div className="dest-img-overlay"></div>
+                                <div className="dest-title">
+                                    <span className="dest-flag">
+                                        <svg viewBox="0 0 36 36" width="24" height="24"><circle fill="#ed2939" cx="18" cy="18" r="18" /><path fill="#fff" d="M0 18a18 18 0 0 0 36 0H0z" /><circle fill="#fff" cx="11.5" cy="10" r="5" /><circle fill="#ed2939" cx="12.5" cy="10.5" r="4.5" /><path fill="#fff" d="M16 7l1 2 2 .5-1.5 1L18 13l-1.5-1-1.5 1 .5-2L14 9.5l2-.5zM20 6l1 2 2 .5-1.5 1L22 12l-1.5-1-1.5 1 .5-2L18 8.5l2-.5zM24 8l1 2 2 .5-1.5 1L26 14l-1.5-1-1.5 1 .5-2L22 10.5l2-.5z" /></svg>
+                                    </span>
+                                    <h4>Singapore</h4>
+                                </div>
+                            </div>
+                            <div className="dest-body">
+                                <p className="dest-desc">International hospitality and maritime opportunities.</p>
+                                <div className="dest-stats-grid">
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> LIVE JOBS</span>
+                                        <strong>180+<br />Vacancies</strong>
+                                    </div>
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg> SECTOR</span>
+                                        <strong style={{ color: '#0f172a' }}>Hospitality &amp;<br />Maritime</strong>
+                                    </div>
+                                </div>
+                                <div className="dest-salary">
+                                    <span className="dest-salary-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg> AVERAGE SALARY</span>
+                                    <strong>SGD 4,500 – 9,000/mo</strong>
+                                </div>
+                                <Link to="/jobs/singapore" className="dest-btn sg-grad">
+                                    EXPLORE JOBS IN SINGAPORE ➔
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Germany */}
+                        <div className="dest-card reveal">
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=600&auto=format&fit=crop)' }}>
+                                <div className="dest-img-overlay"></div>
+                                <div className="dest-title">
+                                    <span className="dest-flag">
+                                        <svg viewBox="0 0 36 36" width="24" height="24"><circle fill="#000" cx="18" cy="18" r="18" /><path fill="#dd0000" d="M0 12h36v12H0z" /><path fill="#ffce00" d="M0 24a18 18 0 0 0 36 0H0z" /></svg>
+                                    </span>
+                                    <h4>Germany</h4>
+                                </div>
+                            </div>
+                            <div className="dest-body">
+                                <p className="dest-desc">Technical and maritime career pathways.</p>
+                                <div className="dest-stats-grid">
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> LIVE JOBS</span>
+                                        <strong>110+<br />Vacancies</strong>
+                                    </div>
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg> SECTOR</span>
+                                        <strong style={{ color: '#0f172a' }}>Technical &amp;<br />Maritime</strong>
+                                    </div>
+                                </div>
+                                <div className="dest-salary">
+                                    <span className="dest-salary-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg> AVERAGE SALARY</span>
+                                    <strong>EUR 2,500 – 4,500/mo</strong>
+                                </div>
+                                <Link to="/jobs/germany" className="dest-btn de-grad">
+                                    EXPLORE JOBS IN GERMANY ➔
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Italy */}
+                        <div className="dest-card reveal delay-1">
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1516483638261-f4ddaefa53f7?q=80&w=600&auto=format&fit=crop)' }}>
+                                <div className="dest-img-overlay"></div>
+                                <div className="dest-title">
+                                    <span className="dest-flag">
+                                        <svg viewBox="0 0 36 36" width="24" height="24"><circle fill="#009246" cx="18" cy="18" r="18" /><path fill="#fff" d="M12 0h12v36H12z" /><path fill="#ce2b37" d="M24 2.1a18 18 0 0 1 0 31.8V2.1z" /></svg>
+                                    </span>
+                                    <h4>Italy</h4>
+                                </div>
+                            </div>
+                            <div className="dest-body">
+                                <p className="dest-desc">Cruise operations and hospitality opportunities.</p>
+                                <div className="dest-stats-grid">
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> LIVE JOBS</span>
+                                        <strong>140+<br />Vacancies</strong>
+                                    </div>
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg> SECTOR</span>
+                                        <strong style={{ color: '#0f172a' }}>Cruise &amp;<br />Hospitality</strong>
+                                    </div>
+                                </div>
+                                <div className="dest-salary">
+                                    <span className="dest-salary-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg> AVERAGE SALARY</span>
+                                    <strong>EUR 2,200 – 3,800/mo</strong>
+                                </div>
+                                <Link to="/jobs/italy" className="dest-btn it-grad">
+                                    EXPLORE JOBS IN ITALY ➔
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Norway */}
+                        <div className="dest-card reveal delay-2">
+                            <div className="dest-img-box" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1513515570324-4b533b38153d?q=80&w=600&auto=format&fit=crop)' }}>
+                                <div className="dest-img-overlay"></div>
+                                <div className="dest-title">
+                                    <span className="dest-flag">
+                                        <svg viewBox="0 0 36 36" width="24" height="24"><circle fill="#ef2b2d" cx="18" cy="18" r="18" /><path fill="#fff" d="M10 0h6v36h-6zM0 14h36v6H0z" /><path fill="#002868" d="M11.5 0h3v36h-3zM0 15.5h36v3H0z" /></svg>
+                                    </span>
+                                    <h4>Norway</h4>
+                                </div>
+                            </div>
+                            <div className="dest-body">
+                                <p className="dest-desc">Maritime and offshore career opportunities.</p>
+                                <div className="dest-stats-grid">
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> LIVE JOBS</span>
+                                        <strong>95+<br />Vacancies</strong>
+                                    </div>
+                                    <div className="dest-stat">
+                                        <span className="dest-stat-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg> SECTOR</span>
+                                        <strong style={{ color: '#0f172a' }}>Maritime &amp;<br />Offshore</strong>
+                                    </div>
+                                </div>
+                                <div className="dest-salary">
+                                    <span className="dest-salary-label"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg> AVERAGE SALARY</span>
+                                    <strong>NOK 25,000 – 45,000/mo</strong>
+                                </div>
+                                <Link to="/jobs/norway" className="dest-btn no-grad">
+                                    EXPLORE JOBS IN NORWAY ➔
+                                </Link>
+                            </div>
+                        </div>
+
+                    </div>
+                    <style>{`
+                        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; padding-top: 10px; }
+                        .dest-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 30px -10px rgba(0,22,122,0.06); border: 1px solid rgba(0,22,122,0.06); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
+                        .dest-card:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -10px rgba(0,22,122,0.1); }
+                        .dest-img-box { position: relative; height: 190px; background-size: cover; background-position: center; border-radius: 20px 20px 0 0; }
+                        .dest-img-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,22,122,0) 20%, rgba(0,10,50,0.9) 100%); }
+                        .dest-title { position: absolute; bottom: 20px; left: 24px; right: 24px; display: flex; alignItems: center; gap: 12px; z-index: 2; }
+                        .dest-flag { display: inline-flex; width: 30px; height: 30px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(255,255,255,0.2); flex-shrink: 0; }
+                        .dest-flag svg { width: 100%; height: 100%; object-fit: cover; }
+                        .dest-title h4 { color: #fff; font-size: 21px; font-weight: 800; margin: 0; letter-spacing: -0.01em; }
+                        .dest-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+                        .dest-desc { font-size: 15px; color: #64748b; line-height: 1.5; margin-bottom: 24px; min-height: 45px; }
+                        .dest-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+                        .dest-stat { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+                        .dest-stat-label { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #94a3b8; display: flex; align-items: center; gap: 6px; }
+                        .dest-stat strong { font-size: 14px; font-weight: 800; color: #0070bc; line-height: 1.3; margin: 0; }
+                        .dest-salary { background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.15); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
+                        .dest-salary-label { font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #059669; display: flex; align-items: center; gap: 6px; }
+                        .dest-salary strong { font-size: 16.5px; font-weight: 800; color: #0f172a; }
+                        .dest-btn { display: flex; align-items: center; justify-content: center; padding: 16px; border-radius: 12px; color: #fff; font-size: 13.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; transition: opacity 0.3s ease; text-decoration: none; margin-top: auto; }
+                        .dest-btn:hover { opacity: 0.9; color: #fff; }
+                        .ua-grad { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
+                        .qa-grad { background: linear-gradient(135deg, #f43f5e, #be123c); }
+                        .sg-grad { background: linear-gradient(135deg, #10b981, #047857); }
+                        .de-grad { background: linear-gradient(135deg, #a855f7, #7e22ce); }
+                        .it-grad { background: linear-gradient(135deg, #f97316, #ea580c); }
+                        .no-grad { background: linear-gradient(135deg, #06b6d4, #0369a1); }
+                    `}</style>
+                </div>
+            </section>
+
+
+            {/* SERVICE MODEL */}
+            <section className="section on-dark" style={{
+                position: 'relative',
+                backgroundImage: 'url(/assets/img/urban-skyline-modern-buildings.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundAttachment: 'fixed',
+                zIndex: 1,
+                backgroundColor: 'transparent'
+            }}>
+                <div style={{ position: 'absolute', inset: 0, background: 'rgba(0, 0, 0, 0.65)', zIndex: -1 }}></div>
+                <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                     <div className="section-head">
                         <span className="eyebrow">Our Service Model</span>
                         <h2>Recruit. Train. Certify.</h2>
@@ -435,8 +718,8 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* CANDIDATE JOURNEY */}
-            <section className="section" style={{ padding: '100px 0', background: 'linear-gradient(to bottom, #f8fafc 0%, #fff 100%)' }}>
+            {/* CANDIDATE JOURNEY -> HOW IT WORKS */}
+            <section className="section" style={{ padding: '100px 0', background: '#fff' }}>
                 <div className="container">
                     <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px auto' }} className="reveal">
                         <span style={{
@@ -445,50 +728,140 @@ export default function Home() {
                             fontWeight: '800',
                             textTransform: 'uppercase',
                             letterSpacing: '1.5px',
-                            color: 'var(--maroon)',
-                            border: '1px solid rgba(92, 15, 56, 0.3)',
+                            color: '#0ea5e9',
+                            border: '1px solid #bae6fd',
+                            background: '#f0f9ff',
                             padding: '6px 16px',
                             borderRadius: '100px',
                             marginBottom: '20px'
                         }}>
-                            CANDIDATE JOURNEY
+                            HOW IT WORKS
                         </span>
-                        <h2 style={{ fontSize: 'clamp(32px, 4vw, 42px)', fontWeight: '800', color: '#0b1a4a', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '1.5rem' }}>From guidance to placement</h2>
+                        <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: '800', color: '#0f172a', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '1.5rem' }}>
+                            Your Journey To A <span style={{ color: '#3b82f6' }}>Global Career</span>
+                        </h2>
                         <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.6' }}>
-                            A clear journey that shows Ecofusion is not simply a recruiter, but a complete career support system.
+                            Our recruitment process is designed to be simple, transparent, and candidate-focused.
                         </p>
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-                        <div className="journey-card-modern reveal">
-                            <div className="j-icon-box">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M16 8l-3 7-3-2 6-5Z" /></svg>
+
+                    <div className="how-it-works-grid">
+                        {/* Item 1 */}
+                        <div className="hiw-item reveal">
+                            <div className="hiw-circle-box blue-grad">
+                                <div className="hiw-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                </div>
+                                <span className="hiw-num">01</span>
                             </div>
-                            <h3>1. Guidance</h3>
-                            <p>Candidates receive career direction and sector counselling.</p>
+                            <h3>Career Consultation</h3>
+                            <p>Understand your goals and explore suitable opportunities.</p>
                         </div>
-                        <div className="journey-card-modern reveal delay-1">
-                            <div className="j-icon-box">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z" /><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" /></svg>
+                        {/* Item 2 */}
+                        <div className="hiw-item reveal delay-1">
+                            <div className="hiw-circle-box indigo-grad">
+                                <div className="hiw-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>
+                                </div>
+                                <span className="hiw-num">02</span>
                             </div>
-                            <h3>2. Training</h3>
-                            <p>Skill-building and certification aligned to industry needs.</p>
+                            <h3>Profile Evaluation</h3>
+                            <p>Review your qualifications and identify the right career pathway.</p>
                         </div>
-                        <div className="journey-card-modern reveal delay-2">
-                            <div className="j-icon-box">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 6L9 17l-5-5" /></svg>
+                        {/* Item 3 */}
+                        <div className="hiw-item reveal delay-2">
+                            <div className="hiw-circle-box purple-grad">
+                                <div className="hiw-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <span className="hiw-num">03</span>
                             </div>
-                            <h3>3. Screening</h3>
-                            <p>Readiness assessment against employer expectations.</p>
+                            <h3>Application Submission</h3>
+                            <p>Prepare and submit your profile for employer review.</p>
                         </div>
-                        <div className="journey-card-modern reveal delay-3">
-                            <div className="j-icon-box">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M8 12h8M8 12a4 4 0 1 1 4-4M16 12a4 4 0 1 1-4 4" /></svg>
+                        {/* Item 4 */}
+                        <div className="hiw-item reveal delay-3">
+                            <div className="hiw-circle-box pink-halo-wrap">
+                                <div className="hiw-circle-inner pink-grad">
+                                    <div className="hiw-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg>
+                                    </div>
+                                    <span className="hiw-num">04</span>
+                                </div>
                             </div>
-                            <h3>4. Placement</h3>
-                            <p>Matched to the right role in cruise, aviation or hotels.</p>
+                            <h3 style={{ color: '#0ea5e9' }}>Interview Coordination</h3>
+                            <p>Attend employer interviews with professional guidance and preparation.</p>
+                        </div>
+                        {/* Item 5 */}
+                        <div className="hiw-item reveal">
+                            <div className="hiw-circle-box rose-grad">
+                                <div className="hiw-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </div>
+                                <span className="hiw-num">05</span>
+                            </div>
+                            <h3>Offer Letter</h3>
+                            <p>Successful candidates receive an official employment offer.</p>
+                        </div>
+                        {/* Item 6 */}
+                        <div className="hiw-item reveal delay-1">
+                            <div className="hiw-circle-box orange-grad">
+                                <div className="hiw-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                </div>
+                                <span className="hiw-num">06</span>
+                            </div>
+                            <h3>Documentation</h3>
+                            <p>Complete employer-required documentation with our support.</p>
+                        </div>
+                        {/* Item 7 */}
+                        <div className="hiw-item reveal delay-2">
+                            <div className="hiw-circle-box yellow-green-grad">
+                                <div className="hiw-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.6L3 8l5 5-3 3-3-1-1 1 3 3 1-1 3-3 5 5 1.2-.7c.4-.2.7-.6.6-1.1z"></path></svg>
+                                </div>
+                                <span className="hiw-num">07</span>
+                            </div>
+                            <h3>Travel Preparation</h3>
+                            <p>Receive guidance before joining your international employer.</p>
+                        </div>
+                        {/* Item 8 */}
+                        <div className="hiw-item reveal delay-3">
+                            <div className="hiw-circle-box green-grad">
+                                <div className="hiw-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <span className="hiw-num">08</span>
+                            </div>
+                            <h3>Begin Your Career</h3>
+                            <p>Start your international journey with confidence.</p>
                         </div>
                     </div>
                 </div>
+                <style>{`
+                    .how-it-works-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 20px; }
+                    @media (max-width: 1024px) { .how-it-works-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; } }
+                    @media (max-width: 640px) { .how-it-works-grid { grid-template-columns: 1fr; } }
+                    .hiw-item { text-align: center; display: flex; flex-direction: column; align-items: center; }
+                    .hiw-circle-box { width: 120px; height: 120px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 24px; position: relative; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+                    .hiw-item:hover .hiw-circle-box { transform: translateY(-5px); }
+                    .hiw-icon { margin-bottom: 4px; display: flex; justify-content: center; align-items: center; }
+                    .hiw-icon svg { width: 36px; height: 36px; color: #fff; stroke-width: 1.5; }
+                    .hiw-num { font-size: 13px; font-weight: 700; color: rgba(255, 255, 255, 0.9); letter-spacing: 1px; }
+                    .hiw-item h3 { font-size: 18px; font-weight: 700; color: #0f172a; margin-bottom: 12px; }
+                    .hiw-item p { font-size: 14px; color: #64748b; line-height: 1.5; }
+                    .hiw-circle-box.blue-grad { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
+                    .hiw-circle-box.indigo-grad { background: linear-gradient(135deg, #3b82f6, #4f46e5); }
+                    .hiw-circle-box.purple-grad { background: linear-gradient(135deg, #8b5cf6, #c026d3); }
+                    .hiw-circle-box.pink-halo-wrap { background: transparent; box-shadow: none; position: relative; }
+                    .hiw-circle-box.pink-halo-wrap::before { content: ''; position: absolute; inset: -12px; border-radius: 50%; background: linear-gradient(135deg, #fbcfe8, #fbcfe8 50%, #fbcfe8); opacity: 0.6; z-index: 0; }
+                    .hiw-circle-box.pink-halo-wrap::after { content: ''; position: absolute; inset: -24px; border-radius: 50%; background: linear-gradient(135deg, #fbcfe8, #fdf2f8 50%, #fff); opacity: 0.3; z-index: -1; }
+                    .hiw-circle-inner.pink-grad { background: linear-gradient(135deg, #d946ef, #e11d48); width: 100%; height: 100%; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; z-index: 1; box-shadow: 0 10px 25px -5px rgba(225, 29, 72, 0.4); }
+                    .hiw-circle-box.rose-grad { background: linear-gradient(135deg, #f43f5e, #be123c); }
+                    .hiw-circle-box.orange-grad { background: linear-gradient(135deg, #f97316, #ea580c); }
+                    .hiw-circle-box.yellow-green-grad { background: linear-gradient(135deg, #eab308, #65a30d); }
+                    .hiw-circle-box.green-grad { background: linear-gradient(135deg, #10b981, #047857); }
+                `}</style>
             </section>
 
             {/* REVIEWS MARQUEE */}
