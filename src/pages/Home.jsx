@@ -132,7 +132,7 @@ export default function Home() {
                         }}
                     />
                 ))}
-                <div className="hero-overlay" style={{ zIndex: 1, position: 'absolute', inset: 0 }}></div>
+                <div className="hero-overlay" style={{ zIndex: 1, position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.4) 100%)' }}></div>
 
                 <div className="container hero-grid-new" style={{ zIndex: 2, position: 'relative' }}>
                     <div className="hero-copy">
@@ -255,7 +255,7 @@ export default function Home() {
                     <div className="grid immersive-cards-grid reveal stagger-group">
                         <div className="immersive-card">
                             <img className="ic-bg" src="/assets/img/hero-cruise.jpg" alt="" />
-                            <div className="ic-overlay"></div>
+                            <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
                                     <span className="modern-circle-icon">
@@ -271,7 +271,7 @@ export default function Home() {
 
                         <div className="immersive-card">
                             <img className="ic-bg" src="/assets/img/hero-aviation.jpg" alt="" />
-                            <div className="ic-overlay"></div>
+                            <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
                                     <span className="modern-circle-icon">
@@ -287,7 +287,7 @@ export default function Home() {
 
                         <div className="immersive-card span-last">
                             <img className="ic-bg" src="/assets/img/hero-hospitality.jpg" alt="" />
-                            <div className="ic-overlay"></div>
+                            <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
                                     <span className="modern-circle-icon">
@@ -305,7 +305,7 @@ export default function Home() {
             </section>
 
             {/* HOT OPPORTUNITIES */}
-            <section className="section section-pale" style={{ padding: '100px 0' }}>
+            <section className="section section-white" style={{ padding: '100px 0' }}>
                 <div className="container">
                     <div className="section-head" style={{ marginBottom: '40px' }}>
                         <span className="pill-eyebrow">NOW HIRING</span>
@@ -369,7 +369,7 @@ export default function Home() {
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px', textAlign: 'left' }}>
                         {/* Card 1 */}
                         <div className="reveal expertise-card" style={{ background: 'var(--white)', borderRadius: '16px', padding: '32px', boxShadow: 'var(--shadow-card)', border: '1px solid var(--line)' }}>
-                            <div className="ec-icon ec-icon-maroon" style={{ width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                            <div className="ec-icon" style={{ background: '#0ea5e9', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
                                 {/* Compass */}
                                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
                             </div>
@@ -378,7 +378,7 @@ export default function Home() {
                         </div>
                         {/* Card 2 */}
                         <div className="reveal delay-1 expertise-card" style={{ background: 'var(--white)', borderRadius: '16px', padding: '32px', boxShadow: 'var(--shadow-card)', border: '1px solid var(--line)' }}>
-                            <div className="ec-icon ec-icon-maroon-light" style={{ width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                            <div className="ec-icon" style={{ background: '#10b981', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
                                 {/* Globe */}
                                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                             </div>
@@ -387,7 +387,7 @@ export default function Home() {
                         </div>
                         {/* Card 3 */}
                         <div className="reveal delay-2 expertise-card" style={{ background: 'var(--white)', borderRadius: '16px', padding: '32px', boxShadow: 'var(--shadow-card)', border: '1px solid var(--line)' }}>
-                            <div className="ec-icon ec-icon-aubergine" style={{ width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                            <div className="ec-icon" style={{ background: '#8b5cf6', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
                                 {/* Interview/User Desk */}
                                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                             </div>
@@ -396,7 +396,7 @@ export default function Home() {
                         </div>
                         {/* Card 4 */}
                         <div className="reveal expertise-card" style={{ background: 'var(--white)', borderRadius: '16px', padding: '32px', boxShadow: 'var(--shadow-card)', border: '1px solid var(--line)' }}>
-                            <div className="ec-icon ec-icon-lavender" style={{ width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                            <div className="ec-icon" style={{ background: '#f97316', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
                                 {/* Document Support */}
                                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                             </div>
@@ -405,7 +405,7 @@ export default function Home() {
                         </div>
                         {/* Card 5 */}
                         <div className="reveal delay-1 expertise-card" style={{ background: 'var(--white)', borderRadius: '16px', padding: '32px', boxShadow: 'var(--shadow-card)', border: '1px solid var(--line)' }}>
-                            <div className="ec-icon ec-icon-maroon" style={{ width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                            <div className="ec-icon" style={{ background: '#f43f5e', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
                                 {/* Career Planning (Briefcase) */}
                                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
                             </div>
@@ -414,7 +414,7 @@ export default function Home() {
                         </div>
                         {/* Card 6 */}
                         <div className="reveal delay-2 expertise-card" style={{ background: 'var(--white)', borderRadius: '16px', padding: '32px', boxShadow: 'var(--shadow-card)', border: '1px solid var(--line)' }}>
-                            <div className="ec-icon ec-icon-aubergine" style={{ width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                            <div className="ec-icon" style={{ background: '#0ea5e9', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
                                 {/* Heart */}
                                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                             </div>
@@ -640,26 +640,31 @@ export default function Home() {
                     </div>
                     <style>{`
                         .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; padding-top: 10px; }
-                        .dest-card { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid var(--line); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
-                        .dest-card:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -10px rgba(38, 6, 26, 0.12); }
+                        .dest-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 30px -10px rgba(0,22,122,0.06); border: 1px solid rgba(0,22,122,0.06); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
+                        .dest-card:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -10px rgba(0,22,122,0.1); }
                         .dest-img-box { position: relative; height: 190px; background-size: cover; background-position: center; border-radius: 20px 20px 0 0; }
-                        .dest-img-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(38, 6, 26, 0) 20%, rgba(38, 6, 26, 0.88) 100%); }
+                        .dest-img-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,22,122,0) 20%, rgba(0,10,50,0.9) 100%); }
                         .dest-title { position: absolute; bottom: 20px; left: 24px; right: 24px; display: flex; alignItems: center; gap: 12px; z-index: 2; }
                         .dest-flag { display: inline-flex; width: 30px; height: 30px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(255,255,255,0.2); flex-shrink: 0; }
                         .dest-flag svg { width: 100%; height: 100%; object-fit: cover; }
                         .dest-title h4 { color: #fff; font-size: 21px; font-weight: 800; margin: 0; letter-spacing: -0.01em; }
                         .dest-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
-                        .dest-desc { font-size: 15px; color: var(--ink-soft); line-height: 1.5; margin-bottom: 24px; min-height: 45px; }
+                        .dest-desc { font-size: 15px; color: #64748b; line-height: 1.5; margin-bottom: 24px; min-height: 45px; }
                         .dest-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
-                        .dest-stat { background: var(--rose); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 8px; justify-content: center; }
-                        .dest-stat-label { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-soft); display: flex; align-items: center; gap: 6px; }
-                        .dest-stat strong { font-size: 14px; font-weight: 800; color: var(--maroon); line-height: 1.3; margin: 0; }
-                        .dest-salary { background: var(--lavender-soft); border: 1px solid var(--lavender); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
-                        .dest-salary-label { font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--maroon); display: flex; align-items: center; gap: 6px; }
-                        .dest-salary strong { font-size: 16.5px; font-weight: 800; color: var(--ink); }
+                        .dest-stat { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+                        .dest-stat-label { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #94a3b8; display: flex; align-items: center; gap: 6px; }
+                        .dest-stat strong { font-size: 14px; font-weight: 800; color: #0070bc; line-height: 1.3; margin: 0; }
+                        .dest-salary { background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.15); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
+                        .dest-salary-label { font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #059669; display: flex; align-items: center; gap: 6px; }
+                        .dest-salary strong { font-size: 16.5px; font-weight: 800; color: #0f172a; }
                         .dest-btn { display: flex; align-items: center; justify-content: center; padding: 16px; border-radius: 12px; color: #fff; font-size: 13.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; transition: opacity 0.3s ease; text-decoration: none; margin-top: auto; }
                         .dest-btn:hover { opacity: 0.9; color: #fff; }
-                        .ua-grad, .qa-grad, .sg-grad, .de-grad, .it-grad, .no-grad { background: linear-gradient(135deg, #5F0F40, #26061A); }
+                        .ua-grad { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
+                        .qa-grad { background: linear-gradient(135deg, #f43f5e, #be123c); }
+                        .sg-grad { background: linear-gradient(135deg, #10b981, #047857); }
+                        .de-grad { background: linear-gradient(135deg, #a855f7, #7e22ce); }
+                        .it-grad { background: linear-gradient(135deg, #f97316, #ea580c); }
+                        .no-grad { background: linear-gradient(135deg, #06b6d4, #0369a1); }
                     `}</style>
                 </div>
             </section>
@@ -668,35 +673,35 @@ export default function Home() {
             {/* SERVICE MODEL */}
             <section className="section on-dark" style={{
                 position: 'relative',
-                backgroundImage: 'url(/assets/img/urban-skyline-modern-buildings.jpg)',
+                backgroundImage: 'url(/assets/img/hero-cruise.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed',
                 zIndex: 1,
                 backgroundColor: 'transparent'
             }}>
-                <div className="service-model-overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(38, 6, 26, 0.82)', zIndex: -1 }}></div>
+                <div className="service-model-overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(0, 10, 40, 0.75)', zIndex: -1 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                     <div className="section-head">
-                        <span className="eyebrow">Our Service Model</span>
-                        <h2>Recruit. Train. Certify.</h2>
-                        <p>A complete career pathway rather than isolated services — this is what makes Ecofusion both a hiring partner and a training partner.</p>
+                        <span className="eyebrow" style={{ border: '1px solid rgba(255,255,255,0.2)', padding: '6px 16px', borderRadius: '100px', display: 'inline-block', marginBottom: '24px', fontSize: '11px', fontWeight: '800', letterSpacing: '1px', textTransform: 'uppercase' }}>Our Service Model</span>
+                        <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: '800', lineHeight: '1.2', marginBottom: '20px' }}>Recruit. Train. Certify.</h2>
+                        <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.85)', lineHeight: '1.6' }}>A complete career pathway rather than isolated services — this is what makes Ecofusion both a hiring partner and a training partner.</p>
                     </div>
                     <div className="grid grid-3">
-                        <div className="step reveal">
-                            <span className="num">01 — Recruit</span>
-                            <h3>Recruit</h3>
-                            <p>Identify and connect skilled candidates with cruise, aviation and hotel opportunities.</p>
+                        <div className="step reveal" style={{ background: '#7c1955', padding: '32px', borderRadius: '16px' }}>
+                            <span className="num" style={{ fontSize: '11px', fontWeight: '800', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '24px', display: 'block', color: 'rgba(255,255,255,0.7)' }}>01 — Recruit</span>
+                            <h3 style={{ fontSize: '20px', marginBottom: '16px', fontWeight: '800' }}>Recruit</h3>
+                            <p style={{ color: 'rgba(255,255,255,0.9)', lineHeight: '1.5', fontSize: '15px' }}>Identify and connect skilled candidates with cruise, aviation and hotel opportunities.</p>
                         </div>
-                        <div className="step reveal">
-                            <span className="num">02 — Train</span>
-                            <h3>Train</h3>
-                            <p>Build job-ready skills through specialised, industry-aligned courses.</p>
+                        <div className="step reveal delay-1" style={{ background: '#7c1955', padding: '32px', borderRadius: '16px' }}>
+                            <span className="num" style={{ fontSize: '11px', fontWeight: '800', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '24px', display: 'block', color: 'rgba(255,255,255,0.7)' }}>02 — Train</span>
+                            <h3 style={{ fontSize: '20px', marginBottom: '16px', fontWeight: '800' }}>Train</h3>
+                            <p style={{ color: 'rgba(255,255,255,0.9)', lineHeight: '1.5', fontSize: '15px' }}>Build job-ready skills through specialised, industry-aligned courses.</p>
                         </div>
-                        <div className="step reveal">
-                            <span className="num">03 — Certify</span>
-                            <h3>Certify</h3>
-                            <p>Award recognised certifications that meet international service standards.</p>
+                        <div className="step reveal delay-2" style={{ background: '#7c1955', padding: '32px', borderRadius: '16px' }}>
+                            <span className="num" style={{ fontSize: '11px', fontWeight: '800', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '24px', display: 'block', color: 'rgba(255,255,255,0.7)' }}>03 — Certify</span>
+                            <h3 style={{ fontSize: '20px', marginBottom: '16px', fontWeight: '800' }}>Certify</h3>
+                            <p style={{ color: 'rgba(255,255,255,0.9)', lineHeight: '1.5', fontSize: '15px' }}>Award recognised certifications that meet international service standards.</p>
                         </div>
                     </div>
                 </div>
@@ -820,32 +825,32 @@ export default function Home() {
                     .hiw-icon { margin-bottom: 4px; display: flex; justify-content: center; align-items: center; }
                     .hiw-icon svg { width: 36px; height: 36px; color: #fff; stroke-width: 1.5; }
                     .hiw-num { font-size: 13px; font-weight: 700; color: rgba(255, 255, 255, 0.9); letter-spacing: 1px; }
-                    .hiw-item h3 { font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 12px; }
-                    .hiw-item p { font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
-                    .hiw-circle-box.blue-grad { background: linear-gradient(135deg, #5F0F40, #7C1B54); }
-                    .hiw-circle-box.indigo-grad { background: linear-gradient(135deg, #26061A, #5F0F40); }
-                    .hiw-circle-box.purple-grad { background: linear-gradient(135deg, #7C1B54, #3A0E29); }
+                    .hiw-item h3 { font-size: 18px; font-weight: 700; color: #0f172a; margin-bottom: 12px; }
+                    .hiw-item p { font-size: 14px; color: #64748b; line-height: 1.5; }
+                    .hiw-circle-box.blue-grad { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
+                    .hiw-circle-box.indigo-grad { background: linear-gradient(135deg, #6366f1, #4338ca); }
+                    .hiw-circle-box.purple-grad { background: linear-gradient(135deg, #a855f7, #9333ea); }
                     .hiw-circle-box.pink-halo-wrap { background: transparent; box-shadow: none; position: relative; }
-                    .hiw-circle-box.pink-halo-wrap::before { content: ''; position: absolute; inset: -12px; border-radius: 50%; background: var(--lavender); opacity: 0.5; z-index: 0; }
-                    .hiw-circle-box.pink-halo-wrap::after { content: ''; position: absolute; inset: -24px; border-radius: 50%; background: var(--rose); opacity: 0.6; z-index: -1; }
-                    .hiw-circle-inner.pink-grad { background: linear-gradient(135deg, #5F0F40, #26061A); width: 100%; height: 100%; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; z-index: 1; box-shadow: 0 10px 25px -5px rgba(95, 15, 64, 0.4); }
-                    .hiw-circle-box.rose-grad { background: linear-gradient(135deg, #7C1B54, #5F0F40); }
-                    .hiw-circle-box.orange-grad { background: linear-gradient(135deg, #5F0F40, #3A0E29); }
-                    .hiw-circle-box.yellow-green-grad { background: linear-gradient(135deg, #D9C5D1, #5F0F40); }
-                    .hiw-circle-box.green-grad { background: linear-gradient(135deg, #3A0E29, #26061A); }
+                    .hiw-circle-box.pink-halo-wrap::before { content: ''; position: absolute; inset: -12px; border-radius: 50%; background: #fbcfe8; opacity: 0.5; z-index: 0; }
+                    .hiw-circle-box.pink-halo-wrap::after { content: ''; position: absolute; inset: -24px; border-radius: 50%; background: #fdf2f8; opacity: 1; z-index: -1; }
+                    .hiw-circle-inner.pink-grad { background: linear-gradient(135deg, #f43f5e, #be123c); width: 100%; height: 100%; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; z-index: 1; box-shadow: 0 10px 25px -5px rgba(244, 63, 94, 0.4); }
+                    .hiw-circle-box.rose-grad { background: linear-gradient(135deg, #e11d48, #9f1239); }
+                    .hiw-circle-box.orange-grad { background: linear-gradient(135deg, #f97316, #ea580c); }
+                    .hiw-circle-box.yellow-green-grad { background: linear-gradient(135deg, #84cc16, #65a30d); }
+                    .hiw-circle-box.green-grad { background: linear-gradient(135deg, #10b981, #047857); }
                 `}</style>
             </section>
 
             {/* REVIEWS MARQUEE */}
-            <section className="reviews-section">
+            <section className="reviews-section" style={{ background: '#f8fafc' }}>
                 <div className="container">
                     <div className="reviews-head">
-                        <span className="reviews-pill">Candidate Feedback</span>
+                        <span className="eyebrow" style={{ color: '#0ea5e9', padding: '6px 16px', background: '#e0f2fe', borderRadius: '99px', display: 'inline-block', marginBottom: '20px', fontWeight: '800', fontSize: '11px', letterSpacing: '1px', textTransform: 'uppercase' }}>Candidate Feedback</span>
                         <div className="reviews-rating">
-                            <div className="stars">★★★★★</div>
-                            <span>4.8</span>
+                            <div className="stars" style={{ color: '#eab308' }}>★★★★★</div>
+                            <span style={{ fontWeight: '800' }}>4.8</span>
                         </div>
-                        <h2 className="reviews-title">What Candidates <span>Are Saying</span></h2>
+                        <h2 className="reviews-title" style={{ color: '#0f172a' }}>What Candidates <span style={{ color: '#3b82f6' }}>Are Saying</span></h2>
                     </div>
                 </div>
 
@@ -881,82 +886,90 @@ export default function Home() {
 
                 <div className="container">
                     <div className="reviews-action">
-                        <Link to="/reviews" className="btn-blue">READ MORE REVIEWS</Link>
+                        <Link to="/reviews" className="btn-primary" style={{ padding: '16px 32px', borderRadius: '8px', fontWeight: 'bold', textTransform: 'uppercase', fontSize: '13px', display: 'inline-block' }}>READ MORE REVIEWS</Link>
                     </div>
                 </div>
+                <style>{`
+                    .reviews-section .review-card { background: #fff; padding: 32px; border-radius: 16px; border: 1px solid #e2e8f0; min-width: 320px; box-shadow: 0 4px 6px -1px rgba(0,22,122,0.05); display: flex; flex-direction: column; gap: 16px; transition: transform 0.3s ease; }
+                    .reviews-section .review-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0,22,122,0.1); }
+                    .reviews-section .review-card .stars { color: #eab308; }
+                    .reviews-section .review-card .review-text { font-size: 14.5px; color: #64748b; line-height: 1.6; font-style: italic; }
+                    .reviews-section .review-card h4 { font-size: 15px; font-weight: 800; color: #0f172a; margin-bottom: 4px; }
+                    .reviews-section .review-card p { font-size: 12.5px; color: #94a3b8; margin: 0; }
+                `}</style>
             </section>
 
             {/* LIVE OPERATIONS CONTROL */}
-            <section className="container" style={{ paddingBottom: '80px' }}>
-                <div className="home-live-ops" style={{
-                    marginTop: '2.5rem',
-                    marginBottom: '2rem',
-                    background: 'var(--white)',
-                    borderRadius: '24px',
-                    border: '1px solid var(--line)',
-                    padding: '2.5rem',
-                    boxShadow: 'var(--shadow-card)',
-                    display: 'grid',
-                    gridTemplateColumns: '1fr 1fr',
-                    gap: '3rem',
-                    alignItems: 'stretch'
-                }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '1.5rem' }}>
-                        <div>
-                            <div className="ops-label-row" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: 'var(--aubergine)' }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-activity animate-pulse" aria-hidden="true" style={{ color: 'var(--maroon)', width: '16px', height: '16px' }}><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
-                                <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Live Operations Control</span>
-                                <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--maroon)', boxShadow: '0 0 6px var(--maroon-light)', display: 'inline-block' }}></span>
-                            </div>
-                            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--aubergine)', marginBottom: '0.75rem', letterSpacing: '-0.02em', lineHeight: 1.2 }}>Global Crew &amp; Vessel Logistics</h3>
-                            <p className="text-muted" style={{ fontSize: '0.85rem', lineHeight: 1.5 }}>Monitoring real-time seafarer deployments, visa compliance, and certified crew matches across our global cruise line fleet.</p>
-                        </div>
-                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                            <div className="ops-stat-box" style={{ borderRadius: '12px', padding: '1rem', position: 'relative' }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users" aria-hidden="true" style={{ color: 'var(--maroon)', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                                <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-soft)', letterSpacing: '0.05em' }}>Active Onboard</span>
-                                <span className="ops-stat-value" style={{ fontSize: '1.25rem', fontWeight: 850, letterSpacing: '-0.03em', display: 'flex', alignItems: 'center', gap: '0.35rem', marginTop: '0.15rem' }}>1258<span className="ops-live-badge" style={{ fontSize: '0.65rem', fontWeight: 600, padding: '0.1rem 0.35rem', borderRadius: '4px' }}>LIVE</span></span>
-                            </div>
-                            <div className="ops-stat-box" style={{ borderRadius: '12px', padding: '1rem' }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-ship" aria-hidden="true" style={{ color: 'var(--aubergine)', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M12 10.189V14"></path><path d="M12 2v3"></path><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"></path><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 2.81 7.76"></path><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg>
-                                <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-soft)', letterSpacing: '0.05em' }}>Fleet Vessels</span>
-                                <span style={{ fontSize: '1.25rem', fontWeight: 850, color: 'var(--aubergine)', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>64</span>
-                            </div>
-                            <div className="ops-stat-box" style={{ borderRadius: '12px', padding: '1rem' }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users" aria-hidden="true" style={{ color: 'var(--maroon-light)', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                                <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-soft)', letterSpacing: '0.05em' }}>Talent Pool</span>
-                                <span style={{ fontSize: '1.25rem', fontWeight: 850, color: 'var(--maroon-light)', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>14,850+</span>
-                            </div>
-                            <div className="ops-stat-box" style={{ borderRadius: '12px', padding: '1rem' }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shield-check" aria-hidden="true" style={{ color: 'var(--maroon)', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-soft)', letterSpacing: '0.05em' }}>STCW Compliance</span>
-                                <span style={{ fontSize: '1.25rem', fontWeight: 850, color: 'var(--maroon)', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>100%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="home-terminal" style={{ borderRadius: '20px', border: '1px solid rgba(255,255,255,0.08)', padding: '1.25rem 1rem', display: 'flex', flexDirection: 'column', gap: '1.25rem', boxShadow: 'inset 0 10px 30px rgba(0,0,0,0.35)', height: '100%', minHeight: 0, overflow: 'hidden' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1rem' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--lavender)' }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-terminal term-accent" aria-hidden="true"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg>
-                                <span style={{ fontFamily: 'monospace', fontSize: '0.8rem', fontWeight: 700 }}>crew-matching-core.sh</span>
-                            </div>
-                            <div style={{ display: 'flex', gap: '0.35rem' }}>
-                                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ef4444' }}></span>
-                                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#eab308' }}></span>
-                                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#22c55e' }}></span>
-                            </div>
-                        </div>
-
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', flex: 1, overflow: 'hidden' }}>
-                            {liveLogs.map((log, index) => (
-                                <div key={log.id} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', fontFamily: 'monospace', fontSize: '0.8rem', lineHeight: 1.5, color: index === 0 ? 'var(--white)' : 'var(--lavender)', padding: '0.5rem 0', borderBottom: '1px solid rgba(255, 255, 255, 0.06)', animation: index === 0 ? 'slideDownLog 0.3s ease-out' : 'none', opacity: 1 - (index * 0.15) }}>
-                                    <span style={{ color: 'var(--lavender)', opacity: 0.7, flexShrink: 0 }}>[{log.time}]</span>
-                                    <span style={{ flexShrink: 0 }}>{log.icon}</span>
-                                    <span style={{ flex: '1 1 0%' }}>{log.text}</span>
-                                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: log.color, boxShadow: `0 0 8px ${log.color}`, flexShrink: 0, marginTop: '0.35rem' }}></span>
+            <section style={{ background: '#f8fafc', padding: '100px 0' }}>
+                <div className="container">
+                    <div className="home-live-ops" style={{
+                        background: '#fff',
+                        borderRadius: '24px',
+                        border: '1px solid #e2e8f0',
+                        padding: '3rem',
+                        boxShadow: '0 20px 40px -10px rgba(0,22,122,0.05)',
+                        display: 'grid',
+                        gridTemplateColumns: '1fr 1fr',
+                        gap: '4rem',
+                        alignItems: 'stretch'
+                    }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '1.5rem' }}>
+                            <div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-activity" aria-hidden="true" style={{ color: '#10b981', width: '18px', height: '18px' }}><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+                                    <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#10b981' }}>LIVE OPERATIONS CONTROL</span>
+                                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10b981', boxShadow: '0 0 8px #10b981', animation: 'pulseLog 2s infinite' }}></span>
                                 </div>
-                            ))}
+                                <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#0f172a', marginBottom: '0.75rem', lineHeight: 1.2, letterSpacing: '-0.02em' }}>Global Crew & Vessel Logistics</h2>
+                                <p style={{ color: '#64748b', lineHeight: 1.6, fontSize: '0.95rem', maxWidth: '420px', margin: 0 }}>Monitoring real-time seafarer deployments, visa compliance, and certified crew matches across our global cruise line fleet.</p>
+                            </div>
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                                <div className="ops-stat-box" style={{ borderRadius: '12px', padding: '1rem', border: '1px solid #e2e8f0', background: '#fff' }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-anchor" aria-hidden="true" style={{ color: '#0ea5e9', marginBottom: '0.35rem', width: '16px', height: '16px' }}><circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path></svg>
+                                    <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#94a3b8', letterSpacing: '0.05em' }}>Active Onboard</span>
+                                    <span style={{ fontSize: '1.25rem', fontWeight: 850, color: '#0ea5e9', letterSpacing: '-0.03em', display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginTop: '0.15rem' }}>1258 <span style={{ fontSize: '0.6rem', padding: '2px 6px', background: '#e0f2fe', color: '#0ea5e9', borderRadius: '100px', letterSpacing: '0' }}>LIVE</span></span>
+                                </div>
+                                <div className="ops-stat-box" style={{ borderRadius: '12px', padding: '1rem', border: '1px solid #e2e8f0', background: '#fff' }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-ship" aria-hidden="true" style={{ color: '#f97316', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 3.2-1.5 5.5-1.5 2.3 0 3 1.5 5.5 1.5 1.3 0 1.9-.5 2.5-1"></path><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"></path><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"></path><path d="M12 10v4"></path><path d="M12 2v3"></path></svg>
+                                    <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#94a3b8', letterSpacing: '0.05em' }}>Fleet Vessels</span>
+                                    <span style={{ fontSize: '1.25rem', fontWeight: 850, color: '#f97316', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>64</span>
+                                </div>
+                                <div className="ops-stat-box" style={{ borderRadius: '12px', padding: '1rem', border: '1px solid #e2e8f0', background: '#fff' }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users" aria-hidden="true" style={{ color: '#8b5cf6', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                    <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#94a3b8', letterSpacing: '0.05em' }}>Talent Pool</span>
+                                    <span style={{ fontSize: '1.25rem', fontWeight: 850, color: '#8b5cf6', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>14,850+</span>
+                                </div>
+                                <div className="ops-stat-box" style={{ borderRadius: '12px', padding: '1rem', border: '1px solid #e2e8f0', background: '#fff' }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shield-check" aria-hidden="true" style={{ color: '#10b981', marginBottom: '0.35rem', width: '16px', height: '16px' }}><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                    <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#94a3b8', letterSpacing: '0.05em' }}>STCW Compliance</span>
+                                    <span style={{ fontSize: '1.25rem', fontWeight: 850, color: '#10b981', letterSpacing: '-0.03em', display: 'block', marginTop: '0.15rem' }}>100%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="home-terminal" style={{ background: '#0f172a', borderRadius: '20px', border: '1px solid #1e293b', padding: '1.25rem 1rem', display: 'flex', flexDirection: 'column', gap: '1.25rem', boxShadow: 'inset 0 10px 30px rgba(0,0,0,0.35)', height: '100%', minHeight: 0, overflow: 'hidden' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1rem' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#94a3b8' }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-terminal term-accent" aria-hidden="true"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg>
+                                    <span style={{ fontFamily: 'monospace', fontSize: '0.8rem', fontWeight: 700 }}>crew-matching-core.sh</span>
+                                </div>
+                                <div style={{ display: 'flex', gap: '0.35rem' }}>
+                                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ef4444' }}></span>
+                                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#eab308' }}></span>
+                                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#22c55e' }}></span>
+                                </div>
+                            </div>
+
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', flex: 1, overflow: 'hidden' }}>
+                                {liveLogs.map((log, index) => (
+                                    <div key={log.id} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', fontFamily: 'monospace', fontSize: '0.8rem', lineHeight: 1.5, color: index === 0 ? '#f8fafc' : '#94a3b8', padding: '0.5rem 0', borderBottom: '1px solid rgba(255, 255, 255, 0.06)', animation: index === 0 ? 'slideDownLog 0.3s ease-out' : 'none', opacity: 1 - (index * 0.15) }}>
+                                        <span style={{ color: '#64748b', opacity: 0.8, flexShrink: 0 }}>[{log.time}]</span>
+                                        <span style={{ flexShrink: 0 }}>{log.icon}</span>
+                                        <span style={{ flex: '1 1 0%' }}>{log.text}</span>
+                                        <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: log.color, boxShadow: `0 0 8px ${log.color}`, flexShrink: 0, marginTop: '0.35rem' }}></span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                         <style>{`
                             @keyframes slideDownLog {
@@ -1006,7 +1019,7 @@ export default function Home() {
             </section>
 
             {/* CAREER GUIDANCE SECTION */}
-            <section className="cg-section">
+            <section className="cg-section" style={{ background: '#fff' }}>
                 <div className="container" style={{ position: 'relative' }}>
                     <div className="cg-header">
                         <div className="cg-header-text">
@@ -1084,7 +1097,7 @@ export default function Home() {
                 <div style={{
                     position: 'absolute',
                     inset: 0,
-                    background: 'linear-gradient(to bottom, rgba(38,6,26,0.85) 0%, rgba(38,6,26,0.65) 50%, rgba(38,6,26,0.98) 100%)',
+                    background: 'linear-gradient(to bottom, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.65) 50%, rgba(15,23,42,0.98) 100%)',
                     zIndex: 1
                 }}></div>
 
