@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const reviewsRow1 = [
@@ -17,13 +18,43 @@ const reviewsRow2 = [
 ];
 
 export default function Home() {
+    const [bgIndex, setBgIndex] = useState(0);
+    const bgImages = [
+        '/assets/img/hero-cruise.jpg',
+        '/assets/img/hero-aviation.jpg',
+        '/assets/img/hero-hospitality.jpg',
+        '/assets/img/hero-cruise.jpg'
+    ];
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setBgIndex(prev => (prev + 1) % bgImages.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <>
             {/* HERO */}
-            <section className="hero-fullbg" style={{ backgroundImage: 'url(/assets/img/hero-cruise.jpg)' }}>
-                <div className="hero-overlay"></div>
+            <section className="hero-fullbg" style={{ position: 'relative', background: 'transparent' }}>
+                {bgImages.map((img, i) => (
+                    <div
+                        key={i}
+                        style={{
+                            position: 'absolute',
+                            inset: 0,
+                            backgroundImage: `url(${img})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            opacity: i === bgIndex ? 1 : 0,
+                            transition: 'opacity 1.5s ease-in-out',
+                            zIndex: 0
+                        }}
+                    />
+                ))}
+                <div className="hero-overlay" style={{ zIndex: 1, position: 'absolute', inset: 0 }}></div>
 
-                <div className="container hero-grid-new">
+                <div className="container hero-grid-new" style={{ zIndex: 2, position: 'relative' }}>
                     <div className="hero-copy">
                         <span className="eyebrow" style={{ color: '#fff', borderColor: 'rgba(255,255,255,0.3)', background: 'rgba(255,255,255,0.1)' }}>Recruitment &amp; Training Consultancy</span>
                         <h1 style={{ color: '#fff' }}>Careers that go<br />further than the<br />horizon.</h1>
@@ -63,6 +94,49 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <style>{`
+                    @keyframes fillBarProgress {
+                        0% { width: 0%; }
+                        100% { width: 100%; }
+                    }
+                `}</style>
+                <div className="hero-slide-progress" style={{
+                    position: 'absolute',
+                    bottom: '40px',
+                    right: '40px',
+                    zIndex: 5,
+                    background: 'rgba(15, 23, 42, 0.6)',
+                    border: '1px solid rgba(255, 255, 255, 0.08)',
+                    backdropFilter: 'blur(12px)',
+                    padding: '10px 24px',
+                    borderRadius: '50px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '16px'
+                }}>
+                    <span style={{ color: '#fff', fontWeight: '800', fontSize: '16px' }}>
+                        0{bgIndex + 1}
+                    </span>
+                    <div style={{ width: '60px', height: '2px', background: 'rgba(255,255,255,0.2)', position: 'relative', borderRadius: '2px', overflow: 'hidden' }}>
+                        <div
+                            key={bgIndex}
+                            style={{
+                                position: 'absolute',
+                                left: 0,
+                                top: 0,
+                                height: '100%',
+                                background: '#5c0f38',
+                                width: '0%',
+                                animation: 'fillBarProgress 5s linear forwards',
+                                borderRadius: '2px'
+                            }}
+                        ></div>
+                    </div>
+                    <span style={{ color: '#64748b', fontSize: '16px', fontWeight: '500' }}>
+                        0{bgImages.length}
+                    </span>
                 </div>
             </section>
 
