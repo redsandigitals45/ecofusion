@@ -1099,7 +1099,7 @@ section {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(3, 7, 18, 0.95) 0%, rgba(3, 7, 18, 0.7) 45%, rgba(3, 7, 18, 0.1) 100%);
+  background: linear-gradient(90deg, rgba(38, 6, 26, 0.95) 0%, rgba(38, 6, 26, 0.72) 45%, rgba(38, 6, 26, 0.15) 100%);
   z-index: 1;
 }
 
@@ -1197,13 +1197,13 @@ section {
 }
 
 .fc-icon.green {
-  background: rgba(16, 185, 129, 0.2);
-  color: #10b981;
+  background: rgba(217, 197, 209, 0.35);
+  color: var(--lavender);
 }
 
 .fc-icon.orange {
-  background: rgba(245, 158, 11, 0.2);
-  color: #f59e0b;
+  background: rgba(124, 27, 84, 0.35);
+  color: var(--maroon-light);
 }
 
 .fc-content h3 {
@@ -1237,12 +1237,12 @@ section {
 }
 
 .fc-badge.green {
-  background: #10b981;
+  background: var(--maroon-light);
 }
 
 .fc-badge.orange {
-  background: #f59e0b;
-  color: #000;
+  background: var(--aubergine-soft);
+  color: #fff;
 }
 
 @media (max-width: 900px) {
@@ -1264,7 +1264,7 @@ section {
 /* TRUSTED EMPLOYERS MARQUEE */
 .trusted-employers-section {
   padding: 30px 0 30px;
-  background-color: #fff;
+  background-color: var(--white);
   overflow: hidden;
 }
 
@@ -1273,7 +1273,7 @@ section {
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2px;
-  color: #cbd5e1;
+  color: var(--ink-soft);
   margin-bottom: 20px;
   /* Greatly reduced gap */
   text-transform: uppercase;
@@ -1307,7 +1307,7 @@ section {
   gap: 10px;
   font-size: 14px;
   font-weight: 800;
-  color: #cbd5e1;
+  color: var(--lavender);
   letter-spacing: 1px;
   white-space: nowrap;
 }
@@ -1317,28 +1317,13 @@ section {
   opacity: 0.6;
 }
 
-.m-icon.hotel {
-  color: #f87171;
-}
-
-.m-icon.diamond {
-  color: #94a3b8;
-}
-
-.m-icon.star {
-  color: #fbbf24;
-}
-
-.m-icon.wave {
-  color: #60a5fa;
-}
-
-.m-icon.ship {
-  color: #f43f5e;
-}
-
+.m-icon.hotel,
+.m-icon.diamond,
+.m-icon.star,
+.m-icon.wave,
+.m-icon.ship,
 .m-icon.anchor {
-  color: #38bdf8;
+  color: var(--maroon-light);
 }
 
 @keyframes marquee-scroll {
@@ -1391,7 +1376,7 @@ section {
 .ic-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(8, 12, 24, 0) 0%, rgba(8, 12, 24, 0.5) 40%, rgba(8, 12, 24, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(38, 6, 26, 0) 0%, rgba(38, 6, 26, 0.45) 40%, rgba(38, 6, 26, 0.92) 100%);
   z-index: 1;
 }
 
@@ -1537,7 +1522,7 @@ section {
 /* REVIEWS MARQUEE SECTION */
 .reviews-section {
   padding: 100px 0;
-  background-color: #fafbfc;
+  background-color: var(--rose);
   overflow: hidden;
 }
 
@@ -1549,8 +1534,9 @@ section {
 .reviews-pill {
   display: inline-block;
   padding: 6px 20px;
-  background: #e0f2fe;
-  color: #0284c7;
+  background: var(--white);
+  color: var(--maroon);
+  border: 1px solid var(--lavender);
   border-radius: 50px;
   font-size: 11px;
   font-weight: 800;
@@ -1567,11 +1553,11 @@ section {
   margin-bottom: 12px;
   font-size: 24px;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--ink);
 }
 
 .reviews-rating .stars {
-  color: #fbbf24;
+  color: var(--maroon-light);
   font-size: 20px;
   letter-spacing: 2px;
 }
@@ -1579,12 +1565,12 @@ section {
 .reviews-title {
   font-size: clamp(32px, 4vw, 44px);
   font-weight: 800;
-  color: #0f172a;
+  color: var(--ink);
   letter-spacing: -1px;
 }
 
 .reviews-title span {
-  color: #3b82f6;
+  color: var(--maroon);
 }
 
 .reviews-track-container {
@@ -1640,11 +1626,11 @@ section {
 
 .review-card {
   width: 360px;
-  background: #fff;
+  background: var(--white);
   border-radius: 16px;
   padding: 32px;
-  border: 1px solid #f1f5f9;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1656,7 +1642,7 @@ section {
 }
 
 .review-card .stars {
-  color: #fbbf24;
+  color: var(--maroon-light);
   margin-bottom: 20px;
   font-size: 15px;
   letter-spacing: 2px;
@@ -1664,7 +1650,7 @@ section {
 
 .review-text {
   font-style: italic;
-  color: #475569;
+  color: var(--ink-soft);
   font-size: 15.5px;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -1678,13 +1664,13 @@ section {
 .review-author h4 {
   font-size: 15px;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--ink);
   margin-bottom: 4px;
 }
 
 .review-author p {
   font-size: 13px;
-  color: #94a3b8;
+  color: var(--ink-soft);
 }
 
 .reviews-action {
@@ -1706,7 +1692,7 @@ section {
 }
 
 .btn-blue:hover {
-  background: #0284c7;
+  background: var(--maroon-light);
   color: #fff;
   transform: translateY(-2px);
 }
@@ -1852,7 +1838,7 @@ section {
 /* CAREER GUIDANCE SECTION */
 .cg-section {
   padding: 100px 0;
-  background-color: #f7f9fc;
+  background-color: var(--lavender-soft);
 }
 
 .cg-header {
@@ -1865,12 +1851,12 @@ section {
 .cg-header-text h2 {
   font-size: 36px;
   font-weight: 800;
-  color: #0b1a4a;
+  color: var(--ink);
   margin-bottom: 12px;
 }
 
 .cg-header-text p {
-  color: #64748b;
+  color: var(--ink-soft);
   font-size: 16px;
   max-width: 600px;
   line-height: 1.6;
@@ -1885,29 +1871,29 @@ section {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #e1e7ef;
+  border: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background: #fff;
-  color: #64748b;
+  background: var(--white);
+  color: var(--ink-soft);
   font-size: 18px;
   transition: all 0.3s ease;
 }
 
 .cg-btn:hover {
-  background: #f1f5f9;
+  background: var(--rose);
 }
 
 .cg-btn.next {
-  background: #0b1a4a;
+  background: var(--maroon);
   color: #fff;
-  border-color: #0b1a4a;
+  border-color: var(--maroon);
 }
 
 .cg-btn.next:hover {
-  background: #061033;
+  background: var(--maroon-light);
 }
 
 .cg-slider-container {
@@ -1989,13 +1975,13 @@ section {
 .cg-card-content h3 {
   font-size: 19px;
   font-weight: 800;
-  color: #0b1a4a;
+  color: var(--ink);
   line-height: 1.4;
   margin-bottom: 16px;
 }
 
 .cg-card-content p {
-  color: #64748b;
+  color: var(--ink-soft);
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 24px;
@@ -2003,7 +1989,7 @@ section {
 }
 
 .cg-read-more {
-  color: #0b1a4a;
+  color: var(--maroon);
   font-weight: 700;
   font-size: 14px;
   text-decoration: none;
@@ -2540,8 +2526,8 @@ section {
   width: 56px;
   height: 56px;
   border-radius: 12px;
-  background: #f0f9ff;
-  color: #0284c7;
+  background: var(--rose);
+  color: var(--maroon);
   font-weight: 700;
   font-size: 18px;
   display: flex;
@@ -2554,7 +2540,7 @@ section {
   margin: 0 0 6px 0;
   font-size: 18px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--ink);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2564,8 +2550,8 @@ section {
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  background: #ecfdf5;
-  color: #059669;
+  background: var(--lavender-soft);
+  color: var(--maroon);
   padding: 4px 8px;
   border-radius: 4px;
   letter-spacing: 0.05em;
@@ -2576,7 +2562,7 @@ section {
 
 .job-meta {
   font-size: 13.5px;
-  color: #64748b;
+  color: var(--ink-soft);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2595,8 +2581,8 @@ section {
 
 .job-tag {
   font-size: 11px;
-  background: #f1f5f9;
-  color: #475569;
+  background: var(--rose);
+  color: var(--ink-soft);
   padding: 4px 10px;
   border-radius: 100px;
   font-weight: 600;
@@ -2652,15 +2638,15 @@ section {
 }
 
 .filter-pill.active-blue {
-  background: #0ea5e9;
+  background: var(--maroon);
   color: #fff;
-  border-color: #0ea5e9;
+  border-color: var(--maroon);
 }
 
 .filter-pill.active-dark {
-  background: #0f172a;
+  background: var(--aubergine);
   color: #fff;
-  border-color: #0f172a;
+  border-color: var(--aubergine);
 }
 
 /* KEYFRAME ANIMATION FOR DYNAMIC JOBS */

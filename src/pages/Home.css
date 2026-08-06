@@ -1,0 +1,130 @@
+/* Home page — palette: aubergine, maroon, lavender, rose, white */
+
+.home-page {
+  --home-ink: var(--aubergine);
+  --home-muted: var(--ink-soft);
+}
+
+.home-page .hero-slide-progress {
+  background: rgba(38, 6, 26, 0.75);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.home-page .hero-slide-progress .progress-fill {
+  background: var(--maroon);
+}
+
+.home-page .hero-slide-counter-muted {
+  color: var(--lavender);
+}
+
+.home-page .section-pale {
+  background: var(--rose);
+}
+
+.home-page .section-white {
+  background: var(--white);
+}
+
+.home-page .pill-eyebrow {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--white);
+  color: var(--maroon);
+  border: 1px solid var(--lavender);
+  border-radius: 99px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.home-page .pill-eyebrow::before {
+  display: none;
+}
+
+.home-page .heading-ink {
+  color: var(--home-ink);
+}
+
+.home-page .text-muted {
+  color: var(--home-muted);
+}
+
+.home-page .accent-maroon {
+  color: var(--maroon);
+}
+
+.home-page .btn-maroon {
+  background: var(--maroon);
+  color: var(--white);
+}
+
+.home-page .link-maroon {
+  color: var(--maroon);
+  font-weight: 700;
+}
+
+.home-page .expertise-card .ec-icon-maroon {
+  background: var(--maroon);
+}
+
+.home-page .expertise-card .ec-icon-aubergine {
+  background: var(--aubergine);
+}
+
+.home-page .expertise-card .ec-icon-maroon-light {
+  background: var(--maroon-light);
+}
+
+.home-page .expertise-card .ec-icon-lavender {
+  background: var(--lavender);
+  color: var(--aubergine);
+}
+
+.home-page .expertise-card .ec-icon-lavender svg {
+  stroke: var(--aubergine);
+}
+
+.home-page .expertise-card .ec-icon-maroon svg,
+.home-page .expertise-card .ec-icon-aubergine svg,
+.home-page .expertise-card .ec-icon-maroon-light svg {
+  stroke: #fff;
+}
+
+.home-page .home-live-ops {
+  border-color: var(--line);
+  box-shadow: var(--shadow-card);
+}
+
+.home-page .home-live-ops h3,
+.home-page .home-live-ops .ops-label-row {
+  color: var(--aubergine);
+}
+
+.home-page .home-live-ops .ops-stat-box {
+  background: var(--rose);
+  border: 1px solid var(--line);
+}
+
+.home-page .home-live-ops .ops-stat-value {
+  color: var(--maroon);
+}
+
+.home-page .home-live-ops .ops-live-badge {
+  color: var(--maroon);
+  background: rgba(95, 15, 64, 0.12);
+}
+
+.home-page .home-terminal {
+  background: var(--aubergine);
+}
+
+.home-page .home-terminal .term-accent {
+  color: var(--lavender);
+}
+
+.home-page .on-dark.service-model-overlay {
+  background: rgba(38, 6, 26, 0.82);
+}
