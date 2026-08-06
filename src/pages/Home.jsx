@@ -1,5 +1,21 @@
 import { Link } from 'react-router-dom';
 
+const reviewsRow1 = [
+    { id: 1, text: "I've always dreamed of working on a cruise ship. They matched me with the perfect culinary role and even helped with my STCW certification.", name: "Keiko Tanaka", role: "Chef • Celebrity Cruises" },
+    { id: 2, text: "Professional, reliable, and genuinely care about your success. Got placed in Singapore within 10 weeks. Amazing support throughout.", name: "Carlos Mendoza", role: "Aviation Security • Changi Airport" },
+    { id: 3, text: "The grooming sessions and interview preparation were spot on. I passed the Etihad assessment on my first attempt. Forever grateful!", name: "Fatima Al-Zahra", role: "Cabin Crew • Etihad Airways" },
+    { id: 4, text: "Seamless process from start to finish. The team even helped me negotiate my contract terms. I'm now exploring the Caribbean daily!", name: "Lucas Ferreira", role: "Deck Officer • Norwegian Cruise" },
+    { id: 5, text: "Absolutely incredible service! The team guided me through every step, from CV to contract. Now flying tax-free to 40+ destinations!", name: "Priya Sharma", role: "Cabin Crew • Qatar Airways" }
+];
+
+const reviewsRow2 = [
+    { id: 6, text: "I had zero experience in the maritime industry. Ecofusion's team trained me, prepped me, and placed me in 3 months. Life-changing!", name: "James Okafor", role: "Steward • MSC Cruises" },
+    { id: 7, text: "Found an incredible job in Malaysia. Their visa assistance made the process stress-free. Best decision of my life.", name: "Maria Santos", role: "Security Officer • Kuala Lumpur Airport" },
+    { id: 8, text: "From Mumbai to Dubai in 6 weeks! The placement team was transparent, professional, and always available to answer my questions.", name: "Ahmed Al-Rashid", role: "Corporate Security • Dubai Hub" },
+    { id: 9, text: "Could not recommend them highly enough. From initial training to final placement on a luxury liner, everything was handled perfectly.", name: "Sarah Jenkins", role: "Guest Relations • Royal Caribbean" },
+    { id: 10, text: "The hotel management placement process was incredibly smooth. They found a role that perfectly matched my 5-star resort background.", name: "David Chen", role: "Front Desk Manager • Hilton Sydney" }
+];
+
 export default function Home() {
     return (
         <>
@@ -218,6 +234,56 @@ export default function Home() {
                             <h3 style={{ fontSize: '19px' }}>4. Placement</h3>
                             <p className="ink-soft" style={{ marginTop: '10px', fontSize: '14.5px' }}>Matched to the right role in cruise, aviation or hotels.</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* REVIEWS MARQUEE */}
+            <section className="reviews-section">
+                <div className="container">
+                    <div className="reviews-head">
+                        <span className="reviews-pill">Candidate Feedback</span>
+                        <div className="reviews-rating">
+                            <div className="stars">★★★★★</div>
+                            <span>4.8</span>
+                        </div>
+                        <h2 className="reviews-title">What Candidates <span>Are Saying</span></h2>
+                    </div>
+                </div>
+
+                <div className="reviews-track-container">
+                    {/* Top Row - Scrolls Left */}
+                    <div className="reviews-track left">
+                        {[...reviewsRow1, ...reviewsRow1, ...reviewsRow1].map((review, i) => (
+                            <div className="review-card" key={`r1-${i}`}>
+                                <div className="stars">★★★★★</div>
+                                <p className="review-text">"{review.text}"</p>
+                                <div className="review-author">
+                                    <h4>{review.name}</h4>
+                                    <p>{review.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Bottom Row - Scrolls Right */}
+                    <div className="reviews-track right">
+                        {[...reviewsRow2, ...reviewsRow2, ...reviewsRow2].map((review, i) => (
+                            <div className="review-card" key={`r2-${i}`}>
+                                <div className="stars">★★★★★</div>
+                                <p className="review-text">"{review.text}"</p>
+                                <div className="review-author">
+                                    <h4>{review.name}</h4>
+                                    <p>{review.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="container">
+                    <div className="reviews-action">
+                        <Link to="/reviews" className="btn-blue">READ MORE REVIEWS</Link>
                     </div>
                 </div>
             </section>
