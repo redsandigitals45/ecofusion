@@ -1,8 +1,8 @@
-/* NEW LIGHT FOOTER */
+/* BRAND THEMED LIGHT FOOTER */
 .site-footer.bg-light {
-    background: #f4f7f9;
-    background: linear-gradient(180deg, #fdfdfd 0%, #f0f4f8 100%);
-    color: #475569;
+    background: var(--rose);
+    background: linear-gradient(180deg, #fff 0%, var(--rose) 100%);
+    color: var(--ink-soft);
     padding: 80px 0 30px;
 }
 
@@ -35,14 +35,14 @@
 }
 
 .footer-title {
-    color: #1a2b4b;
+    color: var(--aubergine);
     font-size: 20px;
     font-weight: 800;
     margin-bottom: 12px;
 }
 
 .footer-desc {
-    color: #64748b;
+    color: var(--ink-soft);
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 24px;
@@ -63,17 +63,18 @@
     align-items: center;
     gap: 10px;
     font-size: 13.5px;
-    color: #334155;
+    color: var(--ink);
     font-weight: 600;
 }
 
 .footer-features li svg {
     width: 18px;
     height: 18px;
+    stroke: var(--maroon);
 }
 
 .site-footer.bg-light .footer-col h4 {
-    color: #2563eb;
+    color: var(--maroon);
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
@@ -91,7 +92,7 @@
 }
 
 .site-footer.bg-light .footer-col ul a {
-    color: #475569;
+    color: var(--ink-soft);
     font-size: 14px;
     text-decoration: none;
     transition: color 0.2s;
@@ -99,7 +100,7 @@
 }
 
 .site-footer.bg-light .footer-col ul a:hover {
-    color: #2563eb;
+    color: var(--maroon);
 }
 
 /* Contact Col */
@@ -124,18 +125,19 @@
     height: 18px;
     flex-shrink: 0;
     margin-top: 3px;
+    color: var(--lavender);
 }
 
 .contact-item .c-icon.text-cyan {
-    color: #06b6d4;
+    color: var(--maroon);
 }
 
 .contact-item .c-icon.text-green {
-    color: #10b981;
+    color: var(--maroon);
 }
 
 .contact-item .c-icon.text-gray {
-    color: #94a3b8;
+    color: var(--ink-soft);
 }
 
 .contact-item div {
@@ -144,20 +146,20 @@
 }
 
 .contact-item strong {
-    color: #334155;
+    color: var(--aubergine);
     font-size: 13px;
     font-weight: 700;
     margin-bottom: 2px;
 }
 
 .contact-item span {
-    color: #94a3b8;
+    color: var(--ink-soft);
     font-size: 12px;
     line-height: 1.4;
 }
 
 .social-text {
-    color: #64748b;
+    color: var(--ink-soft);
     font-size: 13px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -175,19 +177,19 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--line);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #64748b;
+    color: var(--ink-soft);
     transition: all 0.2s;
     background: white;
 }
 
 .site-footer.bg-light .social-row a:hover {
-    background: #f1f5f9;
-    color: #2563eb;
-    border-color: #cbd5e1;
+    background: var(--rose);
+    color: var(--maroon);
+    border-color: var(--lavender);
 }
 
 .site-footer.bg-light .social-row svg {
@@ -197,7 +199,7 @@
 
 /* Newsletter Box */
 .newsletter-box {
-    background: linear-gradient(135deg, #f0fbff 0%, #e6f3fa 100%);
+    background: linear-gradient(135deg, var(--rose) 0%, var(--white) 100%);
     border-radius: 16px;
     padding: 40px;
     margin-top: 60px;
@@ -205,7 +207,8 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    border: 1px solid #e0eff5;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
 }
 
 @media (max-width: 900px) {
@@ -223,7 +226,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #0284c7;
+    color: var(--maroon);
     font-size: 11px;
     font-weight: 800;
     letter-spacing: 1.5px;
@@ -233,12 +236,12 @@
 .nl-tag .dot {
     width: 6px;
     height: 6px;
-    background: #38bdf8;
+    background: var(--maroon);
     border-radius: 50%;
 }
 
 .nl-content h3 {
-    color: #0f172a;
+    color: var(--aubergine);
     font-size: 26px;
     font-weight: 800;
     margin-bottom: 12px;
@@ -246,7 +249,7 @@
 }
 
 .nl-content p {
-    color: #64748b;
+    color: var(--ink-soft);
     font-size: 14.5px;
     line-height: 1.6;
 }
@@ -273,29 +276,28 @@
     flex: 1;
     padding: 16px 20px;
     border-radius: 12px;
-    border: 1px solid #cbd5e1;
+    border: 1px solid var(--line);
     font-size: 15px;
-    color: #334155;
+    color: var(--ink);
     background: white;
     outline: none;
     min-width: 0;
 }
 
 .nl-form input::placeholder {
-    color: #94a3b8;
+    color: var(--ink-soft);
 }
 
 .nl-form input:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    border-color: var(--maroon);
+    box-shadow: 0 0 0 3px rgba(95, 15, 64, 0.1);
 }
 
 .nl-form button {
     padding: 16px 32px;
     border-radius: 12px;
     border: none;
-    background: #1e3a8a;
-    /* dark blue */
+    background: var(--aubergine);
     color: white;
     font-weight: 700;
     font-size: 14px;
@@ -308,11 +310,11 @@
 }
 
 .nl-form button:hover {
-    background: #1e40af;
+    background: var(--maroon);
 }
 
 .nl-disclaimer {
-    color: #94a3b8;
+    color: var(--ink-soft);
     font-size: 12px;
 }
 
@@ -320,14 +322,14 @@
 .footer-bottom-new {
     margin-top: 60px;
     padding-top: 30px;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--line);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     font-size: 12px;
-    color: #64748b;
+    color: var(--ink-soft);
 }
 
 .footer-bottom-new .fb-center {
@@ -337,22 +339,22 @@
 }
 
 .footer-bottom-new .fb-center a {
-    color: #64748b;
+    color: var(--ink-soft);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .footer-bottom-new .fb-center a:hover {
-    color: #1e3a8a;
+    color: var(--maroon);
 }
 
 .footer-bottom-new .dot-sep {
-    color: #cbd5e1;
+    color: var(--line);
 }
 
 .fb-right {
     font-weight: 700;
-    color: #1e3a8a;
+    color: var(--aubergine);
 }
 
 @media (max-width: 860px) {

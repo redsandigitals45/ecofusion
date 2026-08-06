@@ -1084,24 +1084,18 @@ export default function Home() {
                 <div style={{
                     position: 'absolute',
                     inset: 0,
-                    background: 'linear-gradient(to bottom, rgba(14,23,44,0.85) 0%, rgba(14,23,44,0.6) 50%, rgba(14,23,44,0.95) 100%)',
+                    background: 'linear-gradient(to bottom, rgba(38,6,26,0.85) 0%, rgba(38,6,26,0.65) 50%, rgba(38,6,26,0.98) 100%)',
                     zIndex: 1
                 }}></div>
 
                 <div className="container" style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '800px' }}>
-                    <div style={{ display: 'inline-block', border: '1px solid rgba(255,193,7,0.5)', borderRadius: '100px', padding: '6px 16px', marginBottom: '24px', fontSize: '11px', fontWeight: '800', letterSpacing: '2px', color: '#ffc107', textTransform: 'uppercase' }}>
+                    <div style={{ display: 'inline-block', border: '1px solid rgba(217,197,209,0.5)', borderRadius: '100px', padding: '6px 16px', marginBottom: '24px', fontSize: '11px', fontWeight: '800', letterSpacing: '2px', color: 'var(--lavender)', textTransform: 'uppercase' }}>
                         YOUR FUTURE STARTS TODAY
                     </div>
 
                     <h2 style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: '900', lineHeight: '1.1', marginBottom: '24px', letterSpacing: '-0.02em' }}>
                         The World Is Waiting.<br />
-                        <span style={{
-                            background: 'linear-gradient(90deg, #38bdf8, #818cf8, #f472b6, #fb923c)',
-                            WebkitBackgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent',
-                            backgroundClip: 'text',
-                            color: 'transparent'
-                        }}>Start Your Global Career</span><br />
+                        <span style={{ color: 'var(--lavender)' }}>Start Your Global Career</span><br />
                         Today.
                     </h2>
 
@@ -1117,7 +1111,7 @@ export default function Home() {
 
                     <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '80px' }}>
                         <Link to="/contact" className="btn" style={{
-                            background: '#007bff',
+                            background: 'var(--maroon)',
                             color: '#fff',
                             border: 'none',
                             borderRadius: '100px',
