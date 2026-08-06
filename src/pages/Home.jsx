@@ -4,28 +4,25 @@ export default function Home() {
     return (
         <>
             {/* HERO */}
-            <section className="hero">
-                <div className="blob-field">
-                    <div className="blob" style={{ width: '520px', height: '520px', top: '-220px', right: '-160px' }}></div>
-                    <div className="blob" style={{ width: '340px', height: '340px', bottom: '-160px', left: '-120px', opacity: 0.22 }}></div>
-                </div>
-                <div className="container hero-grid">
+            <section className="hero-fullbg" style={{ backgroundImage: 'url(/assets/img/hero-cruise.jpg)' }}>
+                <div className="hero-overlay"></div>
+
+                <div className="container hero-grid-new">
                     <div className="hero-copy">
-                        <span className="eyebrow">Recruitment &amp; Training Consultancy</span>
-                        <h1>Careers that go<br />further than the<br />horizon.</h1>
-                        <p className="lede">Ecofusion Outsourcing places and prepares talent for careers at sea, in the air, and across the world's hotels — one guided pathway from training to placement.</p>
+                        <span className="eyebrow" style={{ color: '#fff', borderColor: 'rgba(255,255,255,0.3)', background: 'rgba(255,255,255,0.1)' }}>Recruitment &amp; Training Consultancy</span>
+                        <h1 style={{ color: '#fff' }}>Careers that go<br />further than the<br />horizon.</h1>
+                        <p className="lede" style={{ color: 'rgba(255,255,255,0.85)' }}>Ecofusion Outsourcing places and prepares talent for careers at sea, in the air, and across the world's hotels — one guided pathway from training to placement.</p>
+
                         <div className="hero-actions">
-                            <Link to="/contact" className="btn btn-primary">Start Your Career</Link>
-                            <Link to="/about" className="btn btn-ghost-dark">How It Works</Link>
+                            <Link to="/contact" className="btn btn-primary" style={{ background: '#fff', color: 'var(--blue)' }}>Start Your Career</Link>
+                            <Link to="/about" className="btn" style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', backdropFilter: 'blur(8px)' }}>How It Works</Link>
                         </div>
-                        <div className="hero-tags">
-                            <span className="hero-tag">⚓ Cruise</span>
-                            <span className="hero-tag">✈ Aviation</span>
-                            <span className="hero-tag">🏨 Hotel Management</span>
+
+                        <div className="hero-tags" style={{ color: '#fff' }}>
+                            <span className="hero-tag" style={{ background: 'rgba(255,255,255,0.1)', borderColor: 'rgba(255,255,255,0.2)' }}>⚓ Cruise</span>
+                            <span className="hero-tag" style={{ background: 'rgba(255,255,255,0.1)', borderColor: 'rgba(255,255,255,0.2)' }}>✈ Aviation</span>
+                            <span className="hero-tag" style={{ background: 'rgba(255,255,255,0.1)', borderColor: 'rgba(255,255,255,0.2)' }}>🏨 Hotel Management</span>
                         </div>
-                    </div>
-                    <div className="hero-media reveal">
-                        <img src="/assets/img/hero-cruise.jpg" alt="Cruise ships and yachts docked in a Monaco harbour" />
                     </div>
                 </div>
             </section>
