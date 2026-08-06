@@ -212,10 +212,11 @@ export default function Home() {
                             <img className="ic-bg" src="/assets/img/hero-cruise.jpg" alt="" />
                             <div className="ic-overlay"></div>
                             <div className="ic-content">
-                                <div className="ic-badge">
-                                    <span className="ic-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="5" r="3" /><line x1="12" y1="22" x2="12" y2="8" /><path d="M5 12H2a10 10 0 0 0 20 0h-3" /></svg>
-                                    </span> CRUISE PLACEMENT
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                                    <span className="modern-circle-icon">
+                                        <svg viewBox="0 0 640 512" fill="currentColor"><path d="M425.7 256c-16.9 0-32.8-9-41.4-23.4L320 118.4 255.7 232.6c-8.6 14.4-24.5 23.4-41.4 23.4H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h147.2L282.8 18.2c13.7-22.9 40.5-22.9 54.3 0L440.8 192H588c17.7 0 32 14.3 32 32s-14.3 32-32 32H425.7zM623 351.4c-9.8-19.1-34.7-22.9-49.8-7.5l-42.5 43.1L489.1 346c-13.6-13.3-34.7-13.3-48.3 0l-41.5 41-41.5-41c-13.6-13.3-34.7-13.3-48.3 0l-41.5 41-41.5-41c-13.6-13.3-34.7-13.3-48.3 0l-41.5 41-41.5-41c-13.6-13.3-34.7-13.3-48.3 0L49.2 387 6.8 343.8c-15.1-15.3-40-11.6-49.8 7.5S-28 393.7-12.9 409l64 64.9c13.6 13.8 35.1 13.8 48.7 0L141.2 432l41.5 41c13.6 13.3 34.7 13.3 48.3 0l41.5-41 41.5 41c13.6 13.3 34.7 13.3 48.3 0l41.5-41 41.5 41c13.6 13.3 34.7 13.3 48.3 0l41.5-41 42.5 43.1c15.1 15.3 40 11.6 49.8-7.5s-24-43.2-12.9-27.9-.1-27.9 11-42.5z" /></svg>
+                                    </span>
+                                    <span style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.9)' }}>CRUISE PLACEMENT</span>
                                 </div>
                                 <h3>Cruise</h3>
                                 <p>Guest relations, F&amp;B, housekeeping, entertainment &amp; onboard service roles.</p>
@@ -227,10 +228,11 @@ export default function Home() {
                             <img className="ic-bg" src="/assets/img/hero-aviation.jpg" alt="" />
                             <div className="ic-overlay"></div>
                             <div className="ic-content">
-                                <div className="ic-badge">
-                                    <span className="ic-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.7l-1.2 3.6c-.1.4.2.9.7 1l4.8 1.1L5 16l-2.8-.5c-.5-.1-.9.2-1.1.7l-.5 1.5c-.1.4.3.9.8.8l4.8-1 4.7-4.7 1.1 4.8c.1.5.6.8 1 .7l3.6-1.2c.5-.2.8-.6.7-1.1Z" /></svg>
-                                    </span> AVIATION PLACEMENT
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                                    <span className="modern-circle-icon">
+                                        <svg viewBox="0 0 576 512" fill="currentColor"><path d="M482.3 192c34 0 93.7 29 93.7 64c0 36-59.7 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z" /></svg>
+                                    </span>
+                                    <span style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.9)' }}>AVIATION PLACEMENT</span>
                                 </div>
                                 <h3>Aviation</h3>
                                 <p>Cabin crew, airport operations, ground service &amp; passenger-facing roles.</p>
@@ -242,10 +244,11 @@ export default function Home() {
                             <img className="ic-bg" src="/assets/img/hero-hospitality.jpg" alt="" />
                             <div className="ic-overlay"></div>
                             <div className="ic-content">
-                                <div className="ic-badge">
-                                    <span className="ic-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2" /><path d="M9 22v-4h6v4" /><path d="M8 6h.01" /><path d="M16 6h.01" /><path d="M12 6h.01" /><path d="M12 10h.01" /><path d="M12 14h.01" /><path d="M16 10h.01" /><path d="M16 14h.01" /><path d="M8 10h.01" /><path d="M8 14h.01" /></svg>
-                                    </span> HOSPITALITY PLACEMENT
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                                    <span className="modern-circle-icon">
+                                        <svg viewBox="0 0 384 512" fill="currentColor"><path d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h96c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-32zm80-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16zm96 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32zM64 112c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-32zm80-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16zm96 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32z" /></svg>
+                                    </span>
+                                    <span style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.9)' }}>HOSPITALITY PLACEMENT</span>
                                 </div>
                                 <h3>Hotel Management</h3>
                                 <p>Front office, housekeeping, F&amp;B and full hotel operations.</p>
@@ -256,31 +259,59 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ABOUT TEASER */}
-            <section className="section">
-                <div className="container two-col">
-                    <div className="col-media reveal">
-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hospitality staff assisting a guest at reception" />
+            {/* ABOUT ECOFUSION (Modern Grid View) */}
+            <section className="section" style={{ background: '#fafbfc', padding: '100px 0' }}>
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <div className="reveal" style={{ maxWidth: '820px', margin: '0 auto 56px auto' }}>
+                        <span style={{
+                            display: 'inline-block',
+                            fontSize: '11px',
+                            fontWeight: '800',
+                            textTransform: 'uppercase',
+                            letterSpacing: '1.5px',
+                            color: 'var(--maroon)',
+                            border: '1px solid rgba(92, 15, 56, 0.3)',
+                            padding: '6px 16px',
+                            borderRadius: '100px',
+                            marginBottom: '20px'
+                        }}>
+                            ABOUT ECOFUSION
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '900', color: '#0b1a4a', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '1.5rem' }}>A career partner — not just a recruiter.</h2>
+                        <p style={{ fontSize: '1.15rem', color: '#64748b', lineHeight: '1.6' }}>
+                            Ecofusion Outsourcing is a professional recruitment and training consultancy that helps candidates build careers in cruise ships, aviation and hotel management. Unlike agencies that focus on placement alone, we build a complete talent-development journey — a stronger path for candidates, and a stronger pipeline for employers.
+                        </p>
                     </div>
-                    <div>
-                        <span className="eyebrow">About Ecofusion</span>
-                        <h2 style={{ fontSize: 'clamp(28px,3.2vw,40px)', marginTop: '14px', lineHeight: 1.15 }}>A career partner — not just a recruiter.</h2>
-                        <p className="ink-soft" style={{ marginTop: '18px', fontSize: '16.5px' }}>Ecofusion Outsourcing is a professional recruitment and training consultancy that helps candidates build careers in cruise ships, aviation and hotel management. Unlike agencies that focus on placement alone, we build a complete talent-development journey — a stronger path for candidates, and a stronger pipeline for employers.</p>
-                        <div className="badge-row">
-                            <div className="card-flat">
-                                <div className="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z" /><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" /></svg></div>
-                                <strong>Train</strong>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+                        {/* Card 1 */}
+                        <div className="reveal why-choose-card-modern">
+                            <div className="wc-icon-box">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--maroon)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '2px' }}><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z" /><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" /></svg>
                             </div>
-                            <div className="card-flat">
-                                <div className="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="8" r="6" /><path d="M9 14l-2 7 5-3 5 3-2-7" /></svg></div>
-                                <strong>Certify</strong>
-                            </div>
-                            <div className="card-flat">
-                                <div className="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M8 12h8M8 12a4 4 0 1 1 4-4M16 12a4 4 0 1 1-4 4" /></svg></div>
-                                <strong>Place</strong>
-                            </div>
+                            <h3>Train</h3>
+                            <p>Build job-ready skills through specialised, industry-aligned courses.</p>
                         </div>
-                        <Link to="/about" className="btn btn-ghost" style={{ marginTop: '32px' }}>More About Us</Link>
+                        {/* Card 2 */}
+                        <div className="reveal delay-1 why-choose-card-modern">
+                            <div className="wc-icon-box">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--maroon)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '2px' }}><circle cx="12" cy="8" r="6" /><path d="M9 14l-2 7 5-3 5 3-2-7" /></svg>
+                            </div>
+                            <h3>Certify</h3>
+                            <p>Award recognised certifications that meet international service standards.</p>
+                        </div>
+                        {/* Card 3 */}
+                        <div className="reveal delay-2 why-choose-card-modern">
+                            <div className="wc-icon-box">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--maroon)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '2px' }}><path d="M8 12h8M8 12a4 4 0 1 1 4-4M16 12a4 4 0 1 1-4 4" /></svg>
+                            </div>
+                            <h3>Place</h3>
+                            <p>Matched to the right role in cruise, aviation or hotel management.</p>
+                        </div>
+                    </div>
+
+                    <div className="reveal delay-3" style={{ marginTop: '48px' }}>
+                        <Link to="/about" className="btn" style={{ background: 'var(--maroon)', color: '#fff', padding: '16px 36px', borderRadius: '100px', fontWeight: 'bold' }}>More About Us</Link>
                     </div>
                 </div>
             </section>
@@ -315,33 +346,56 @@ export default function Home() {
             </section>
 
             {/* CANDIDATE JOURNEY */}
-            <section className="section">
+            <section className="section" style={{ padding: '100px 0', background: 'linear-gradient(to bottom, #f8fafc 0%, #fff 100%)' }}>
                 <div className="container">
-                    <div className="section-head center">
-                        <span className="eyebrow">Candidate Journey</span>
-                        <h2>From guidance to placement</h2>
-                        <p className="ink-soft" style={{ marginLeft: 'auto', marginRight: 'auto' }}>A clear journey that shows Ecofusion is not simply a recruiter, but a complete career support system.</p>
+                    <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px auto' }} className="reveal">
+                        <span style={{
+                            display: 'inline-block',
+                            fontSize: '11px',
+                            fontWeight: '800',
+                            textTransform: 'uppercase',
+                            letterSpacing: '1.5px',
+                            color: 'var(--maroon)',
+                            border: '1px solid rgba(92, 15, 56, 0.3)',
+                            padding: '6px 16px',
+                            borderRadius: '100px',
+                            marginBottom: '20px'
+                        }}>
+                            CANDIDATE JOURNEY
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(32px, 4vw, 42px)', fontWeight: '800', color: '#0b1a4a', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '1.5rem' }}>From guidance to placement</h2>
+                        <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.6' }}>
+                            A clear journey that shows Ecofusion is not simply a recruiter, but a complete career support system.
+                        </p>
                     </div>
-                    <div className="grid grid-4">
-                        <div className="card reveal">
-                            <div className="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M16 8l-3 7-3-2 6-5Z" /></svg></div>
-                            <h3 style={{ fontSize: '19px' }}>1. Guidance</h3>
-                            <p className="ink-soft" style={{ marginTop: '10px', fontSize: '14.5px' }}>Candidates receive career direction and sector counselling.</p>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+                        <div className="journey-card-modern reveal">
+                            <div className="j-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M16 8l-3 7-3-2 6-5Z" /></svg>
+                            </div>
+                            <h3>1. Guidance</h3>
+                            <p>Candidates receive career direction and sector counselling.</p>
                         </div>
-                        <div className="card reveal">
-                            <div className="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z" /><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" /></svg></div>
-                            <h3 style={{ fontSize: '19px' }}>2. Training</h3>
-                            <p className="ink-soft" style={{ marginTop: '10px', fontSize: '14.5px' }}>Skill-building and certification aligned to industry needs.</p>
+                        <div className="journey-card-modern reveal delay-1">
+                            <div className="j-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z" /><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" /></svg>
+                            </div>
+                            <h3>2. Training</h3>
+                            <p>Skill-building and certification aligned to industry needs.</p>
                         </div>
-                        <div className="card reveal">
-                            <div className="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 6L9 17l-5-5" /></svg></div>
-                            <h3 style={{ fontSize: '19px' }}>3. Screening</h3>
-                            <p className="ink-soft" style={{ marginTop: '10px', fontSize: '14.5px' }}>Readiness assessment against employer expectations.</p>
+                        <div className="journey-card-modern reveal delay-2">
+                            <div className="j-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 6L9 17l-5-5" /></svg>
+                            </div>
+                            <h3>3. Screening</h3>
+                            <p>Readiness assessment against employer expectations.</p>
                         </div>
-                        <div className="card reveal">
-                            <div className="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M8 12h8M8 12a4 4 0 1 1 4-4M16 12a4 4 0 1 1-4 4" /></svg></div>
-                            <h3 style={{ fontSize: '19px' }}>4. Placement</h3>
-                            <p className="ink-soft" style={{ marginTop: '10px', fontSize: '14.5px' }}>Matched to the right role in cruise, aviation or hotels.</p>
+                        <div className="journey-card-modern reveal delay-3">
+                            <div className="j-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M8 12h8M8 12a4 4 0 1 1 4-4M16 12a4 4 0 1 1-4 4" /></svg>
+                            </div>
+                            <h3>4. Placement</h3>
+                            <p>Matched to the right role in cruise, aviation or hotels.</p>
                         </div>
                     </div>
                 </div>
