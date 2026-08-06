@@ -318,72 +318,67 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* BLOG SECTION */}
-            <section className="blog-section">
-                <div className="container">
-                    <div className="blog-head">
-                        <span className="blog-pill">Career Resources</span>
-                        <h2 className="blog-title">From Our <span>Career Blog</span></h2>
+            {/* CAREER GUIDANCE SECTION */}
+            <section className="cg-section">
+                <div className="container" style={{ position: 'relative' }}>
+                    <div className="cg-header">
+                        <div className="cg-header-text">
+                            <h2>Career Guidance</h2>
+                            <p>Learn about different departments in the maritime industry and discover the best career path for you.</p>
+                        </div>
+                        <div className="cg-nav">
+                            <button className="cg-btn" onClick={(e) => { e.currentTarget.closest('.container').querySelector('.cg-slider-track').scrollBy({ left: -364, behavior: 'smooth' }); }}>❮</button>
+                            <button className="cg-btn next" onClick={(e) => { e.currentTarget.closest('.container').querySelector('.cg-slider-track').scrollBy({ left: 364, behavior: 'smooth' }); }}>❯</button>
+                        </div>
                     </div>
 
-                    <div className="blog-grid stagger-group">
-                        <Link to="/blog" className="blog-card reveal">
-                            <div className="bc-img-wrap">
-                                <span className="bc-badge" style={{ background: '#0ea5e9' }}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="5" r="3" /><line x1="12" y1="22" x2="12" y2="8" /><path d="M5 12H2a10 10 0 0 0 20 0h-3" /></svg>
-                                    CRUISE
-                                </span>
-                                <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship" />
-                            </div>
-                            <div className="bc-content">
-                                <span className="bc-meta">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
-                                    12-15 MIN READ • JUL 13, 2026
-                                </span>
-                                <h3 className="bc-title">Cruise Ship Careers: A Complete Beginner's Guide</h3>
-                                <p className="bc-excerpt">Learn everything about cruise ship careers, including job roles, eligibility, salaries, benefits, recruitment process, and expert tips to start your international career at sea.</p>
-                            </div>
-                        </Link>
+                    <div className="cg-slider-container">
+                        <div className="cg-slider-track">
+                            <Link to="/blog/cv-writing" className="cg-card">
+                                <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship at sea" />
+                                <div className="cg-card-content">
+                                    <h3>CV Writing for Cruise Ship Jobs: A Complete Guide</h3>
+                                    <p>Learn how to format your CV, highlight relevant maritime experience, and stand out to luxury cruise line recruiters.</p>
+                                    <span className="cg-read-more">Read Article <span>→</span></span>
+                                </div>
+                            </Link>
 
-                        <Link to="/blog" className="blog-card reveal delay-1">
-                            <div className="bc-img-wrap">
-                                <span className="bc-badge" style={{ background: '#0ea5e9' }}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="5" r="3" /><line x1="12" y1="22" x2="12" y2="8" /><path d="M5 12H2a10 10 0 0 0 20 0h-3" /></svg>
-                                    CRUISE
-                                </span>
-                                <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship" />
-                            </div>
-                            <div className="bc-content">
-                                <span className="bc-meta">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
-                                    5 MIN READ • JUNE 28, 2025
-                                </span>
-                                <h3 className="bc-title">Life On A Cruise Ship: What Nobody Tells You</h3>
-                                <p className="bc-excerpt">From sharing cabins to port-day adventures — here's the unfiltered truth about living and working on a luxury cruise ship for months at a time.</p>
-                            </div>
-                        </Link>
+                            <Link to="/blog/life-on-board" className="cg-card">
+                                <img src="/assets/img/hero-hospitality.jpg" alt="Yacht at sea" />
+                                <div className="cg-card-content">
+                                    <h3>Life on Board: What It's Really Like to Work on a Cruise Ship</h3>
+                                    <p>Discover the daily routine, accommodation, crew privileges, and social life that come with working on a...</p>
+                                    <span className="cg-read-more">Read Article <span>→</span></span>
+                                </div>
+                            </Link>
 
-                        <Link to="/blog" className="blog-card reveal delay-2">
-                            <div className="bc-img-wrap">
-                                <span className="bc-badge" style={{ background: '#a855f7' }}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.7l-1.2 3.6c-.1.4.2.9.7 1l4.8 1.1L5 16l-2.8-.5c-.5-.1-.9.2-1.1.7l-.5 1.5c-.1.4.3.9.8.8l4.8-1 4.7-4.7 1.1 4.8c.1.5.6.8 1 .7l3.6-1.2c.5-.2.8-.6.7-1.1Z" /></svg>
-                                    AVIATION
-                                </span>
-                                <img src="/assets/img/hero-aviation.jpg" alt="Airplane wing" />
-                            </div>
-                            <div className="bc-content">
-                                <span className="bc-meta">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
-                                    8 MIN READ • JUNE 15, 2025
-                                </span>
-                                <h3 className="bc-title">Cabin Crew Interview Guide: Ace Your Assessment Day</h3>
-                                <p className="bc-excerpt">Everything you need to know about the cabin crew selection process — from the group assessment and English test to the final panel interview and grooming standards.</p>
-                            </div>
-                        </Link>
-                    </div>
+                            <Link to="/blog/departments" className="cg-card">
+                                <img src="/assets/img/hero-hospitality.jpg" alt="Restaurant interior" />
+                                <div className="cg-card-content">
+                                    <h3>Cruise Ship Careers: Guide to Departments and Job Roles</h3>
+                                    <p>Unpack the different departments on board—from Marine and Deck to Hotel, Entertainment, and Wellness—to find...</p>
+                                    <span className="cg-read-more">Read Article <span>→</span></span>
+                                </div>
+                            </Link>
 
-                    <div className="blog-action reveal">
-                        <Link to="/blog" className="btn-blue">VIEW ALL ARTICLES &rarr;</Link>
+                            <Link to="/blog/interview" className="cg-card">
+                                <img src="/assets/img/hero-aviation.jpg" alt="People on laptops" />
+                                <div className="cg-card-content">
+                                    <h3>Mastering the Cruise Line Interview: Tips & Strategies</h3>
+                                    <p>Prepare for your video and in-person interviews with top cruise lines. Learn about typical questions and how to...</p>
+                                    <span className="cg-read-more">Read Article <span>→</span></span>
+                                </div>
+                            </Link>
+
+                            <Link to="/blog/finance" className="cg-card">
+                                <img src="/assets/img/hero-cruise.jpg" alt="Tropical resort" />
+                                <div className="cg-card-content">
+                                    <h3>Financial Freedom: How to Save and Manage Money...</h3>
+                                    <p>Learn about tax-free earnings, zero living expenses, and smart saving strategies that make maritime careers incredibly...</p>
+                                    <span className="cg-read-more">Read Article <span>→</span></span>
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
