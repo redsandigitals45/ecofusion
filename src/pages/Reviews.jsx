@@ -64,10 +64,6 @@ export default function Reviews() {
                     <h1 className="r-hero-title">Trusted by Candidates<br />Across <span className="r-hero-highlight">All Career Sectors</span></h1>
                     <p className="r-hero-subtitle">Read what candidates who pursued international career opportunities through Ecofusion's Nautical Ventures have to say about their experience.</p>
 
-                    <div className="r-sample-note">
-                        <strong>Note:</strong> The testimonials below are sample candidate reviews for website preview purposes. They will be replaced with verified feedback from actual candidates.
-                    </div>
-
                     <div className="r-stats-board">
                         <div className="r-stat">
                             <h3>5.0/5</h3>
@@ -136,35 +132,35 @@ export default function Reviews() {
                 <div className="container">
                     <div className="r-tabs">
                         <div className="r-tab active"><span className="r-icon">❖</span> All Reviews <small>(31)</small></div>
-                        <div className="r-tab"><span className="r-icon">���️</span> Cruise Ship <small>(8)</small></div>
-                        <div className="r-tab"><span className="r-icon">✈</span> Air Hostess <small>(8)</small></div>
-                        <div className="r-tab"><span className="r-icon">⚓</span> Merchant Navy <small>(7)</small></div>
-                        <div className="r-tab"><span className="r-icon">���</span> Security Guard <small>(8)</small></div>
+                        <div className="r-tab"><span className="r-icon"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.4 13.9 22 17H2l2.6-3.1"/><path d="M14.9 13.9 14 8c-.2-1.5-1.5-2.7-3.1-2.7h-2.1c-.8 0-1.6.4-2.1 1.1L3.9 13.9"/><path d="M8 8V5a3 3 0 1 1 6 0v3"/></svg></span> Cruise Ship <small>(8)</small></div>
+                        <div className="r-tab"><span className="r-icon"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.5l-2.2 3.3c-.2.3 0 .7.3.9l5.5 2.5-3.2 3.2-2.8-.9c-.3-.1-.7 0-.9.2l-1.6 1.6c-.3.3-.3.7 0 .9l4 2 2 4c.2.3.6.3.9 0l1.6-1.6c.2-.2.3-.6.2-.9l-.9-2.8 3.2-3.2 2.5 5.5c.2.3.6.5.9.3l3.3-2.2c.3-.2.5-.6.5-1.1z"/></svg></span> Air Hostess <small>(8)</small></div>
+                        <div className="r-tab"><span className="r-icon"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="5" r="3" /><line x1="12" y1="22" x2="12" y2="8" /><path d="M5 12H2a10 10 0 0 0 20 0h-3" /></svg></span> Merchant Navy <small>(7)</small></div>
+                        <div className="r-tab"><span className="r-icon"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></span> Security Guard <small>(8)</small></div>
                     </div>
 
                     <h2 className="text-center" style={{ marginTop: '60px', marginBottom: '40px', fontWeight: '800', fontSize: '28px', color: 'var(--ink)' }}>Browse by Career Sector</h2>
 
                     <div className="r-cats-grid">
                         <div className="r-cat-card">
-                            <div className="r-cat-icon blue">���️</div>
+                            <div className="r-cat-icon blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.4 13.9 22 17H2l2.6-3.1"/><path d="M14.9 13.9 14 8c-.2-1.5-1.5-2.7-3.1-2.7h-2.1c-.8 0-1.6.4-2.1 1.1L3.9 13.9"/><path d="M8 8V5a3 3 0 1 1 6 0v3"/></svg></div>
                             <h4>Cruise Ship</h4>
                             <span>8 reviews</span>
                             <div className="r-cat-link blue-text">View ➔</div>
                         </div>
                         <div className="r-cat-card">
-                            <div className="r-cat-icon purple">✈</div>
+                            <div className="r-cat-icon purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.5l-2.2 3.3c-.2.3 0 .7.3.9l5.5 2.5-3.2 3.2-2.8-.9c-.3-.1-.7 0-.9.2l-1.6 1.6c-.3.3-.3.7 0 .9l4 2 2 4c.2.3.6.3.9 0l1.6-1.6c.2-.2.3-.6.2-.9l-.9-2.8 3.2-3.2 2.5 5.5c.2.3.6.5.9.3l3.3-2.2c.3-.2.5-.6.5-1.1z"/></svg></div>
                             <h4>Air Hostess</h4>
                             <span>8 reviews</span>
                             <div className="r-cat-link blue-text">View ➔</div>
                         </div>
                         <div className="r-cat-card">
-                            <div className="r-cat-icon green">⚓</div>
+                            <div className="r-cat-icon green"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5"><circle cx="12" cy="5" r="3" /><line x1="12" y1="22" x2="12" y2="8" /><path d="M5 12H2a10 10 0 0 0 20 0h-3" /></svg></div>
                             <h4>Merchant Navy</h4>
                             <span>7 reviews</span>
                             <div className="r-cat-link blue-text">View ➔</div>
                         </div>
                         <div className="r-cat-card">
-                            <div className="r-cat-icon orange">���</div>
+                            <div className="r-cat-icon orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
                             <h4>Security Guard</h4>
                             <span>8 reviews</span>
                             <div className="r-cat-link blue-text">View ➔</div>
@@ -175,7 +171,7 @@ export default function Reviews() {
 
             {/* BIG CTA FOOTER BLOCK */}
             <section className="r-big-cta">
-                <div className="r-cta-bg" style={{ backgroundImage: 'url(/assets/img/urban-skyline-modern-buildings.jpg)' }}></div>
+                <div className="r-cta-bg" style={{ backgroundImage: 'url(/assets/img/herosection/night-cruise.jpg)' }}></div>
                 <div className="r-cta-overlay"></div>
                 <div className="r-cta-content container text-center">
                     <h2>READY TO START YOUR<br />JOURNEY?</h2>
