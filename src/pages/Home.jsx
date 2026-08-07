@@ -65,10 +65,10 @@ export default function Home() {
     const [activeCategory, setActiveCategory] = useState('All');
     const [activeLocation, setActiveLocation] = useState('All');
     const bgImages = [
-        'public/assets/img/herosection/hero-aviation.jpg',
-        'public/assets/img/herosection/hero-cruise.jpg',
-        'public/assets/img/herosection/hero-hospitality.jpg',
-        "public/assets/img/herosection/night-cruise.jpg"
+        '/assets/img/herosection/hero-aviation.jpg',
+        '/assets/img/herosection/hero-cruise.jpg',
+        '/assets/img/herosection/hero-hospitality.jpg',
+        "/assets/img/herosection/night-cruise.jpg"
     ];
 
     useEffect(() => {
