@@ -16,7 +16,7 @@ export default function ServicesHospitality() {
                         </div>
                     </div>
                     <div className="hero-media reveal">
-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hotel reception staff assisting a guest at the front desk" />
+                        <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!��������� #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel reception staff assisting a guest at the front desk" />
                     </div>
                 </div>
             </section>
@@ -39,7 +39,7 @@ export default function ServicesHospitality() {
                         </div>
                     </div>
                     <div className="col-media reveal">
-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hotel front desk staff handing over a passport to a guest" />
+                        <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!��������� #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel front desk staff handing over a passport to a guest" />
                     </div>
                 </div>
             </section>
@@ -78,7 +78,7 @@ export default function ServicesHospitality() {
             <section className="section">
                 <div className="container two-col reverse">
                     <div className="col-media reveal">
-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hospitality staff at hotel reception desk" />
+                        <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!��������� #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hospitality staff at hotel reception desk" />
                     </div>
                     <div>
                         <span className="eyebrow">Hotel Management Courses</span>

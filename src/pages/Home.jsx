@@ -65,10 +65,10 @@ export default function Home() {
     const [activeCategory, setActiveCategory] = useState('All');
     const [activeLocation, setActiveLocation] = useState('All');
     const bgImages = [
-        '/assets/img/hero-cruise.jpg',
-        '/assets/img/hero-aviation.jpg',
-        '/assets/img/hero-hospitality.jpg',
-        '/assets/img/hero-cruise.jpg'
+        '/assets/img/urban-skyline-modern-buildings.jpg',
+        '/assets/img/aviation-courses.jpg',
+        '/assets/img/hospitality-team.jpg',
+        "/assets/img/white-cruise-ship-neva-saint-petersburg.jpg"
     ];
 
     useEffect(() => {
@@ -254,7 +254,7 @@ export default function Home() {
 
                     <div className="grid immersive-cards-grid reveal stagger-group">
                         <div className="immersive-card">
-                            <img className="ic-bg" src="/assets/img/hero-cruise.jpg" alt="" />
+                            <img className="ic-bg" src="/assets/img/urban-skyline-modern-buildings.jpg" alt="" />
                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
@@ -270,7 +270,7 @@ export default function Home() {
                         </div>
 
                         <div className="immersive-card">
-                            <img className="ic-bg" src="/assets/img/hero-aviation.jpg" alt="" />
+                            <img className="ic-bg" src='/assets/img/aviation-courses.jpg' alt="" />
                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
@@ -286,7 +286,7 @@ export default function Home() {
                         </div>
 
                         <div className="immersive-card span-last">
-                            <img className="ic-bg" src="/assets/img/hero-hospitality.jpg" alt="" />
+                            <img className="ic-bg" src='/assets/img/hospitality-team.jpg' alt="" />
                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
@@ -431,7 +431,7 @@ export default function Home() {
                     <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px auto' }} className="reveal">
                         <h2 className="heading-ink" style={{ fontSize: 'clamp(36px, 4.5vw, 56px)', fontWeight: '900', lineHeight: '1.15', letterSpacing: '-0.02em', marginBottom: '1.25rem' }}>
                             Where Will Your <span className="accent-maroon">Career</span><br />
--                            <span className="accent-maroon">Take You?</span>
+                            -                            <span className="accent-maroon">Take You?</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.15rem', lineHeight: '1.6' }}>
                             International opportunities are available across some of the world's<br />most exciting destinations.
@@ -673,7 +673,7 @@ export default function Home() {
             {/* SERVICE MODEL */}
             <section className="section on-dark" style={{
                 position: 'relative',
-                backgroundImage: 'url(/assets/img/hero-cruise.jpg)',
+                backgroundImage: 'url(/assets/img/urban-skyline-modern-buildings.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed',
@@ -1035,7 +1035,7 @@ export default function Home() {
                     <div className="cg-slider-container">
                         <div className="cg-slider-track">
                             <Link to="/blog/cv-writing" className="cg-card">
-                                <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship at sea" />
+                                <img src="/assets/img/white-cruise.jpg" alt="Cruise ship at sea" />
                                 <div className="cg-card-content">
                                     <h3>CV Writing for Cruise Ship Jobs: A Complete Guide</h3>
                                     <p>Learn how to format your CV, highlight relevant maritime experience, and stand out to luxury cruise line recruiters.</p>
@@ -1044,7 +1044,7 @@ export default function Home() {
                             </Link>
 
                             <Link to="/blog/life-on-board" className="cg-card">
-                                <img src="/assets/img/hero-hospitality.jpg" alt="Yacht at sea" />
+                                <img src='/assets/img/hospitality-team.jpg' alt="Yacht at sea" />
                                 <div className="cg-card-content">
                                     <h3>Life on Board: What It's Really Like to Work on a Cruise Ship</h3>
                                     <p>Discover the daily routine, accommodation, crew privileges, and social life that come with working on a...</p>
@@ -1053,7 +1053,7 @@ export default function Home() {
                             </Link>
 
                             <Link to="/blog/departments" className="cg-card">
-                                <img src="/assets/img/hero-hospitality.jpg" alt="Restaurant interior" />
+                                <img src='/assets/img/hospitality-chef.jpg' alt="Restaurant interior" />
                                 <div className="cg-card-content">
                                     <h3>Cruise Ship Careers: Guide to Departments and Job Roles</h3>
                                     <p>Unpack the different departments on board—from Marine and Deck to Hotel, Entertainment, and Wellness—to find...</p>
@@ -1062,7 +1062,7 @@ export default function Home() {
                             </Link>
 
                             <Link to="/blog/interview" className="cg-card">
-                                <img src="/assets/img/hero-aviation.jpg" alt="People on laptops" />
+                                <img src='/assets/img/professional-pilot.jpg' alt="People on laptops" />
                                 <div className="cg-card-content">
                                     <h3>Mastering the Cruise Line Interview: Tips & Strategies</h3>
                                     <p>Prepare for your video and in-person interviews with top cruise lines. Learn about typical questions and how to...</p>
@@ -1071,7 +1071,7 @@ export default function Home() {
                             </Link>
 
                             <Link to="/blog/finance" className="cg-card">
-                                <img src="/assets/img/hero-cruise.jpg" alt="Tropical resort" />
+                                <img src="/assets/img/large-cruise-ship.jpg" alt="Tropical resort" />
                                 <div className="cg-card-content">
                                     <h3>Financial Freedom: How to Save and Manage Money...</h3>
                                     <p>Learn about tax-free earnings, zero living expenses, and smart saving strategies that make maritime careers incredibly...</p>
@@ -1086,7 +1086,7 @@ export default function Home() {
             {/* NEW HERO CTA SECTION */}
             <section className="section-cta-hero" style={{
                 position: 'relative',
-                backgroundImage: 'url(/assets/img/hero-cruise.jpg)',
+                backgroundImage: 'url(/assets/img/urban-skyline-modern-buildings.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 padding: '100px 0 0 0',

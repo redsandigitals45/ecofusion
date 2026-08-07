@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 export default function Hero() {
     const [bgIndex, setBgIndex] = useState(0);
     const bgImages = [
-        '/assets/img/hero-cruise.jpg',
-        '/assets/img/hero-aviation.jpg',
-        '/assets/img/hero-hospitality.jpg',
-        '/assets/img/hero-cruise.jpg'
+        '/assets/img/urban-skyline-modern-buildings.jpg',
+        '/assets/img/Aviation Courses After 12th (2026 Guide) ✈️ Careers, Fees & Opportunities in Kannur.jpg',
+        "/assets/img/A big thanks to all and know that I'm proud to work with you!!!��������� #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg",
+        '/assets/img/urban-skyline-modern-buildings.jpg'
     ];
 
     useEffect(() => {

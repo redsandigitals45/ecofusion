@@ -26,7 +26,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="col-media reveal">
-                        <img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member smiling in an airport terminal" />
+                        <img src="/assets/img/Aviation Courses After 12th (2026 Guide) ✈️ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member smiling in an airport terminal" />
                     </div>
                 </div>
             </section>
@@ -60,7 +60,7 @@ export default function About() {
             <section className="section">
                 <div className="container two-col reverse">
                     <div className="col-media reveal">
-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hotel reception staff assisting guests" />
+                        <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!��������� #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel reception staff assisting guests" />
                     </div>
                     <div>
                         <span className="eyebrow">Market Position</span>

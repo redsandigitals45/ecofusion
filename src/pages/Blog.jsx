@@ -17,7 +17,7 @@ export default function Blog() {
                 <div className="container">
                     <div className="grid grid-3">
                         <Link to="#" className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-cruise.jpg" alt="Cruise ship at sea" /></div>
+                            <div className="media"><img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship at sea" /></div>
                             <div className="body">
                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Cruise</span>
                                 <h3 style={{ marginTop: '10px' }}>What to Expect in Your First Cruise Ship Interview</h3>
@@ -25,7 +25,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to="#" className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member at an airport" /></div>
+                            <div className="media"><img src="/assets/img/Aviation Courses After 12th (2026 Guide) ✈️ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member at an airport" /></div>
                             <div className="body">
                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Aviation</span>
                                 <h3 style={{ marginTop: '10px' }}>Grooming Standards Every Cabin Crew Applicant Should Know</h3>
@@ -33,7 +33,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to="#" className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-hospitality.jpg" alt="Hotel reception staff assisting a guest" /></div>
+                            <div className="media"><img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!��������� #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel reception staff assisting a guest" /></div>
                             <div className="body">
                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Hotel Management</span>
                                 <h3 style={{ marginTop: '10px' }}>Front Office to Management: Mapping a Hotel Career Path</h3>
@@ -41,7 +41,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to="#" className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-cruise.jpg" alt="Cruise ship deck" /></div>
+                            <div className="media"><img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship deck" /></div>
                             <div className="body">
                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Cruise</span>
                                 <h3 style={{ marginTop: '10px' }}>Life at Sea: What New Crew Members Should Prepare For</h3>
@@ -49,7 +49,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to="#" className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-aviation.jpg" alt="Airport terminal seating area" /></div>
+                            <div className="media"><img src="/assets/img/Aviation Courses After 12th (2026 Guide) ✈️ Careers, Fees & Opportunities in Kannur.jpg" alt="Airport terminal seating area" /></div>
                             <div className="body">
                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Aviation</span>
                                 <h3 style={{ marginTop: '10px' }}>Documents You'll Need Before Your Cabin Crew Application</h3>
@@ -57,7 +57,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to="#" className="media-card reveal">
-                            <div className="media"><img src="/assets/img/hero-hospitality.jpg" alt="Hotel staff group" /></div>
+                            <div className="media"><img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!��������� #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel staff group" /></div>
                             <div className="body">
                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Hotel Management</span>
                                 <h3 style={{ marginTop: '10px' }}>Why Hotel Brands Value Certified, Job-Ready Candidates</h3>

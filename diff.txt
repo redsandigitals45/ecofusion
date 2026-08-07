@@ -1,0 +1,79 @@
+diff --git a/old/index.html b/old/index.html
+index fdfad5e..a4782e5 100644
+--- a/old/index.html
++++ b/old/index.html
+@@ -5,7 +5,7 @@
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ecofusion Outsourcing | Cruise, Aviation & Hospitality Careers</title>
+ <meta name="description" content="Ecofusion Outsourcing is a recruitment and training consultancy building careers in cruise, aviation and hotel management — recruit, train, certify.">
+-<link rel="icon" href="assets/img/logo.png">
++<link rel="icon" href="../public/assets/img/testing-logo.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="assets/css/style.css">
+@@ -15,7 +15,7 @@
+ <header class="site-header">
+   <div class="nav-wrap">
+     <a href="index.html" class="brand">
+-      <img src="assets/img/logo.png" alt="Ecofusion Outsourcing logo">
++      <img src="../public/assets/img/testing-logo.png" alt="Ecofusion Outsourcing logo">
+       <span class="brand-name">Ecofusion<span> Outsourcing</span></span>
+     </a>
+     <nav class="main-nav" aria-label="Primary">
+@@ -85,21 +85,21 @@
+     </div>
+     <div class="grid grid-3">
+       <div class="media-card reveal">
+-        <div class="media"><img src="assets/img/hero-cruise.jpg" alt="Cruise ship at sea"></div>
++        <div class="media"><img src="../public/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship at sea"></div>
+         <div class="body">
+           <h3>Cruise</h3>
+           <p>Guest relations, F&amp;B, housekeeping, entertainment &amp; onboard service roles.</p>
+         </div>
+       </div>
+       <div class="media-card reveal">
+-        <div class="media"><img src="assets/img/hero-aviation.jpg" alt="Cabin crew member at an airport terminal"></div>
++        <div class="media"><img src="../public/assets/img/Aviation Courses After 12th (2026 Guide) ✈️ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member at an airport terminal"></div>
+         <div class="body">
+           <h3>Aviation</h3>
+           <p>Cabin crew, airport operations, ground service &amp; passenger-facing roles.</p>
+         </div>
+       </div>
+       <div class="media-card reveal">
+-        <div class="media"><img src="assets/img/hero-hospitality.jpg" alt="Hotel reception staff assisting a guest"></div>
++        <div class="media"><img src="../public/assets/img/A big thanks to all and know that I'm proud to work with you!!!🎂😊🎉 #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel reception staff assisting a guest"></div>
+         <div class="body">
+           <h3>Hotel Management</h3>
+           <p>Front office, housekeeping, F&amp;B and full hotel operations.</p>
+diff --git "a/public/assets/img/A big thanks to all and know that I'm proud to work with you!!!\360\237\216\202\360\237\230\212\360\237\216\211 #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" "b/public/assets/img/A big thanks to all and know that I'm proud to work with you!!!\360\237\216\202\360\237\230\212\360\237\216\211 #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg"
+new file mode 100644
+index 0000000..d195fa5
+Binary files /dev/null and "b/public/assets/img/A big thanks to all and know that I'm proud to work with you!!!\360\237\216\202\360\237\230\212\360\237\216\211 #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" differ
+diff --git "a/public/assets/img/Aviation Courses After 12th (2026 Guide) \342\234\210\357\270\217 Careers, Fees & Opportunities in Kannur.jpg" "b/public/assets/img/Aviation Courses After 12th (2026 Guide) \342\234\210\357\270\217 Careers, Fees & Opportunities in Kannur.jpg"
+new file mode 100644
+index 0000000..5ac70f7
+Binary files /dev/null and "b/public/assets/img/Aviation Courses After 12th (2026 Guide) \342\234\210\357\270\217 Careers, Fees & Opportunities in Kannur.jpg" differ
+diff --git a/public/assets/img/Together, everyone achieves more_ #emilerassam #imageclothing #uniforms #hospitality #fsbeirut #fourseasonsbeirut #style #fashion #uniform #restaurant #hotel  #uniformswag #chefslife #luxury #bespoke #chef #chefs #.jpg b/public/assets/img/Together, everyone achieves more_ #emilerassam #imageclothing #uniforms #hospitality #fsbeirut #fourseasonsbeirut #style #fashion #uniform #restaurant #hotel  #uniformswag #chefslife #luxury #bespoke #chef #chefs #.jpg
+new file mode 100644
+index 0000000..1f7fbe1
+Binary files /dev/null and b/public/assets/img/Together, everyone achieves more_ #emilerassam #imageclothing #uniforms #hospitality #fsbeirut #fourseasonsbeirut #style #fashion #uniform #restaurant #hotel  #uniformswag #chefslife #luxury #bespoke #chef #chefs #.jpg differ
+diff --git a/public/assets/img/large-luxurious-cruise-ship-sailing-sea-sunny-day-ai-generative.jpg b/public/assets/img/large-luxurious-cruise-ship-sailing-sea-sunny-day-ai-generative.jpg
+new file mode 100644
+index 0000000..b1575d0
+Binary files /dev/null and b/public/assets/img/large-luxurious-cruise-ship-sailing-sea-sunny-day-ai-generative.jpg differ
+diff --git a/public/assets/img/professional pilot program in Delhi _ India.jpg b/public/assets/img/professional pilot program in Delhi _ India.jpg
+new file mode 100644
+index 0000000..b747b51
+Binary files /dev/null and b/public/assets/img/professional pilot program in Delhi _ India.jpg differ
+diff --git a/public/assets/img/spectacular-night-sea-coast-with-city-cruise-ship-lights-reflected-water.jpg b/public/assets/img/spectacular-night-sea-coast-with-city-cruise-ship-lights-reflected-water.jpg
+new file mode 100644
+index 0000000..ed0dfe4
+Binary files /dev/null and b/public/assets/img/spectacular-night-sea-coast-with-city-cruise-ship-lights-reflected-water.jpg differ
+diff --git a/public/assets/img/testing-logo.png b/public/assets/img/testing-logo.png
+new file mode 100644
+index 0000000..dc95f2d
+Binary files /dev/null and b/public/assets/img/testing-logo.png differ
+diff --git a/public/assets/img/white-cruise-ship-neva-saint-petersburg.jpg b/public/assets/img/white-cruise-ship-neva-saint-petersburg.jpg
+new file mode 100644
+index 0000000..77f96d9
+Binary files /dev/null and b/public/assets/img/white-cruise-ship-neva-saint-petersburg.jpg differ

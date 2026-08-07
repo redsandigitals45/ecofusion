@@ -30,7 +30,7 @@ export default function Header() {
         <header className="site-header">
             <div className="nav-wrap">
                 <Link to="/" className="brand" onClick={() => setIsNavOpen(false)}>
-                    <img src="/assets/img/logo.png" alt="Ecofusion Outsourcing logo" />
+                    <img src="/assets/img/testing-logo.png" alt="Ecofusion Outsourcing logo" />
                     <span className="brand-name">Ecofusion<span> Outsourcing</span></span>
                 </Link>
                 <nav className={`main-nav ${isNavOpen ? 'open' : ''}`} aria-label="Primary">

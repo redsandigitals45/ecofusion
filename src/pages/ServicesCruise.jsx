@@ -16,7 +16,7 @@ export default function ServicesCruise() {
                         </div>
                     </div>
                     <div className="hero-media reveal">
-                        <img src="/assets/img/hero-cruise.jpg" alt="Cruise ships and superyachts docked in a Mediterranean harbour" />
+                        <img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ships and superyachts docked in a Mediterranean harbour" />
                     </div>
                 </div>
             </section>
@@ -39,7 +39,7 @@ export default function ServicesCruise() {
                         </div>
                     </div>
                     <div className="col-media reveal">
-                        <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship at sea" />
+                        <img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship at sea" />
                     </div>
                 </div>
             </section>
@@ -78,7 +78,7 @@ export default function ServicesCruise() {
             <section className="section">
                 <div className="container two-col reverse">
                     <div className="col-media reveal">
-                        <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship and yachts in harbour" />
+                        <img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship and yachts in harbour" />
                     </div>
                     <div>
                         <span className="eyebrow">Cruise Working Certifications</span>

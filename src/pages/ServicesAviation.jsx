@@ -16,7 +16,7 @@ export default function ServicesAviation() {
                         </div>
                     </div>
                     <div className="hero-media reveal">
-                        <img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member smiling in an airport terminal" />
+                        <img src="/assets/img/Aviation Courses After 12th (2026 Guide) ✈️ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member smiling in an airport terminal" />
                     </div>
                 </div>
             </section>
@@ -39,7 +39,7 @@ export default function ServicesAviation() {
                         </div>
                     </div>
                     <div className="col-media reveal">
-                        <img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member in an airport lounge" />
+                        <img src="/assets/img/Aviation Courses After 12th (2026 Guide) ✈️ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member in an airport lounge" />
                     </div>
                 </div>
             </section>
@@ -73,7 +73,7 @@ export default function ServicesAviation() {
             <section className="section">
                 <div className="container two-col reverse">
                     <div className="col-media reveal">
-                        <img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member walking through an airport" />
+                        <img src="/assets/img/Aviation Courses After 12th (2026 Guide) ✈️ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member walking through an airport" />
                     </div>
                     <div>
                         <span className="eyebrow">Aviation Courses</span>

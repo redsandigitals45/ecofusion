@@ -1,0 +1,327 @@
+diff --git a/src/components/Footer.jsx b/src/components/Footer.jsx
+index 0a16637..5213872 100644
+--- a/src/components/Footer.jsx
++++ b/src/components/Footer.jsx
+@@ -8,7 +8,7 @@ export default function Footer() {
+                 <div className="footer-grid-new">
+                     <div className="footer-col-main">
+                         <div className="footer-brand">
+-                            <img src="/assets/img/logo.png" alt="Logo" style={{ background: 'transparent', height: '60px', width: 'auto' }} />
++                            <img src="/assets/img/testing-logo.png" alt="Logo" style={{ background: 'transparent', height: '60px', width: 'auto' }} />
+                         </div>
+                         <h3 className="footer-title">Ecofusion</h3>
+                         <p className="footer-desc">Connecting talented individuals with trusted international career opportunities in Cruise Ships, Air Hostess, Merchant Navy, and Security Services.</p>
+diff --git a/src/components/Header.jsx b/src/components/Header.jsx
+index fcf5080..a05519b 100644
+--- a/src/components/Header.jsx
++++ b/src/components/Header.jsx
+@@ -30,7 +30,7 @@ export default function Header() {
+         <header className="site-header">
+             <div className="nav-wrap">
+                 <Link to="/" className="brand" onClick={() => setIsNavOpen(false)}>
+-                    <img src="/assets/img/logo.png" alt="Ecofusion Outsourcing logo" />
++                    <img src="/assets/img/testing-logo.png" alt="Ecofusion Outsourcing logo" />
+                     <span className="brand-name">Ecofusion<span> Outsourcing</span></span>
+                 </Link>
+                 <nav className={`main-nav ${isNavOpen ? 'open' : ''}`} aria-label="Primary">
+diff --git a/src/components/Home/Hero.jsx b/src/components/Home/Hero.jsx
+index 31351de..89a5b93 100644
+--- a/src/components/Home/Hero.jsx
++++ b/src/components/Home/Hero.jsx
+@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
+ export default function Hero() {
+     const [bgIndex, setBgIndex] = useState(0);
+     const bgImages = [
+-        '/assets/img/hero-cruise.jpg',
+-        '/assets/img/hero-aviation.jpg',
+-        '/assets/img/hero-hospitality.jpg',
+-        '/assets/img/hero-cruise.jpg'
++        '/assets/img/urban-skyline-modern-buildings.jpg',
++        '/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg',
++        '/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg',
++        '/assets/img/urban-skyline-modern-buildings.jpg'
+     ];
+ 
+     useEffect(() => {
+diff --git a/src/pages/About.jsx b/src/pages/About.jsx
+index 8e04c4f..c741f2f 100644
+--- a/src/pages/About.jsx
++++ b/src/pages/About.jsx
+@@ -26,7 +26,7 @@ export default function About() {
+                         </div>
+                     </div>
+                     <div className="col-media reveal">
+-                        <img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member smiling in an airport terminal" />
++                        <img src="/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member smiling in an airport terminal" />
+                     </div>
+                 </div>
+             </section>
+@@ -60,7 +60,7 @@ export default function About() {
+             <section className="section">
+                 <div className="container two-col reverse">
+                     <div className="col-media reveal">
+-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hotel reception staff assisting guests" />
++                        <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel reception staff assisting guests" />
+                     </div>
+                     <div>
+                         <span className="eyebrow">Market Position</span>
+diff --git a/src/pages/Blog.jsx b/src/pages/Blog.jsx
+index cc010c0..2c315cd 100644
+--- a/src/pages/Blog.jsx
++++ b/src/pages/Blog.jsx
+@@ -17,7 +17,7 @@ export default function Blog() {
+                 <div className="container">
+                     <div className="grid grid-3">
+                         <Link to="#" className="media-card reveal">
+-                            <div className="media"><img src="/assets/img/hero-cruise.jpg" alt="Cruise ship at sea" /></div>
++                            <div className="media"><img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship at sea" /></div>
+                             <div className="body">
+                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Cruise</span>
+                                 <h3 style={{ marginTop: '10px' }}>What to Expect in Your First Cruise Ship Interview</h3>
+@@ -25,7 +25,7 @@ export default function Blog() {
+                             </div>
+                         </Link>
+                         <Link to="#" className="media-card reveal">
+-                            <div className="media"><img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member at an airport" /></div>
++                            <div className="media"><img src="/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member at an airport" /></div>
+                             <div className="body">
+                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Aviation</span>
+                                 <h3 style={{ marginTop: '10px' }}>Grooming Standards Every Cabin Crew Applicant Should Know</h3>
+@@ -33,7 +33,7 @@ export default function Blog() {
+                             </div>
+                         </Link>
+                         <Link to="#" className="media-card reveal">
+-                            <div className="media"><img src="/assets/img/hero-hospitality.jpg" alt="Hotel reception staff assisting a guest" /></div>
++                            <div className="media"><img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel reception staff assisting a guest" /></div>
+                             <div className="body">
+                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Hotel Management</span>
+                                 <h3 style={{ marginTop: '10px' }}>Front Office to Management: Mapping a Hotel Career Path</h3>
+@@ -41,7 +41,7 @@ export default function Blog() {
+                             </div>
+                         </Link>
+                         <Link to="#" className="media-card reveal">
+-                            <div className="media"><img src="/assets/img/hero-cruise.jpg" alt="Cruise ship deck" /></div>
++                            <div className="media"><img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship deck" /></div>
+                             <div className="body">
+                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Cruise</span>
+                                 <h3 style={{ marginTop: '10px' }}>Life at Sea: What New Crew Members Should Prepare For</h3>
+@@ -49,7 +49,7 @@ export default function Blog() {
+                             </div>
+                         </Link>
+                         <Link to="#" className="media-card reveal">
+-                            <div className="media"><img src="/assets/img/hero-aviation.jpg" alt="Airport terminal seating area" /></div>
++                            <div className="media"><img src="/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg" alt="Airport terminal seating area" /></div>
+                             <div className="body">
+                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Aviation</span>
+                                 <h3 style={{ marginTop: '10px' }}>Documents You'll Need Before Your Cabin Crew Application</h3>
+@@ -57,7 +57,7 @@ export default function Blog() {
+                             </div>
+                         </Link>
+                         <Link to="#" className="media-card reveal">
+-                            <div className="media"><img src="/assets/img/hero-hospitality.jpg" alt="Hotel staff group" /></div>
++                            <div className="media"><img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel staff group" /></div>
+                             <div className="body">
+                                 <span className="eyebrow" style={{ fontSize: '11px' }}>Hotel Management</span>
+                                 <h3 style={{ marginTop: '10px' }}>Why Hotel Brands Value Certified, Job-Ready Candidates</h3>
+diff --git a/src/pages/Home.jsx b/src/pages/Home.jsx
+index ea050b5..138dd13 100644
+--- a/src/pages/Home.jsx
++++ b/src/pages/Home.jsx
+@@ -65,10 +65,10 @@ export default function Home() {
+     const [activeCategory, setActiveCategory] = useState('All');
+     const [activeLocation, setActiveLocation] = useState('All');
+     const bgImages = [
+-        '/assets/img/hero-cruise.jpg',
+-        '/assets/img/hero-aviation.jpg',
+-        '/assets/img/hero-hospitality.jpg',
+-        '/assets/img/hero-cruise.jpg'
++        '/assets/img/urban-skyline-modern-buildings.jpg',
++        '/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg',
++        '/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg',
++        '/assets/img/urban-skyline-modern-buildings.jpg'
+     ];
+ 
+     useEffect(() => {
+@@ -254,7 +254,7 @@ export default function Home() {
+ 
+                     <div className="grid immersive-cards-grid reveal stagger-group">
+                         <div className="immersive-card">
+-                            <img className="ic-bg" src="/assets/img/hero-cruise.jpg" alt="" />
++                            <img className="ic-bg" src="/assets/img/urban-skyline-modern-buildings.jpg" alt="" />
+                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
+                             <div className="ic-content">
+                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+@@ -270,7 +270,7 @@ export default function Home() {
+                         </div>
+ 
+                         <div className="immersive-card">
+-                            <img className="ic-bg" src="/assets/img/hero-aviation.jpg" alt="" />
++                            <img className="ic-bg" src="/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg" alt="" />
+                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
+                             <div className="ic-content">
+                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+@@ -286,7 +286,7 @@ export default function Home() {
+                         </div>
+ 
+                         <div className="immersive-card span-last">
+-                            <img className="ic-bg" src="/assets/img/hero-hospitality.jpg" alt="" />
++                            <img className="ic-bg" src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="" />
+                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
+                             <div className="ic-content">
+                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+@@ -673,7 +673,7 @@ export default function Home() {
+             {/* SERVICE MODEL */}
+             <section className="section on-dark" style={{
+                 position: 'relative',
+-                backgroundImage: 'url(/assets/img/hero-cruise.jpg)',
++                backgroundImage: 'url(/assets/img/urban-skyline-modern-buildings.jpg)',
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+                 backgroundAttachment: 'fixed',
+@@ -1035,7 +1035,7 @@ export default function Home() {
+                     <div className="cg-slider-container">
+                         <div className="cg-slider-track">
+                             <Link to="/blog/cv-writing" className="cg-card">
+-                                <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship at sea" />
++                                <img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship at sea" />
+                                 <div className="cg-card-content">
+                                     <h3>CV Writing for Cruise Ship Jobs: A Complete Guide</h3>
+                                     <p>Learn how to format your CV, highlight relevant maritime experience, and stand out to luxury cruise line recruiters.</p>
+@@ -1044,7 +1044,7 @@ export default function Home() {
+                             </Link>
+ 
+                             <Link to="/blog/life-on-board" className="cg-card">
+-                                <img src="/assets/img/hero-hospitality.jpg" alt="Yacht at sea" />
++                                <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Yacht at sea" />
+                                 <div className="cg-card-content">
+                                     <h3>Life on Board: What It's Really Like to Work on a Cruise Ship</h3>
+                                     <p>Discover the daily routine, accommodation, crew privileges, and social life that come with working on a...</p>
+@@ -1053,7 +1053,7 @@ export default function Home() {
+                             </Link>
+ 
+                             <Link to="/blog/departments" className="cg-card">
+-                                <img src="/assets/img/hero-hospitality.jpg" alt="Restaurant interior" />
++                                <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Restaurant interior" />
+                                 <div className="cg-card-content">
+                                     <h3>Cruise Ship Careers: Guide to Departments and Job Roles</h3>
+                                     <p>Unpack the different departments on boardâ€”from Marine and Deck to Hotel, Entertainment, and Wellnessâ€”to find...</p>
+@@ -1062,7 +1062,7 @@ export default function Home() {
+                             </Link>
+ 
+                             <Link to="/blog/interview" className="cg-card">
+-                                <img src="/assets/img/hero-aviation.jpg" alt="People on laptops" />
++                                <img src="/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg" alt="People on laptops" />
+                                 <div className="cg-card-content">
+                                     <h3>Mastering the Cruise Line Interview: Tips & Strategies</h3>
+                                     <p>Prepare for your video and in-person interviews with top cruise lines. Learn about typical questions and how to...</p>
+@@ -1071,7 +1071,7 @@ export default function Home() {
+                             </Link>
+ 
+                             <Link to="/blog/finance" className="cg-card">
+-                                <img src="/assets/img/hero-cruise.jpg" alt="Tropical resort" />
++                                <img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Tropical resort" />
+                                 <div className="cg-card-content">
+                                     <h3>Financial Freedom: How to Save and Manage Money...</h3>
+                                     <p>Learn about tax-free earnings, zero living expenses, and smart saving strategies that make maritime careers incredibly...</p>
+@@ -1086,7 +1086,7 @@ export default function Home() {
+             {/* NEW HERO CTA SECTION */}
+             <section className="section-cta-hero" style={{
+                 position: 'relative',
+-                backgroundImage: 'url(/assets/img/hero-cruise.jpg)',
++                backgroundImage: 'url(/assets/img/urban-skyline-modern-buildings.jpg)',
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+                 padding: '100px 0 0 0',
+diff --git a/src/pages/ServicesAviation.jsx b/src/pages/ServicesAviation.jsx
+index 246b88e..7b69900 100644
+--- a/src/pages/ServicesAviation.jsx
++++ b/src/pages/ServicesAviation.jsx
+@@ -16,7 +16,7 @@ export default function ServicesAviation() {
+                         </div>
+                     </div>
+                     <div className="hero-media reveal">
+-                        <img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member smiling in an airport terminal" />
++                        <img src="/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member smiling in an airport terminal" />
+                     </div>
+                 </div>
+             </section>
+@@ -39,7 +39,7 @@ export default function ServicesAviation() {
+                         </div>
+                     </div>
+                     <div className="col-media reveal">
+-                        <img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member in an airport lounge" />
++                        <img src="/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member in an airport lounge" />
+                     </div>
+                 </div>
+             </section>
+@@ -73,7 +73,7 @@ export default function ServicesAviation() {
+             <section className="section">
+                 <div className="container two-col reverse">
+                     <div className="col-media reveal">
+-                        <img src="/assets/img/hero-aviation.jpg" alt="Cabin crew member walking through an airport" />
++                        <img src="/assets/img/Aviation Courses After 12th (2026 Guide) âœˆï¸ Careers, Fees & Opportunities in Kannur.jpg" alt="Cabin crew member walking through an airport" />
+                     </div>
+                     <div>
+                         <span className="eyebrow">Aviation Courses</span>
+diff --git a/src/pages/ServicesCruise.jsx b/src/pages/ServicesCruise.jsx
+index 51874fa..dfcf0eb 100644
+--- a/src/pages/ServicesCruise.jsx
++++ b/src/pages/ServicesCruise.jsx
+@@ -16,7 +16,7 @@ export default function ServicesCruise() {
+                         </div>
+                     </div>
+                     <div className="hero-media reveal">
+-                        <img src="/assets/img/hero-cruise.jpg" alt="Cruise ships and superyachts docked in a Mediterranean harbour" />
++                        <img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ships and superyachts docked in a Mediterranean harbour" />
+                     </div>
+                 </div>
+             </section>
+@@ -39,7 +39,7 @@ export default function ServicesCruise() {
+                         </div>
+                     </div>
+                     <div className="col-media reveal">
+-                        <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship at sea" />
++                        <img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship at sea" />
+                     </div>
+                 </div>
+             </section>
+@@ -78,7 +78,7 @@ export default function ServicesCruise() {
+             <section className="section">
+                 <div className="container two-col reverse">
+                     <div className="col-media reveal">
+-                        <img src="/assets/img/hero-cruise.jpg" alt="Cruise ship and yachts in harbour" />
++                        <img src="/assets/img/urban-skyline-modern-buildings.jpg" alt="Cruise ship and yachts in harbour" />
+                     </div>
+                     <div>
+                         <span className="eyebrow">Cruise Working Certifications</span>
+diff --git a/src/pages/ServicesHospitality.jsx b/src/pages/ServicesHospitality.jsx
+index 7089abf..ee6b37c 100644
+--- a/src/pages/ServicesHospitality.jsx
++++ b/src/pages/ServicesHospitality.jsx
+@@ -16,7 +16,7 @@ export default function ServicesHospitality() {
+                         </div>
+                     </div>
+                     <div className="hero-media reveal">
+-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hotel reception staff assisting a guest at the front desk" />
++                        <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel reception staff assisting a guest at the front desk" />
+                     </div>
+                 </div>
+             </section>
+@@ -39,7 +39,7 @@ export default function ServicesHospitality() {
+                         </div>
+                     </div>
+                     <div className="col-media reveal">
+-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hotel front desk staff handing over a passport to a guest" />
++                        <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hotel front desk staff handing over a passport to a guest" />
+                     </div>
+                 </div>
+             </section>
+@@ -78,7 +78,7 @@ export default function ServicesHospitality() {
+             <section className="section">
+                 <div className="container two-col reverse">
+                     <div className="col-media reveal">
+-                        <img src="/assets/img/hero-hospitality.jpg" alt="Hospitality staff at hotel reception desk" />
++                        <img src="/assets/img/A big thanks to all and know that I'm proud to work with you!!!í¾‚í¸Ší¾‰ #fourseasons #hotel #hongkong #caprice #restaurant #kitchen #thankyou #somuch #amazing #birthdaycake #yummy #proud #best #pastry #team #hk #merc.jpg" alt="Hospitality staff at hotel reception desk" />
+                     </div>
+                     <div>
+                         <span className="eyebrow">Hotel Management Courses</span>

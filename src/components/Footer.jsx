@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="footer-grid-new">
                     <div className="footer-col-main">
                         <div className="footer-brand">
-                            <img src="/assets/img/logo.png" alt="Logo" style={{ background: 'transparent', height: '60px', width: 'auto' }} />
+                            <img src="/assets/img/testing-logo.png" alt="Logo" style={{ background: 'transparent', height: '60px', width: 'auto' }} />
                         </div>
                         <h3 className="footer-title">Ecofusion</h3>
                         <p className="footer-desc">Connecting talented individuals with trusted international career opportunities in Cruise Ships, Air Hostess, Merchant Navy, and Security Services.</p>
