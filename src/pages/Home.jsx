@@ -65,10 +65,10 @@ export default function Home() {
     const [activeCategory, setActiveCategory] = useState('All');
     const [activeLocation, setActiveLocation] = useState('All');
     const bgImages = [
-        '/assets/img/urban-skyline-modern-buildings.jpg',
-        '/assets/img/aviation-courses.jpg',
-        '/assets/img/hospitality-team.jpg',
-        "/assets/img/white-cruise-ship-neva-saint-petersburg.jpg"
+        'public/assets/img/herosection/hero-aviation.jpg',
+        'public/assets/img/herosection/hero-cruise.jpg',
+        'public/assets/img/herosection/hero-hospitality.jpg',
+        "public/assets/img/herosection/night-cruise.jpg"
     ];
 
     useEffect(() => {
@@ -254,7 +254,7 @@ export default function Home() {
 
                     <div className="grid immersive-cards-grid reveal stagger-group">
                         <div className="immersive-card">
-                            <img className="ic-bg" src="/assets/img/urban-skyline-modern-buildings.jpg" alt="" />
+                            <img className="ic-bg" src="/assets/img/threeindustriessection/white-cruise.jpg" alt="" />
                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
@@ -270,7 +270,7 @@ export default function Home() {
                         </div>
 
                         <div className="immersive-card">
-                            <img className="ic-bg" src='/assets/img/aviation-courses.jpg' alt="" />
+                            <img className="ic-bg" src='/assets/img/threeindustriessection/aviation-courses.jpg' alt="" />
                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
@@ -286,7 +286,7 @@ export default function Home() {
                         </div>
 
                         <div className="immersive-card span-last">
-                            <img className="ic-bg" src='/assets/img/hospitality-team.jpg' alt="" />
+                            <img className="ic-bg" src='/assets/img/threeindustriessection/hospitality-team.jpg' alt="" />
                             <div className="ic-overlay" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)' }}></div>
                             <div className="ic-content">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
@@ -673,7 +673,7 @@ export default function Home() {
             {/* SERVICE MODEL */}
             <section className="section on-dark" style={{
                 position: 'relative',
-                backgroundImage: 'url(/assets/img/urban-skyline-modern-buildings.jpg)',
+                backgroundImage: 'url(/assets/img/rectraincert/urban-skyline-modern-buildings.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed',
@@ -1035,7 +1035,7 @@ export default function Home() {
                     <div className="cg-slider-container">
                         <div className="cg-slider-track">
                             <Link to="/blog/cv-writing" className="cg-card">
-                                <img src="/assets/img/white-cruise.jpg" alt="Cruise ship at sea" />
+                                <img src="/assets/img/threeindustriessection/white-cruise.jpg" alt="Cruise ship at sea" />
                                 <div className="cg-card-content">
                                     <h3>CV Writing for Cruise Ship Jobs: A Complete Guide</h3>
                                     <p>Learn how to format your CV, highlight relevant maritime experience, and stand out to luxury cruise line recruiters.</p>
@@ -1044,7 +1044,7 @@ export default function Home() {
                             </Link>
 
                             <Link to="/blog/life-on-board" className="cg-card">
-                                <img src='/assets/img/hospitality-team.jpg' alt="Yacht at sea" />
+                                <img src='/assets/img/threeindustriessection/hospitality-team.jpg' alt="Yacht at sea" />
                                 <div className="cg-card-content">
                                     <h3>Life on Board: What It's Really Like to Work on a Cruise Ship</h3>
                                     <p>Discover the daily routine, accommodation, crew privileges, and social life that come with working on a...</p>
