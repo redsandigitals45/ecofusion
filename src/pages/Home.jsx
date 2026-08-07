@@ -308,15 +308,15 @@ export default function Home() {
             <section className="section section-white" style={{ padding: '100px 0' }}>
                 <div className="container">
                     <div className="section-head" style={{ marginBottom: '40px' }}>
-                        <span className="pill-eyebrow" style={{ background: '#e0f2fe', color: '#0ea5e9', border: 'none' }}>NOW HIRING</span>
+                        <span className="pill-eyebrow">NOW HIRING</span>
                         <h2 className="heading-ink" style={{ fontSize: 'clamp(32px, 4vw, 44px)', fontWeight: '800', lineHeight: '1.2', marginBottom: '16px' }}>
-                            Hot <span style={{ color: '#3b82f6' }}>Opportunities</span> Available Now
+                            Hot <span className="accent-maroon">Opportunities</span> Available Now
                         </h2>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
                             <p className="text-muted" style={{ fontSize: '16px', lineHeight: '1.6', maxWidth: '600px', margin: 0 }}>
                                 Explore a selection of current international career opportunities across hospitality, aviation, maritime, and security sectors.
                             </p>
-                            <Link to="/careers" style={{ fontSize: '16px', display: 'flex', alignItems: 'center', gap: '6px', color: '#0ea5e9', fontWeight: '800', textDecoration: 'none' }}>
+                            <Link to="/careers" className="link-maroon" style={{ fontSize: '15px', display: 'flex', alignItems: 'center', gap: '4px' }}>
                                 View All Opportunities <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </Link>
                         </div>
@@ -345,7 +345,7 @@ export default function Home() {
                     </div>
 
                     <div style={{ textAlign: 'center', marginTop: '48px' }}>
-                        <Link to="/contact" style={{ display: 'inline-block', background: '#0ea5e9', color: '#fff', padding: '16px 36px', borderRadius: '100px', fontWeight: '800', textDecoration: 'none', fontSize: '15px' }}>VIEW ALL OPPORTUNITIES ➔</Link>
+                        <Link to="/contact" className="btn btn-primary" style={{ padding: '16px 36px', borderRadius: '100px', fontWeight: 'bold' }}>VIEW ALL OPPORTUNITIES ➔</Link>
                     </div>
                 </div>
             </section>
@@ -354,12 +354,12 @@ export default function Home() {
             <section className="section section-white" style={{ padding: '100px 0' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
                     <div className="reveal" style={{ maxWidth: '820px', margin: '0 auto 56px auto' }}>
-                        <span className="pill-eyebrow" style={{ background: '#e0f2fe', color: '#0ea5e9', border: '1px solid #bae6fd' }}>
+                        <span className="pill-eyebrow">
                             OUR EXPERTISE
                         </span>
                         <h2 className="heading-ink" style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '900', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '1.5rem' }}>
                             More Than Recruitment.<br />
-                            <span style={{ color: '#0ea5e9' }}>We Build International Careers.</span>
+                            <span className="accent-maroon">We Build International Careers.</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.15rem', lineHeight: '1.6' }}>
                             Every successful international career begins with the right guidance, the right opportunity, and the right recruitment partner. At Ecofusion Outsourcing, we help ambitious professionals prepare for rewarding careers with trusted employers across multiple industries. From career consultation to employer coordination, our recruitment process is designed to make your journey simple, transparent, and professional.
@@ -430,8 +430,8 @@ export default function Home() {
                 <div className="container">
                     <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px auto' }} className="reveal">
                         <h2 className="heading-ink" style={{ fontSize: 'clamp(36px, 4.5vw, 56px)', fontWeight: '900', lineHeight: '1.15', letterSpacing: '-0.02em', marginBottom: '1.25rem' }}>
-                            Where Will Your <span style={{ color: '#0ea5e9' }}>Career</span><br />
-                            <span style={{ color: '#0ea5e9' }}>Take You?</span>
+                            Where Will Your <span className="accent-maroon">Career</span><br />
+-                            <span className="accent-maroon">Take You?</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.15rem', lineHeight: '1.6' }}>
                             International opportunities are available across some of the world's<br />most exciting destinations.
@@ -711,11 +711,11 @@ export default function Home() {
             <section className="section section-white" style={{ padding: '100px 0' }}>
                 <div className="container">
                     <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px auto' }} className="reveal">
-                        <span className="pill-eyebrow" style={{ background: '#e0f2fe', color: '#0ea5e9', border: '1px solid #bae6fd' }}>
+                        <span className="pill-eyebrow">
                             HOW IT WORKS
                         </span>
                         <h2 className="heading-ink" style={{ fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: '800', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '1.5rem' }}>
-                            Your Journey To A <span style={{ color: '#3b82f6' }}>Global Career</span>
+                            Your Journey To A <span className="accent-maroon">Global Career</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
                             Our recruitment process is designed to be simple, transparent, and candidate-focused.
@@ -845,12 +845,12 @@ export default function Home() {
             <section className="reviews-section" style={{ background: '#f8fafc' }}>
                 <div className="container">
                     <div className="reviews-head">
-                        <span className="eyebrow" style={{ color: '#0ea5e9', padding: '6px 16px', background: '#e0f2fe', borderRadius: '99px', display: 'inline-block', marginBottom: '20px', fontWeight: '800', fontSize: '11px', letterSpacing: '1px', textTransform: 'uppercase' }}>Candidate Feedback</span>
+                        <span className="eyebrow" style={{ padding: '6px 16px', background: '#e0f2fe', borderRadius: '99px', display: 'inline-block', marginBottom: '20px', fontWeight: '800', fontSize: '11px', letterSpacing: '1px', textTransform: 'uppercase' }}>Candidate Feedback</span>
                         <div className="reviews-rating">
                             <div className="stars" style={{ color: '#eab308' }}>★★★★★</div>
                             <span style={{ fontWeight: '800' }}>4.8</span>
                         </div>
-                        <h2 className="reviews-title" style={{ color: '#0f172a' }}>What Candidates <span style={{ color: '#3b82f6' }}>Are Saying</span></h2>
+                        <h2 className="reviews-title" style={{ color: '#0f172a' }}>What Candidates <span className="accent-maroon">Are Saying</span></h2>
                     </div>
                 </div>
 
