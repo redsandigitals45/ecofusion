@@ -1,0 +1,766 @@
+.sa-page {
+    background: #fafafa;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    font-family: inherit;
+}
+
+.sa-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* OVERVIEW SECTION */
+.sa-overview-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.sa-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.sa-overview-left {
+    position: relative;
+}
+
+.sa-eyebrow {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--maroon);
+    margin-bottom: 24px;
+}
+
+.sa-title {
+    font-size: clamp(36px, 4vw, 48px);
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.sa-overview-right p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.sa-overview-right p:last-child {
+    margin-bottom: 0;
+}
+
+/* ROLES SECTION */
+.sa-roles-section {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.sa-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sa-section-header .sa-title {
+    margin-top: 16px;
+}
+
+.sa-roles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.sa-role-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    padding: 40px 32px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.sa-role-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.sa-role-card::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 24px;
+    height: 2px;
+    background: var(--maroon);
+}
+
+.sa-role-num {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 64px;
+    font-weight: 900;
+    color: #f1f5f9;
+    z-index: 1;
+    pointer-events: none;
+    line-height: 1;
+}
+
+.sa-role-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 24px;
+}
+
+.sa-role-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 16px;
+}
+
+.sa-role-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ELIGIBILITY SECTION */
+.sa-elig-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.sa-elig-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.sa-elig-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sa-elig-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.sa-elig-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.sa-elig-icon-blue {
+    background: #3b82f6;
+}
+
+.sa-elig-icon-purple {
+    background: #8b5cf6;
+}
+
+.sa-elig-icon-teal {
+    background: #14b8a6;
+}
+
+.sa-elig-icon-orange {
+    background: #f97316;
+}
+
+.sa-elig-icon-red {
+    background: #ef4444;
+}
+
+.sa-elig-icon-cyan {
+    background: #06b6d4;
+}
+
+.sa-elig-icon-pink {
+    background: #ec4899;
+}
+
+.sa-elig-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 4px;
+}
+
+.sa-elig-subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--maroon);
+    margin-bottom: 12px;
+}
+
+.sa-elig-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* EARNINGS SECTION */
+.sa-earn-section {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.sa-earn-grid {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.sa-earn-desc {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.sa-salary-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+}
+
+.sa-salary-eyebrow {
+    font-size: 11px;
+    font-weight: 800;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.sa-salary-amount {
+    font-size: clamp(32px, 4vw, 42px);
+    font-weight: 900;
+    color: var(--maroon);
+    margin-bottom: 32px;
+}
+
+.sa-salary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 14px;
+}
+
+.sa-salary-row:last-of-type {
+    border-bottom: none;
+    margin-bottom: 24px;
+}
+
+.sa-salary-label {
+    color: #666;
+}
+
+.sa-salary-val {
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.sa-salary-val.green {
+    color: #10b981;
+}
+
+.sa-salary-footer {
+    font-size: 11px;
+    color: #999;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.sa-benefits-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 32px;
+}
+
+.sa-benefits-header::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 24px;
+    background: var(--maroon);
+    border-radius: 4px;
+}
+
+.sa-benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.sa-benefit-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.sa-benefit-icon {
+    width: 32px;
+    height: 32px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--maroon);
+}
+
+.sa-benefit-content h4 {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 2px;
+}
+
+.sa-benefit-content p {
+    font-size: 10px;
+    color: #999;
+}
+
+.sa-benefits-note {
+    font-size: 11px;
+    color: #999;
+    font-style: italic;
+    margin-top: 24px;
+}
+
+/* PATHWAY SECTION */
+.sa-path-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.sa-path-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sa-path-card {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    padding: 32px 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+    position: relative;
+    z-index: 2;
+}
+
+.sa-path-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.sa-path-badge {
+    padding: 4px 12px;
+    background: #f1f5f9;
+    color: var(--maroon);
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.sa-path-num {
+    font-size: 24px;
+    font-weight: 900;
+    color: #e2e8f0;
+}
+
+.sa-path-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 12px;
+}
+
+.sa-path-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.sa-path-arrow {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    z-index: 3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sa-path-card:last-child .sa-path-arrow {
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    .sa-overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sa-roles-grid,
+    .sa-elig-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sa-earn-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sa-path-wrapper {
+        flex-direction: column;
+    }
+
+    .sa-path-arrow {
+        top: auto;
+        bottom: -25px;
+        right: 50%;
+        transform: translateX(50%) rotate(90deg);
+    }
+}
+
+@media(max-width: 768px) {
+
+    .sa-roles-grid,
+    .sa-elig-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sa-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FAQ SECTION */
+.sa-faq-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.sa-faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sa-faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sa-faq-item-wrap {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.sa-faq-q {
+    padding: 20px 24px;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.sa-faq-q:hover {
+    background: #fafafa;
+}
+
+.sa-faq-q .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: #f1f5f9;
+    border-radius: 50%;
+    color: #666;
+}
+
+.sa-faq-a {
+    padding: 0 24px 20px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.sa-faq-action {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.sa-btn-solid {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--maroon);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.sa-btn-solid:hover {
+    opacity: 0.9;
+}
+
+/* RELATED CAREERS */
+.sa-related-section {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.sa-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.sa-related-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sa-related-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.sa-related-img {
+    height: 200px;
+    position: relative;
+}
+
+.sa-related-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sa-related-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #fff;
+    color: var(--maroon);
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sa-related-content {
+    padding: 32px 24px;
+}
+
+.sa-related-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 12px;
+}
+
+.sa-related-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    min-height: 100px;
+}
+
+.sa-related-link {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--maroon);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+}
+
+.sa-related-link:hover {
+    text-decoration: underline;
+}
+
+/* CTA SECTION */
+.sa-cta-section {
+    position: relative;
+    padding: 120px 20px;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.sa-cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.85);
+    z-index: 1;
+}
+
+.sa-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sa-cta-eyebrow {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #38bdf8;
+}
+
+.sa-cta-title {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.sa-cta-desc {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.sa-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.sa-btn-primary {
+    background: #0ea5e9;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sa-btn-primary:hover {
+    background: #0284c7;
+}
+
+.sa-btn-outline {
+    background: transparent;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.2s;
+}
+
+.sa-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width: 1024px) {
+    .sa-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 768px) {
+    .sa-related-grid {
+        grid-template-columns: 1fr;
+    }
+}
