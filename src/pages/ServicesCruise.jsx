@@ -298,7 +298,7 @@ export default function ServicesCruise() {
                         <div className="sc-related-card">
                             <div className="sc-related-img">
                                 <span className="sc-related-badge">AIR HOSTESS CAREERS</span>
-                                <img src="/assets/img/flight.jpg" alt="Air Hostess" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80' }} />
+                                <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80" alt="Air Hostess" />
                             </div>
                             <div className="sc-related-content">
                                 <h4 className="sc-related-title">Air Hostess & Cabin Crew</h4>
@@ -310,7 +310,7 @@ export default function ServicesCruise() {
                         <div className="sc-related-card">
                             <div className="sc-related-img">
                                 <span className="sc-related-badge">MERCHANT NAVY CAREERS</span>
-                                <img src="/assets/img/merchant.jpg" alt="Merchant Navy" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1534008897995-27a23e859048?auto=format&fit=crop&w=600&q=80' }} />
+                                <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?auto=format&fit=crop&w=600&q=80" alt="Merchant Navy" />
                             </div>
                             <div className="sc-related-content">
                                 <h4 className="sc-related-title">Merchant Navy Careers</h4>
@@ -322,7 +322,7 @@ export default function ServicesCruise() {
                         <div className="sc-related-card">
                             <div className="sc-related-img">
                                 <span className="sc-related-badge">INTERNATIONAL SECURITY CAREERS</span>
-                                <img src="/assets/img/security.jpg" alt="Security Guard" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=600&q=80' }} />
+                                <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=600&q=80" alt="Security Guard" />
                             </div>
                             <div className="sc-related-content">
                                 <h4 className="sc-related-title">Security Guard Careers</h4>
