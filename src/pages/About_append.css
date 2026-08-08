@@ -1,0 +1,302 @@
+
+/* 6. WHY ECOFUSION */
+.a-why-section {
+    padding: 80px 0;
+    background: #fff;
+}
+.a-why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.a-why-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    gap: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+.a-why-icon-wrap { flex-shrink: 0; }
+.a-why-icon {
+    width: 48px;
+    height: 48px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0ea5e9;
+    font-size: 20px;
+}
+.a-why-content { flex: 1; }
+.a-why-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 8px;
+}
+.a-why-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* 7. SIMPLE PATH */
+.a-path-section {
+    padding: 80px 0;
+    background: #fafafa;
+}
+.a-path-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.a-path-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+.a-path-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+.a-path-icon {
+    width: 40px;
+    height: 40px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--maroon);
+    font-size: 18px;
+}
+.a-path-num {
+    font-size: 32px;
+    font-weight: 900;
+    color: #f1f5f9;
+}
+.a-path-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 8px;
+}
+.a-path-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* 8. OUR PLEDGE */
+.a-pledge-section {
+    padding: 80px 0;
+    background: #fff;
+}
+.a-pledge-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.a-pledge-content {
+    max-width: 500px;
+}
+.a-pledge-card-wrapper {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+}
+.a-pledge-card h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+.a-pledge-subtitle {
+    font-size: 11px;
+    font-weight: 800;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+.a-pledge-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.a-pledge-list li {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.5;
+}
+.a-check {
+    color: #10b981;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+/* 9. FAQ */
+.a-faq-section {
+    padding: 80px 0;
+    background: #fff;
+}
+.a-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.a-faq-item-wrap {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.a-faq-q {
+    padding: 24px;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+.a-faq-q:hover {
+    background: #fafafa;
+}
+.a-faq-q span {
+    font-size: 20px;
+    color: #999;
+}
+.a-faq-a {
+    padding: 0 24px 24px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 10. CTA */
+.a-cta-section {
+    background: #111;
+    color: #fff;
+}
+.a-cta-bg {
+    position: relative;
+    padding: 120px 20px;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.a-cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.85); /* Dark slate overlay */
+    z-index: 1;
+}
+.a-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.a-cta-pill {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(30, 255, 180, 0.1);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.a-cta-content h2 {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+.a-cta-content p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.a-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.a-btn-primary {
+    background: #0ea5e9;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.a-btn-primary:hover {
+    background: #0284c7;
+}
+.a-btn-ghost {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.2s;
+}
+.a-btn-ghost:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.4);
+}
+.a-cta-quote {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1024px) {
+    .a-why-grid, .a-path-grid, .a-pledge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 768px) {
+    .a-why-grid, .a-path-grid, .a-pledge-grid {
+        grid-template-columns: 1fr;
+    }
+}
