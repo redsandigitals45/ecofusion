@@ -64,19 +64,42 @@ export default function Home() {
     const [bgIndex, setBgIndex] = useState(0);
     const [activeCategory, setActiveCategory] = useState('All');
     const [activeLocation, setActiveLocation] = useState('All');
-    const bgImages = [
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Detect mobile viewport for hero images only
+    useEffect(() => {
+        const mq = window.matchMedia('(max-width: 768px)');
+        const handler = (e) => setIsMobile(e.matches);
+        setIsMobile(mq.matches);
+        mq.addEventListener('change', handler);
+        return () => mq.removeEventListener('change', handler);
+    }, []);
+
+    // PC images (unchanged)
+    const desktopImages = [
         '/assets/img/herosection/ecofusion-outsourcing.png',
         '/assets/img/herosection/hero-cruise.jpg',
         '/assets/img/herosection/hero-hospitality.jpg',
         "/assets/img/herosection/night-cruise.jpg"
     ];
 
+    // Mobile-only images
+    const mobileImages = [
+        '/assets/img/ecofusion-ad-creative.png',
+        '/assets/img/The Moments Worth Holding Onto.jpg',
+        '/assets/img/hospitality-chef.jpg',
+        '/assets/img/download (4).jpg'
+    ];
+
+    const bgImages = isMobile ? mobileImages : desktopImages;
+
     useEffect(() => {
+        setBgIndex(0);
         const timer = setInterval(() => {
             setBgIndex(prev => (prev + 1) % bgImages.length);
         }, 5000);
         return () => clearInterval(timer);
-    }, []);
+    }, [isMobile]);
 
     const allLogs = [
         { icon: '🩺', text: 'Medical Doctor cleared port entry compliance in Nassau, Bahamas', color: '#7C1B54' },
