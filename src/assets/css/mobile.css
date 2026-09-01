@@ -1,0 +1,1188 @@
+/* =========================================================
+   ECOFUSION OUTSOURCING — Mobile-Only Stylesheet
+   All rules scoped to max-width: 768px or max-width: 480px
+   The PC version (>768px) is completely untouched.
+   ========================================================= */
+
+/* ========== BODY SCROLL LOCK (when mobile nav is open) ========== */
+body.nav-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* ========== GLOBAL MOBILE OVERRIDES ========== */
+@media (max-width: 768px) {
+
+  /* --- Container tighter padding --- */
+  .container {
+    padding: 0 16px !important;
+  }
+
+  /* --- Section padding reduction --- */
+  .section {
+    padding: 56px 0 !important;
+  }
+
+  .section-tight {
+    padding: 36px 0 !important;
+  }
+
+  /* --- Section head spacing --- */
+  .section-head {
+    margin-bottom: 32px !important;
+  }
+
+  .section-head h2 {
+    font-size: clamp(26px, 7vw, 36px) !important;
+    line-height: 1.15 !important;
+  }
+
+  .section-head p {
+    font-size: 15px !important;
+  }
+
+  /* --- Cards --- */
+  .card {
+    padding: 24px !important;
+  }
+
+  .card-flat {
+    padding: 24px !important;
+  }
+
+  /* --- Two column layout --- */
+  .two-col {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  /* --- CTA Band --- */
+  .cta-band {
+    padding: 32px 20px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    border-radius: 20px !important;
+  }
+
+  /* --- Buttons --- */
+  .btn {
+    padding: 12px 24px !important;
+    font-size: 14px !important;
+  }
+
+  .btn-sm {
+    padding: 10px 18px !important;
+    font-size: 13px !important;
+  }
+}
+
+/* ========== HEADER / NAV ========== */
+@media (max-width: 980px) {
+
+  /* Close icon when nav is open */
+  .nav-toggle.is-open svg line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-toggle.is-open svg line:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .nav-toggle.is-open svg line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-toggle svg line {
+    transition: transform 0.3s ease, opacity 0.2s ease;
+    transform-origin: center;
+  }
+
+  /* Smooth mobile nav transition */
+  .main-nav.open {
+    animation: slideNavIn 0.3s ease forwards;
+  }
+
+  @keyframes slideNavIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .main-nav.open > ul {
+    gap: 4px !important;
+  }
+
+  .main-nav.open a.nav-link {
+    padding: 16px 16px !important;
+    font-size: 17px !important;
+    border-radius: 12px !important;
+  }
+
+  /* Mobile CTA in nav */
+  .mobile-cta {
+    padding: 16px 0 !important;
+    gap: 12px !important;
+  }
+
+  .mobile-cta .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 16px 24px !important;
+    font-size: 16px !important;
+    border-radius: 14px !important;
+  }
+}
+
+/* ========== HERO SECTION (Home) ========== */
+@media (max-width: 768px) {
+
+  .hero-fullbg {
+    min-height: auto !important;
+    padding: 100px 0 60px !important;
+  }
+
+  .hero-grid-new {
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  .hero-copy {
+    max-width: 100% !important;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(28px, 8vw, 42px) !important;
+    line-height: 1.12 !important;
+  }
+
+  .hero-copy .lede {
+    font-size: 15px !important;
+    max-width: 100% !important;
+  }
+
+  .hero-actions {
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin-top: 28px !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 14px 24px !important;
+  }
+
+  /* Hero floating cards */
+  .hero-cards-right {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    justify-content: center !important;
+  }
+
+  .floating-card {
+    width: auto !important;
+    flex: 1 1 140px !important;
+    min-width: 140px !important;
+    padding: 6px 12px !important;
+    gap: 8px !important;
+    animation: none !important;
+  }
+
+  .floating-card.align-right {
+    margin-left: 0 !important;
+  }
+
+  .fc-content h3 {
+    font-size: 12px !important;
+  }
+
+  .fc-content p {
+    font-size: 10px !important;
+  }
+
+  .fc-icon {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 14px !important;
+  }
+
+  .fc-badge {
+    font-size: 8px !important;
+    padding: 1px 5px !important;
+  }
+
+  /* Hero slide progress indicator */
+  .hero-slide-progress {
+    bottom: 16px !important;
+    right: 16px !important;
+    padding: 8px 16px !important;
+    gap: 10px !important;
+  }
+
+  /* Hero tags */
+  .hero-tags {
+    margin-top: 28px !important;
+    gap: 8px !important;
+  }
+
+  .hero-tag {
+    padding: 8px 14px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* ========== PAGE HERO (sub-pages) ========== */
+@media (max-width: 768px) {
+
+  .page-hero {
+    padding: 100px 0 50px !important;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(28px, 7vw, 40px) !important;
+  }
+
+  .page-hero p {
+    font-size: 15px !important;
+  }
+}
+
+/* ========== TRUSTED EMPLOYERS MARQUEE ========== */
+@media (max-width: 768px) {
+
+  .trusted-employers-section {
+    padding: 20px 0 !important;
+  }
+
+  .trusted-eyebrow {
+    font-size: 10px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .marquee-track {
+    gap: 36px !important;
+    padding-left: 36px !important;
+  }
+
+  .marquee-item {
+    font-size: 11px !important;
+    gap: 6px !important;
+  }
+}
+
+/* ========== THREE INDUSTRIES — IMMERSIVE CARDS ========== */
+@media (max-width: 768px) {
+
+  .immersive-cards-grid {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .immersive-card {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    min-height: 320px !important;
+    padding: 24px !important;
+    border-radius: 16px !important;
+  }
+
+  .immersive-card.span-last {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ic-content h3 {
+    font-size: 24px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .ic-content p {
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+    max-width: 100% !important;
+  }
+
+  .ic-btn {
+    padding: 10px 18px !important;
+    font-size: 11px !important;
+  }
+
+  .modern-circle-icon {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .modern-circle-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+/* ========== JOB CARDS ========== */
+@media (max-width: 768px) {
+
+  .job-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    padding: 20px !important;
+  }
+
+  .job-card-left {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .job-badge {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+  }
+
+  .job-info {
+    width: 100% !important;
+  }
+
+  .job-info h3 {
+    font-size: 16px !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .visa-badge {
+    font-size: 9px !important;
+    padding: 3px 8px !important;
+  }
+
+  .job-meta {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    font-size: 12px !important;
+  }
+
+  .job-tags {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .job-tag {
+    font-size: 10px !important;
+    padding: 3px 8px !important;
+  }
+
+  .job-actions {
+    width: 100% !important;
+    justify-content: flex-end !important;
+  }
+
+  .job-actions .btn {
+    flex: 1 !important;
+    justify-content: center !important;
+  }
+
+  /* Filter pills */
+  .filter-pills {
+    gap: 6px !important;
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    padding-bottom: 4px !important;
+  }
+
+  .filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-pill {
+    padding: 6px 14px !important;
+    font-size: 12px !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* ========== EXPERTISE GRID (inline auto-fit cards) ========== */
+@media (max-width: 768px) {
+
+  .expertise-card {
+    padding: 24px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Force the auto-fit inline grid to single column */
+  .home-page .section-white .container > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ========== DESTINATIONS GRID ========== */
+@media (max-width: 768px) {
+
+  .destinations-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .dest-card {
+    border-radius: 16px !important;
+  }
+
+  .dest-img-box {
+    height: 160px !important;
+  }
+
+  .dest-body {
+    padding: 20px !important;
+  }
+
+  .dest-desc {
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+    min-height: auto !important;
+  }
+
+  .dest-stats-grid {
+    gap: 10px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .dest-stat {
+    padding: 12px !important;
+  }
+
+  .dest-salary {
+    padding: 12px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .dest-btn {
+    padding: 14px !important;
+    font-size: 12px !important;
+    border-radius: 10px !important;
+  }
+}
+
+/* ========== SERVICE MODEL (Recruit/Train/Certify) ========== */
+@media (max-width: 768px) {
+
+  .step {
+    padding: 24px !important;
+    border-radius: 14px !important;
+  }
+
+  .step h3 {
+    font-size: 18px !important;
+  }
+
+  .step p {
+    font-size: 13.5px !important;
+  }
+}
+
+/* ========== HOW IT WORKS (Journey Steps) ========== */
+@media (max-width: 768px) {
+
+  .how-it-works-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 28px 16px !important;
+  }
+
+  .hiw-circle-box {
+    width: 90px !important;
+    height: 90px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hiw-icon svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .hiw-num {
+    font-size: 11px !important;
+  }
+
+  .hiw-item h3 {
+    font-size: 15px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .hiw-item p {
+    font-size: 13px !important;
+  }
+
+  /* Pink halo overflow fix */
+  .hiw-circle-box.pink-halo-wrap::before {
+    inset: -8px !important;
+  }
+
+  .hiw-circle-box.pink-halo-wrap::after {
+    inset: -16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .how-it-works-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+}
+
+/* ========== REVIEWS SECTION ========== */
+@media (max-width: 768px) {
+
+  .reviews-section {
+    padding: 60px 0 !important;
+  }
+
+  .reviews-head {
+    margin-bottom: 32px !important;
+  }
+
+  .reviews-pill {
+    margin-bottom: 16px !important;
+  }
+
+  .reviews-title {
+    font-size: clamp(26px, 7vw, 36px) !important;
+  }
+
+  .review-card,
+  .reviews-section .review-card {
+    width: 280px !important;
+    min-width: 280px !important;
+    padding: 24px !important;
+  }
+
+  .reviews-track-container {
+    gap: 16px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .reviews-action {
+    margin-top: 8px !important;
+  }
+}
+
+/* ========== LIVE OPERATIONS CONTROL ========== */
+@media (max-width: 768px) {
+
+  .home-live-ops {
+    grid-template-columns: 1fr !important;
+    padding: 1.25rem !important;
+    gap: 1.5rem !important;
+    border-radius: 16px !important;
+  }
+
+  .home-terminal {
+    border-radius: 14px !important;
+    min-height: 280px !important;
+  }
+
+  /* Ops stat boxes */
+  .ops-stat-box {
+    padding: 0.75rem !important;
+  }
+
+  /* Terminal log text */
+  .home-terminal div[style*="font-family: monospace"] {
+    font-size: 0.7rem !important;
+  }
+}
+
+/* ========== BENEFITS SECTION ========== */
+@media (max-width: 768px) {
+
+  .on-lavender .grid-2 {
+    gap: 16px !important;
+  }
+
+  .check-list li {
+    padding: 12px 0 !important;
+    font-size: 14px !important;
+  }
+}
+
+/* ========== CAREER GUIDANCE SLIDER ========== */
+@media (max-width: 768px) {
+
+  .cg-section {
+    padding: 60px 0 !important;
+  }
+
+  .cg-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .cg-header-text h2 {
+    font-size: 28px !important;
+  }
+
+  .cg-header-text p {
+    font-size: 14px !important;
+  }
+
+  .cg-card {
+    flex: 0 0 280px !important;
+  }
+
+  .cg-card img {
+    height: 180px !important;
+  }
+
+  .cg-card-content {
+    padding: 20px !important;
+  }
+
+  .cg-card-content h3 {
+    font-size: 16px !important;
+  }
+
+  .cg-card-content p {
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .cg-slider-track {
+    gap: 16px !important;
+    padding-right: 16px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .cg-nav {
+    gap: 10px !important;
+  }
+
+  .cg-btn {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* ========== CTA HERO SECTION (Bottom CTA) ========== */
+@media (max-width: 768px) {
+
+  .section-cta-hero {
+    padding: 60px 0 0 0 !important;
+  }
+
+  .section-cta-hero h2 {
+    font-size: clamp(28px, 7vw, 42px) !important;
+  }
+
+  .section-cta-hero p {
+    font-size: 14px !important;
+  }
+
+  /* Stats bar at the bottom */
+  .section-cta-hero div[style*="grid-template-columns: repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px 20px !important;
+  }
+}
+
+/* ========== BLOG SECTION ========== */
+@media (max-width: 768px) {
+
+  .blog-section {
+    padding: 60px 0 !important;
+  }
+
+  .blog-head {
+    margin-bottom: 32px !important;
+  }
+
+  .blog-title {
+    font-size: clamp(26px, 7vw, 36px) !important;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .bc-img-wrap {
+    height: 180px !important;
+  }
+
+  .bc-content {
+    padding: 20px !important;
+  }
+
+  .bc-title {
+    font-size: 17px !important;
+  }
+
+  .blog-action {
+    margin-top: 32px !important;
+  }
+}
+
+/* ========== FOOTER ========== */
+@media (max-width: 768px) {
+
+  .site-footer.bg-light {
+    padding: 48px 0 24px !important;
+  }
+
+  .footer-grid-new {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+
+  .footer-desc {
+    max-width: 100% !important;
+  }
+
+  .footer-col.text-right {
+    text-align: left !important;
+  }
+
+  .social-text {
+    max-width: 100% !important;
+  }
+
+  /* Newsletter */
+  .newsletter-box {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 24px !important;
+    margin-top: 36px !important;
+    gap: 24px !important;
+    border-radius: 14px !important;
+  }
+
+  .nl-content {
+    max-width: 100% !important;
+  }
+
+  .nl-content h3 {
+    font-size: 20px !important;
+  }
+
+  .nl-content p {
+    font-size: 13.5px !important;
+  }
+
+  .nl-form-wrapper {
+    max-width: 100% !important;
+  }
+
+  .nl-form {
+    flex-direction: column !important;
+  }
+
+  .nl-form input {
+    padding: 14px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .nl-form button {
+    padding: 14px 24px !important;
+    justify-content: center !important;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom-new {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 12px !important;
+    margin-top: 36px !important;
+  }
+
+  .footer-bottom-new .fb-center {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  .fb-right {
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+  }
+}
+
+/* ========== ABOUT PAGE ========== */
+@media (max-width: 768px) {
+
+  .about-page {
+    padding-bottom: 40px !important;
+  }
+
+  .a-hero-section {
+    padding: 48px 0 !important;
+  }
+
+  .a-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .a-hero-title {
+    font-size: clamp(28px, 7vw, 40px) !important;
+  }
+}
+
+/* ========== SERVICES PAGES (Aviation, Cruise, Hospitality) ========== */
+@media (max-width: 768px) {
+
+  .sa-page,
+  .sc-page,
+  .sh-page {
+    padding-bottom: 40px !important;
+  }
+
+  .sa-overview-section,
+  .sc-overview-section,
+  .sh-overview-section {
+    padding: 56px 0 !important;
+  }
+
+  .sa-overview-grid,
+  .sc-overview-grid,
+  .sh-overview-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .sa-title,
+  .sc-title,
+  .sh-title {
+    font-size: clamp(28px, 7vw, 38px) !important;
+  }
+
+  .sa-roles-section,
+  .sc-roles-section,
+  .sh-roles-section {
+    padding: 48px 0 !important;
+  }
+
+  .sa-roles-grid,
+  .sc-roles-grid,
+  .sh-roles-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .sa-role-card,
+  .sc-role-card,
+  .sh-role-card {
+    padding: 28px 20px !important;
+  }
+}
+
+/* ========== CAREERS PAGE ========== */
+@media (max-width: 768px) {
+
+  .c-hero {
+    padding: 48px 0 !important;
+  }
+
+  .c-hero-title {
+    font-size: clamp(28px, 7vw, 38px) !important;
+  }
+
+  .c-hero-subtitle {
+    font-size: 14px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .c-categories-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
+
+/* ========== REVIEWS PAGE ========== */
+@media (max-width: 768px) {
+
+  .reviews-page-hero {
+    padding: 100px 0 50px !important;
+  }
+
+  .reviews-masonry {
+    columns: 1 !important;
+    gap: 16px !important;
+  }
+}
+
+/* ========== CONTACT PAGE ========== */
+@media (max-width: 768px) {
+
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-info-item {
+    gap: 12px !important;
+  }
+}
+
+/* ========== OPS SECTION (standalone page) ========== */
+@media (max-width: 768px) {
+
+  .ops-section {
+    padding: 60px 0 !important;
+  }
+
+  .ops-container {
+    grid-template-columns: 1fr !important;
+    padding: 20px !important;
+    gap: 32px !important;
+    border-radius: 16px !important;
+  }
+
+  .ops-title {
+    font-size: clamp(24px, 6vw, 32px) !important;
+  }
+
+  .ops-stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+
+  .ops-stat-card {
+    padding: 16px !important;
+  }
+
+  .ops-stat-val {
+    font-size: 24px !important;
+  }
+
+  .ops-terminal {
+    border-radius: 12px !important;
+  }
+
+  .ops-term-body {
+    padding: 16px !important;
+  }
+
+  .ops-log {
+    font-size: 11px !important;
+  }
+}
+
+/* ========== JOURNEY CARDS (Modern) ========== */
+@media (max-width: 768px) {
+
+  .journey-card-modern {
+    padding: 24px !important;
+    border-radius: 18px !important;
+  }
+
+  .journey-card-modern h3 {
+    font-size: 16px !important;
+  }
+
+  .journey-card-modern p {
+    font-size: 13.5px !important;
+  }
+
+  .journey-card-modern .j-icon-box {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 10px !important;
+    margin-bottom: 18px !important;
+  }
+}
+
+/* ========== WHY CHOOSE US CARDS ========== */
+@media (max-width: 768px) {
+
+  .why-choose-card-modern {
+    padding: 32px 20px !important;
+    border-radius: 24px !important;
+  }
+
+  .why-choose-card-modern .wc-icon-box {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 16px !important;
+  }
+
+  .why-choose-card-modern h3 {
+    font-size: 15px !important;
+  }
+
+  .why-choose-card-modern p {
+    font-size: 13px !important;
+  }
+
+  .why-choose-card-modern.compact {
+    padding: 24px 16px !important;
+  }
+}
+
+/* ========== EYEBROW ========== */
+@media (max-width: 768px) {
+
+  .eyebrow {
+    font-size: 11px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  .pill-eyebrow {
+    font-size: 10px !important;
+    padding: 5px 12px !important;
+  }
+}
+
+/* ========== INLINE STYLE OVERRIDES (using attribute selectors) ========== */
+@media (max-width: 768px) {
+
+  /* Force inline grid layouts to stack */
+  div[style*="grid-template-columns: repeat(auto-fit, minmax(320px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  div[style*="grid-template-columns: repeat(auto-fit, minmax(340px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Force inline 2-col grids to single column */
+  div[style*="gridTemplateColumns"][style*="1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Force 4-col stat grids to 2 columns */
+  div[style*="repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  /* Reduce excessive padding in sections */
+  section[style*="padding: 100px"] {
+    padding: 56px 0 !important;
+  }
+
+  /* Reduce 3rem+ padding */
+  div[style*="padding: 3rem"] {
+    padding: 1.25rem !important;
+  }
+
+  /* Fix the home live ops 2-col inner stats grid */
+  div[style*="gridTemplateColumns: '1fr 1fr'"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* ========== PREVENT HORIZONTAL OVERFLOW ========== */
+@media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  main {
+    overflow-x: hidden !important;
+  }
+
+  /* Fix background attachment on mobile (causes janky scroll on iOS) */
+  section[style*="background-attachment: fixed"] {
+    background-attachment: scroll !important;
+  }
+}
+
+/* ========== EXTRA SMALL SCREENS (≤480px) ========== */
+@media (max-width: 480px) {
+
+  .container {
+    padding: 0 14px !important;
+  }
+
+  .hero-copy h1 {
+    font-size: 28px !important;
+  }
+
+  .section-head h2 {
+    font-size: 24px !important;
+  }
+
+  /* Stack all grids */
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Review cards even tighter */
+  .review-card,
+  .reviews-section .review-card {
+    width: 260px !important;
+    min-width: 260px !important;
+    padding: 20px !important;
+  }
+
+  .review-text {
+    font-size: 13.5px !important;
+  }
+
+  /* Job card tighter */
+  .job-card {
+    padding: 16px !important;
+  }
+
+  .job-info h3 {
+    font-size: 15px !important;
+  }
+
+  /* Stats grid to single col on very small */
+  .ops-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* CTA buttons full width */
+  .btn-primary,
+  .btn-blue {
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+  }
+
+  /* Footer */
+  .social-row {
+    justify-content: flex-start !important;
+  }
+
+  /* Immersive card even smaller */
+  .immersive-card {
+    min-height: 280px !important;
+    padding: 20px !important;
+  }
+
+  .ic-content h3 {
+    font-size: 20px !important;
+  }
+
+  /* Badge row */
+  .badge-row {
+    flex-direction: column !important;
+  }
+
+  .badge-row .card-flat {
+    min-width: auto !important;
+  }
+}
