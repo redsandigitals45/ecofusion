@@ -65,7 +65,7 @@ export default function Home() {
     const [activeCategory, setActiveCategory] = useState('All');
     const [activeLocation, setActiveLocation] = useState('All');
     const bgImages = [
-        '/assets/img/herosection/hero-aviation.jpg',
+        '/assets/img/herosection/ecofusion-outsourcing.png',
         '/assets/img/herosection/hero-cruise.jpg',
         '/assets/img/herosection/hero-hospitality.jpg',
         "/assets/img/herosection/night-cruise.jpg"
