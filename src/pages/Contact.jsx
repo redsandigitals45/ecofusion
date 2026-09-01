@@ -51,21 +51,21 @@ export default function Contact() {
                                 <div className="icon-badge" style={{ margin: 0 }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16v16H4z" /><path d="m4 6 8 7 8-7" /></svg></div>
                                 <div>
                                     <strong style={{ display: 'block', fontSize: '15px' }}>Email</strong>
-                                    <span className="ink-soft">[Email Address]</span>
+                                    <span className="ink-soft">hr@ecofusionoutsourcing.in</span>
                                 </div>
                             </div>
                             <div className="contact-info-item">
                                 <div className="icon-badge" style={{ margin: 0 }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z" /></svg></div>
                                 <div>
                                     <strong style={{ display: 'block', fontSize: '15px' }}>Phone</strong>
-                                    <span className="ink-soft">[Phone Number]</span>
+                                    <span className="ink-soft">+91 9821944685</span>
                                 </div>
                             </div>
                             <div className="contact-info-item">
                                 <div className="icon-badge" style={{ margin: 0 }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0Z" /><circle cx="12" cy="10" r="3" /></svg></div>
                                 <div>
                                     <strong style={{ display: 'block', fontSize: '15px' }}>Office</strong>
-                                    <span className="ink-soft">[Street Address], Gurugram, India</span>
+                                    <span className="ink-soft">Sector 83, Noida, UP, India</span>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,8 @@ export default function Contact() {
                                     <option>Cruise Ship Careers</option>
                                     <option>Air Hostess &amp; Cabin Crew</option>
                                     <option>Hospitality Management</option>
-                                    <option>Hiring Partnership</option>
+                                    <option>Merchant Navy</option>
+                                    <option>Security Guard</option>
                                     <option>Something else</option>
                                 </select>
                             </div>
@@ -121,7 +122,7 @@ export default function Contact() {
             <section className="section-tight on-rose">
                 <div className="container" style={{ textAlign: 'center' }}>
                     <span className="eyebrow center" style={{ justifyContent: 'center' }}>Find Us</span>
-                    <h2 style={{ marginTop: '12px' }}>Gurugram, India</h2>
+                    <h2 style={{ marginTop: '12px' }}>Noida, India</h2>
                     <div style={{ marginTop: '28px', borderRadius: 'var(--radius-lg)', overflow: 'hidden', aspectRatio: '16/6', border: '1px solid var(--line)', background: 'var(--lavender-soft)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <span className="ink-soft" style={{ fontSize: '14px' }}>[Map embed — add office location]</span>
                     </div>

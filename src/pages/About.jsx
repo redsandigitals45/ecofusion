@@ -42,7 +42,7 @@ export default function About() {
                         </div>
                         <div>
                             <div className="a-hero-image-wrapper">
-                                <img src="/assets/img/hero-office.jpg" alt="Office team working" className="a-hero-image" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80' }} />
+                                <img src="/assets/img/hospitality-chef.jpg" alt="Hospitality Chef" className="a-hero-image" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80' }} />
                                 <div className="a-hero-badge">
                                     <div className="a-hero-badge-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
@@ -64,7 +64,7 @@ export default function About() {
                     <div className="a-story-grid">
                         <div>
                             <div className="a-story-image-wrapper">
-                                <img src="/assets/img/team-discussion.jpg" alt="Team discussion" className="a-story-image" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=800&q=80' }} />
+                                <img src="/assets/img/NCL Crew.jpg" alt="NCL Crew" className="a-story-image" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=800&q=80' }} />
                                 <div className="a-story-badge">
                                     <div className="a-story-badge-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>

@@ -129,6 +129,14 @@ export default function ServicesHospitality() {
                             <div className="sh-elig-subtitle">Impeccable Grooming & Etiquette</div>
                             <p className="sh-elig-desc">Candidates must adhere to strict personal presentation standards and demonstrate a polite, empathetic attitude.</p>
                         </div>
+                        <div className="sh-elig-card">
+                            <div className="sh-elig-icon sh-elig-icon-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /></svg>
+                            </div>
+                            <h4 className="sh-elig-title">Certifications</h4>
+                            <div className="sh-elig-subtitle">STCW & Other Certifications</div>
+                            <p className="sh-elig-desc">STCW and other certifications required for Hospitality careers for cruise based.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -143,7 +151,7 @@ export default function ServicesHospitality() {
 
                         <div className="sh-salary-card">
                             <div className="sh-salary-eyebrow">ESTIMATED MONTHLY SALARY</div>
-                            <div className="sh-salary-amount" style={{ fontSize: '32px' }}>Competitive &<br />Brand Based</div>
+                            <div className="sh-salary-amount" style={{ fontSize: '32px' }}>AED 2,000 - AED 6,000<br /><span style={{ fontSize: '24px', fontWeight: '800' }}>/ Month</span></div>
 
                             <div className="sh-salary-row">
                                 <span className="sh-salary-label">Base Salary</span>

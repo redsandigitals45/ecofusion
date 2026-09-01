@@ -143,7 +143,7 @@ export default function ServicesAviation() {
 
                         <div className="sa-salary-card">
                             <div className="sa-salary-eyebrow">ESTIMATED MONTHLY SALARY</div>
-                            <div className="sa-salary-amount" style={{ fontSize: '32px' }}>AED 8,000 - AED 16,000<br /><span style={{ fontSize: '24px', fontWeight: '800' }}>/ Month</span></div>
+                            <div className="sa-salary-amount" style={{ fontSize: '32px' }}>AED 3,000 - AED 8,000<br /><span style={{ fontSize: '24px', fontWeight: '800' }}>/ Month</span></div>
 
                             <div className="sa-salary-row">
                                 <span className="sa-salary-label">Income Tax</span>

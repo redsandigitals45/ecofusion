@@ -66,13 +66,13 @@ export default function Reviews() {
 
                     <div className="r-stats-board">
                         <div className="r-stat">
-                            <h3>5.0/5</h3>
+                            <h3>4.7/5</h3>
                             <span>AVERAGE RATING</span>
                         </div>
                         <div className="r-stat-div"></div>
                         <div className="r-stat">
-                            <h3>30+</h3>
-                            <span>SAMPLE REVIEWS</span>
+                            <h3>750+</h3>
+                            <span>REVIEWS</span>
                         </div>
                         <div className="r-stat-div"></div>
                         <div className="r-stat">
