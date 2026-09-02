@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Contact() {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [result, setResult] = useState({ type: '', message: '' });
+
     // Injecting inline styles from contact.html
     useEffect(() => {
         const style = document.createElement('style');
@@ -19,14 +22,43 @@ export default function Contact() {
       .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
       @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
       .contact-info-item { display: flex; gap: 16px; align-items: flex-start; }
+      .form-result {
+        padding: 14px 18px; border-radius: 12px; font-size: 14.5px; font-weight: 500;
+        margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
+      }
+      .form-result.success { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+      .form-result.error { background: #fce4ec; color: #c62828; border: 1px solid #ef9a9a; }
     `;
         document.head.appendChild(style);
         return () => document.head.removeChild(style);
     }, []);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Form submission logic
+        setIsSubmitting(true);
+        setResult({ type: '', message: '' });
+
+        const formData = new FormData(e.target);
+        formData.append('access_key', 'f3ce6037-78fb-4822-b9c0-e398230038ab');
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+            });
+            const data = await response.json();
+
+            if (data.success) {
+                setResult({ type: 'success', message: 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.' });
+                e.target.reset();
+            } else {
+                setResult({ type: 'error', message: data.message || 'Something went wrong. Please try again.' });
+            }
+        } catch (error) {
+            setResult({ type: 'error', message: 'Network error. Please check your connection and try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -83,6 +115,11 @@ export default function Contact() {
                         <h3 style={{ fontSize: '20px' }}>Send us a message</h3>
                         <p className="ink-soft" style={{ marginTop: '6px', fontSize: '14.5px' }}>We typically respond within 1–2 business days.</p>
                         <form style={{ marginTop: '24px' }} onSubmit={handleSubmit}>
+                            {result.type && (
+                                <div className={`form-result ${result.type}`}>
+                                    {result.type === 'success' ? '✓' : '✕'} {result.message}
+                                </div>
+                            )}
                             <div className="form-row">
                                 <div className="form-field">
                                     <label htmlFor="fname">Full Name</label>
@@ -112,7 +149,9 @@ export default function Contact() {
                                 <label htmlFor="message">Message</label>
                                 <textarea id="message" name="message" rows="4" placeholder="Tell us a little about your goals..."></textarea>
                             </div>
-                            <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Send Message</button>
+                            <button type="submit" className="btn btn-primary" style={{ width: '100%' }} disabled={isSubmitting}>
+                                {isSubmitting ? 'Sending...' : 'Send Message'}
+                            </button>
                         </form>
                     </div>
 
