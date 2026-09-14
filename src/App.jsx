@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -15,8 +15,16 @@ import Blog from './pages/Blog';
 
 function ScrollToTopAndReveal() {
     const { pathname } = useLocation();
+    const isFirstRender = useRef(true);
 
     useEffect(() => {
+        // Track PageView on route change (avoid duplicate on initial mount as index.html already fires it)
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+        } else if (typeof window.fbq === 'function') {
+            window.fbq('track', 'PageView');
+        }
+
         // Scroll to top
         window.scrollTo(0, 0);
 
